@@ -37,6 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django-import-export',
+    'FriendsAsylum',
 )
 
 MIDDLEWARE_CLASSES = (
