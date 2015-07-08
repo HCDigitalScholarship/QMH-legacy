@@ -17,6 +17,11 @@ from django.conf.urls import include, url, patterns
 from django.contrib import admin
 
 
+
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 ]
+
+admin.site.site_header = 'Quakers & Mental Health'
+admin.site.index_title = 'Quakers & Mental Health Administration'
