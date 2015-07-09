@@ -1,0 +1,143 @@
+/* custom CSS styles */
+.top-bar-section ul li {
+    background: #f1f1f1; }
+
+.top-bar-section ul {
+      color: #f1f1f1;
+      font-family: Georgia, sans-serif; !important
+      font-weight: normal;
+      font-size: 20px
+
+      
+  }
+
+  .overlay-container {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .overlay-container .overlay1 {
+    position: absolute; 
+    bottom: 10px;         
+    left: 850px;            
+    right: 0px; 
+    top: 35px;
+    color: white;
+    font-family: Georgia;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ 
+  .overlay-container .overlay2 {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    right: 0px;
+    top: 36px;
+    color: white;
+    font-family: "Poiret One";
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+  }
+
+
+
+  banner img {
+    max-width: 100em;
+    margin: auto;
+    display: block;
+    background-color: #909084;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  header {
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+ #row3 {
+ 	  background-color: #909084;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+ } 
+
+  #row3 h1 {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  	padding-left: 36px;
+  	color: black;
+  	font-family: 'Tangerine', Georgia;
+  	font-style: italic;
+  	font-size: 60px;
+}
+
+  #row3 h6 {
+  	
+  	color: black;
+  	font-family: Georgia;
+  	font-size: 18px;
+  	padding-left: 80px;
+  	padding-right: 80px;
+  	
+  }
+
+  #row3 h6 a {
+    color: #b1b1a8;
+  }
+
+  #row4 h3 {
+  	font-family: "Special Elite", serif;
+  	font-size: 60px;
+  	color: #909090;
+
+  }
+  #row6 {
+  	background-color: #909084;
+  }
+
+  #row6 h2 {
+  	font-family: "Poiret One", Georgia;
+  	color: black;
+  	text-align: center;
+  }
+
+  #row6 h6 {
+  	color: black;
+  	font-size: 26px;
+  	text-align: center;
+  	font-family: "Shadows Into Light";
+  }
+
+  
+  .full-width {
+  	max-width: 1400px;
+
+
+  }
+
+  .footer {
+    padding-top: 20px;
+  	text-align: center;
+  	font-family: Garamond;
+  	font-size: 40px;
+  	color: #fff;
+  	background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }
+ 
