@@ -2,99 +2,17 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Quakers&amp;Mental Health | Welcome</title>
-    <link rel="stylesheet" href="{% static "css/foundation.css" %}">
-    <link href='https://fonts.googleapis.com/css?family=Tangerine|Shadows+Into+Light|Special+Elite|Poiret+One' rel='stylesheet' type='text/css'>
-    <link rel = "stylesheet" href = "{% static "css/index.css" %}">
-    <script src="js/vendor/modernizr.js"></script>
+
+    {% include 'top-links.html' %}
+
   </head>
+
+
    <body>
-    <div class="off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap">
-        <nav class="tab-bar hide-for-medium-up">
-            <section class="left-small">
-              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
-            </section>
-        </nav>
-            <aside class="left-off-canvas-menu">
-              <ul class="off-canvas-list">
-                <li><a href="#">Quakers&amp;Mental Health</a></li>
-                <li><a href="#">About</a>
-                  <ul>
-                    <li><a href="#">Learn More</a></li>
-                    <li><a href="#">Contribute to Research</a></li>
-                     <li><a href="#">Features</a></li>
-                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
-                  </ul>
-                 <li><a href="#">History</a></li>
-                 <ul>
-                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Early History</a></li>
-                    <li><a href="#">Building</a></li>
-                    <li><a href="#">Governance &amp; Goals</a></li>
-                    <li><a href="#">Hicksite-Orthodox Split</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Moral Treatment</a></li>
-                  <ul>
-                    <li><a href="#">Quaker Philosophy</a></li>
-                    <li><a href="#">Technology</a></li>
-                  </ul>
-                <li><a href="#">Glossary</a></li>
-                <li><a href="#">Future Work</a></li>
-                <li><a href="#">Bibliography &amp; Credits</a></li>
-              </ul>
-            </aside>
-            <a class="exit-off-canvas"></a>
-
-    <!-- top bar code -->
-    
-      <div class = "sticky">
-        <nav class="top-bar show-for-medium-up" data-topbar="" role ="navigation">
-          <ul class="title-area">
-            <li class="name"> </li>
-            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-          </ul>
-
-          <section class="top-bar-section">
-            <ul class = "left">
-            <li> <a href= "#">Quakers &amp; Mental Health</a></li>
-            </ul> 
-            <ul class = "right">
-              <li class="has-dropdown"><a href="#">About</a>
-                <ul class = "dropdown">
-                  <li><a href = "#">Learn More</a></li>
-                  <li><a href= "#"> Contribute to Research</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
-                </ul>
-              </li>
-              <li class="has-dropdown"><a href="#">History</a>
-               <ul class="dropdown">
-                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Early History</a></li>
-                  <li><a href="#">Building</a></li>
-                  <li><a href="#">Governance &amp; Goals</a></li>
-                  <li><a href="#">Hicksite-Orthodox Split</a></li>
-
-                </ul>
-              </li>
-
-              <li class="has-dropdown"><a href="#">Moral Treatment</a>
-               <ul class="dropdown">
-                <li><a href="#">Quaker Philosophy</a></li>
-                <li><a href="#">Technology</a></li>
-               </ul>
-             </li>
-              <li><a href="#">Glossary</a></li>
-              <li><a href="#">Future Work</a></li>
-              <li><a href="#">Bibliography &amp; Credits</a></li>
-            </ul>
-          </section>
-        </nav>
-    </div>
   
-
+    {% include 'nav-bar.html' %}
 
     <header>
       <div class = "banner">
@@ -102,7 +20,7 @@
         <img src="{% static "Images/FriendsAsylum.jpg" %}" alt="Friends Asylum.">
         <!--div class = "overlay1 show-for-large-up">  "The Asylum is intended to furnish besides the requisite medical aid, such tender sympathetic attention and religious oversight as may soothe the patients' agitated minds and thereby under the divine blessing facilitate their restoration of this inestimable gift [of reason]"<br> </br>
         <em> ~ Contributors of the Asylum</em></div-->
-        <div class = "overlay2 show-for-medium-up">
+        <div class = "overlay2 show-for-large-up">
           <strong>Quakers &amp; Mental Health</strong>
         </div>
       </div>
@@ -154,65 +72,13 @@
       </div>
     </div>
 
-    <div id = "row6">
-    
-       <h2> <strong>Connect with HaverfordDS </strong></h2>
-        <h6> Find us online or email us with questions!</h6>
-      <div class  "row">
-        <div class = "small-12 medium-6 large-6 columns text-center">
-            <br> </br>
-            <a href ="https://www.facebook.com/hclibraries"><img src = "{% static "Images/facebook.png" %}" alt ="facebook"></a>
-            <a href ="https://twitter.com/HCLibraries"><img src = "{% static "Images/twitter.png" %}"  alt ="twitter"></a>
-            <a href ="https://instagram.com/HCLibraries/"><img src = "{% static "Images/insta.png" %}" alt ="instagram"></a>
-            <br> </br>
-          </div>
-          <div class = "small-12 medium-6 large-6 columns text-center">
-            <br> </br>
-            <a href ="#"><img src = "{% static "Images/Mail.png" %}" alt ="mail"><p> hcdigitalscholarship@gmail.com</p></a>
-            <br> </br>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <footer class = "footer" id = "footer1">
-      <div class = "row full-width">
-        <div class = "small-12 medium-6 large-6 columns" id = "vert">
-            <ul class = "no-bullet">
-          <li> Contact Us: </li>
-           <li> Digital Scholarship</li>
-           <li> Haverford College Libraries</li>
-          <li>  370 Lancaster Avenue</li>
-          <li>  Haverford, PA 19041</li>
-           <li>  <a href = "http://library.haverford.edu/services/digital-scholarship/"> HaverfordDS Website </a></li>
-          </ul>
-          
-
-        </div>
-        <div class = "small-12 medium-6 large-6 columns">
-            <ul class = "no-bullet">
-              <li> Funding Provided By: </li>
-              <li> The Scattergood Foundation</li>
-              <li>1501 Cherry Street</li>
-              <li>Philadelphia, PA 19102 </li>
-               <li>  <a href = "http://www.scattergoodfoundation.org/">Scattergood Foundation Website </a></li>
-            </ul>
-         
-        </div>  
-        
-
-      </div>
-    </footer>
+     {% include 'footer-complex.html' %}
 
 
 	     </div><!-- end inner wrap, must go after ALL content -->
      </div><!-- end offcanvas -->
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+      {% include 'bottom-links.html' %}    
+
   </body>
 </html>
