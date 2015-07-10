@@ -1,0 +1,250 @@
+[
+{
+    "fields": {
+        "definition": "Someone who was born to Quaker parents; it is assumed that they will grow up to be a Quaker and a full member of their Meeting.",
+        "word": "Birthright Friend"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 1
+},
+{
+    "fields": {
+        "definition": "Also called a \"Meeting for Worship with Attention to Business\"; conducted out of the silence like Meeting for Worship, Business Meeting is when Quakers meet to carry out the Meeting's business; decisions that come out of Business Meeting are thought to be divinely inspired.",
+        "word": "Business Meeting"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 2
+},
+{
+    "fields": {
+        "definition": "\"A deep interest, whether by an individual or a meeting, in some spiritual or social matter; an interest so deep and vigorous that often it must be expressed in action\" (NYYM Quaker Glossary); Bonsall describes the Asylum as a concern.",
+        "word": "Concern"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 3
+},
+{
+    "fields": {
+        "definition": "The idea that God is still revealing the Truth to us, and that we must listen for the voice of God and act on that Truth; this idea is at the heart of Quaker faith and practice.",
+        "word": "Continuing Revelation"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 4
+},
+{
+    "fields": {
+        "definition": " Someone who was not born Quaker, but becomes \"convinced\" of Quaker truth and therefore joins a Meeting.",
+        "word": "Convinced Friend"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 5
+},
+{
+    "fields": {
+        "definition": "\"A small group of men and women appointed to assist and also oversee the ministers\" (BMC Quakers and Slavery Glossary).",
+        "word": "Elders"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 6
+},
+{
+    "fields": {
+        "definition": "Someone is in a \"state of fatuity\" when they lose the use of their reason later in life; it is assumed that people do not recover from a state of fatuity; the Asylum does care for these people, despite its preference for patients who can recover.",
+        "word": "Fatuity"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 7
+},
+{
+    "fields": {
+        "definition": "Sunday; Monday; Early Quakers disapproved of using the \"pagan\" names for days of the week, so Sunday became First Day, Monday Second Day, and so on; the same process applies to months, making January First Month, etc. ",
+        "word": "First Day, Second Day, etc."
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 8
+},
+{
+    "fields": {
+        "definition": "A Quaker; Quakers may call each other Friend ____ or refer to someone as a Friend; nineteenth century Quakers are much more likely to refer to themselves and each other as Friends than Quakers.",
+        "word": "Friend"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 9
+},
+{
+    "fields": {
+        "definition": "Named after the controversial minister Elias Hicks, whose preaching inflamed tensions in the Religious Society of Friends; Hicksite Quakers began after the 1827 split; Hicksite Quakers tended to be rural and/or poorer than Orthodox Quakers; they put more emphasis on the importance of continuing revelation and the Inner Light; they objected to the power structure that meant a lot of people were getting disowned.",
+        "word": "Hicksite Quakers"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 10
+},
+{
+    "fields": {
+        "definition": "In nineteenth century medical parlance, the term idiot referred to someone who had displayed \"lack of reason\" since birth; idiots fell outside of the Asylum's concern.",
+        "word": "Idiot"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 11
+},
+{
+    "fields": {
+        "definition": "The Inner Light is the small part of God that Quakers believe is in each person; Quakers try to recognize the Inner Light in others, and listen to their own Inner Light (that is, continuing revelation); it is often described as speaking in a \"still, small voice.\"",
+        "word": "Inner/Inward Light"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 12
+},
+{
+    "fields": {
+        "definition": "\"An inner conviction that impels one to follow a certain course under a sense of divine guidance. A Friend may submit a leading to the meeting for testing by corporate wisdom\" (NYYM Quaker Glossary).",
+        "word": "Leading"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 13
+},
+{
+    "fields": {
+        "definition": "One of the two main types of insanity described in the nineteenth century; mania described any kind of wild or crazy behavior, like fits or ranting, etc.  ",
+        "word": "Mania"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 14
+},
+{
+    "fields": {
+        "definition": "\"A committee to support and care for members and their families who suffer because of their commitment to Friends' principles\" (NYYM Quaker Glossary); the nineteenth century Meeting for Sufferings was made up of very influential Quaker men .",
+        "word": "Meeting for Sufferings"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 15
+},
+{
+    "fields": {
+        "definition": "A time when Quakers gather in silence to listen for that of God within them; if someone feels led to share a message out of the silence, they stand and do so; in the nineteenth century it was mostly recorded ministers who spoke.",
+        "word": "Meeting for Worship"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 16
+},
+{
+    "fields": {
+        "definition": "Melancholy was thought to be one of the two main forms of insanity; melancholy corresponds fairly well to modern-day depression.",
+        "word": "Melancholy"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 17
+},
+{
+    "fields": {
+        "definition": "The basic unit of Quaker religious structure; a Monthly Meeting is the Meeting a Quaker worships with on a regular basis; it is called a Monthly Meeting because it meets to take care of business once a month.",
+        "word": "Monthly Meeting"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 18
+},
+{
+    "fields": {
+        "definition": "Formed during the Hicksite-Orthodox schism in 1827; Orthodox Quakers moved more towards standard Protestantism; they were on top of the Quaker power structure, and they were uneasy with what they saw as the Hicksite Friends' dismissal of the Bible as a source of authority.",
+        "word": "Orthodox Quakers"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 19
+},
+{
+    "fields": {
+        "definition": "Usually part of the phrase \"to speak out of the silence\"; this refers to what happens when people feel led to speak during Meeting for Worship and/or Business-they speak out of the silence; it comes from the fact that there should be silence before and after someone speaks.",
+        "word": "Out of the Silence"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 20
+},
+{
+    "fields": {
+        "definition": "A Preparatory Meeting is one that is too small or new to be a Monthly Meeting; it may become one in the future.",
+        "word": "Preparatory Meeting"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 21
+},
+{
+    "fields": {
+        "definition": "Someone who is not technically a member of a Meeting, but believes (\"professes\") Quaker doctrine; a spouse/child of a Quaker, or someone who attends Quaker meetings, but hasn't yet become a full member.",
+        "word": "Professor"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 22
+},
+{
+    "fields": {
+        "definition": "The biggest Yearly Meeting in the United States in the nineteenth century, and the heart of American Quakerism; the Asylum was founded for the use of Quakers associated with PYM.",
+        "word": "Philadelphia Yearly Meeting (PYM)"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 23
+},
+{
+    "fields": {
+        "definition": "Being disowned from one's Meeting; could happen if someone married a non-Quaker (or married without the consent of the Meeting), or joined the military, etc.",
+        "word": "Read out of Meeting"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 24
+},
+{
+    "fields": {
+        "definition": "Someone who is recognized by their Meeting as having a gift for vocal ministry (that is, speaking during Meeting for Worship); in the nineteenth century, it was unusual for people who were not recorded ministers to speak often during Meeting; both men and women could be recorded as ministers.",
+        "word": "Recorded Minister"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 25
+},
+{
+    "fields": {
+        "definition": "A phrase used to describe the Inner Light, the idea that each person has something of God in them, which they can listen to for guidance.",
+        "word": "\"That of God in Everyone\"/\"That of God\""
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 26
+},
+{
+    "fields": {
+        "definition": " A minister who feels called, with the support of his or her Meeting, to travel to Quaker Meetings in other places and minister to them; traveling ministers often traveled in pairs, and could be away on trips for years.",
+        "word": "Traveling Minister"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 27
+},
+{
+    "fields": {
+        "definition": "\"Meetings for business held four times per year, attended by representatives of all monthly meetings in a region; an intermediary between the monthly and yearly meeting, serves as an appellate body for disciplinary matters, and considers problems too large for a local meeting to solve; holds the authority to establish or discontinue a monthly, preparative, or particular meeting for worship\" (BMC Quakers and Slavery Glossary).",
+        "word": "Quarterly Meeting"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 28
+},
+{
+    "fields": {
+        "definition": "The Asylum's Visiting Managers were in charge of admitting and discharging patients; they inspected the Asylum once a week and the superintendent's accounts once a month; there were four of them at a time, and they served two-month terms.",
+        "word": "Visiting Manager"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 29
+},
+{
+    "fields": {
+        "definition": "A Quaker who is widely thought to have spiritual wisdom and Quaker expertise.",
+        "word": "Weighty Friend"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 30
+},
+{
+    "fields": {
+        "definition": "A Quaker organizational structure made up of many monthly and preparatory meetings; called a Yearly Meeting because it meets once a year to do business.",
+        "word": "Yearly Meeting"
+    },
+    "model": "FriendsAsylum.glossary",
+    "pk": 31
+}
+]

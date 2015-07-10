@@ -91,8 +91,13 @@ class PlaceType(models.Model):
 	def __unicode__(self):
 		return self.place_Type + " " + self.description
 		
+class GeoPlace(models.Model):
+	latitude = models.FloatField(null = True)
+	longitude = models.FloatField(null = True)
+	place_Info = models.ForeignKey("Place", blank = True, null = True)
 
-
+	def __unicode__(self):
+		return unicode(self.latitude) + " " + unicode(self.longitude) + " " + unicode(self.place_Info)
 
 class MeetingtoPersonRelationship(models.Model):
 	meeting = models.ForeignKey("Meeting")
@@ -138,4 +143,14 @@ class RoleType(models.Model):
 
 	
 	def __unicode__(self):
-		return self.role + " " + self.description	
+		return self.role + " " + self.description
+
+class Glossary(models.Model):
+	word = models.CharField("Word", max_length = 100, blank = True, null = True)
+	definition = models.TextField("Definition of Word", null = True, blank = True)
+	
+	class Meta:
+		verbose_name_plural = "Glossary"
+	
+	def __unicode__(self):
+		return self.word + " " + self.definition

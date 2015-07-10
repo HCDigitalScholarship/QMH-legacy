@@ -2,7 +2,7 @@
 from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
 from import_export import resources 
-from FriendsAsylum.models import Person, Relationship, RelationshipType, PatientEntry, Biography, Place, PlaceType, MeetingtoPersonRelationship, Meeting, MeetingType, Residence, RoleType
+from FriendsAsylum.models import Person, Relationship, RelationshipType, PatientEntry, Biography, Place, PlaceType, GeoPlace, MeetingtoPersonRelationship, Meeting, MeetingType, Residence, RoleType, Glossary
 
 class PersonResource(resources.ModelResource):
 	class Meta:
@@ -85,6 +85,17 @@ class PlaceTypeAdmin(ImportExportModelAdmin):
 	resource_class = PlaceTypeResource
 	pass
 
+class GeoPlaceResource(resources.ModelResource):
+	class Meta:
+		model = GeoPlace
+		fields = ('id', 'latitude', 'longitude', 'place_Info')
+
+class GeoPlaceAdmin(ImportExportModelAdmin):
+	fields = ['latitude', 'longitude', 'place_Info']
+	resource_class = GeoPlaceResource
+	pass
+
+
 class MeetingtoPersonRelationshipResource(resources.ModelResource):
 	class Meta:
 		model = MeetingtoPersonRelationship
@@ -140,7 +151,15 @@ class RoleTypeAdmin(ImportExportModelAdmin):
 	resource_class = RoleTypeResource
 	pass
 
+class GlossaryResource(resources.ModelResource):
+	class Meta:
+		model = Glossary
+		fields = ('id', 'word', 'definition')
 
+class GlossaryAdmin(ImportExportModelAdmin):
+	fields = ['word', 'definition']
+	resource_class = GlossaryResource
+	pass
 #admin_site = MyAdminSite(name = 'myadmin')
 admin.site.register(Person,PersonAdmin)
 admin.site.register(Relationship,RelationshipAdmin)
@@ -149,9 +168,10 @@ admin.site.register(PatientEntry,PatientEntryAdmin)
 admin.site.register(Biography,BiographyAdmin)
 admin.site.register(Place,PlaceAdmin)
 admin.site.register(PlaceType,PlaceTypeAdmin)
+admin.site.register(GeoPlace,GeoPlaceAdmin)
 admin.site.register(MeetingtoPersonRelationship,MeetingtoPersonRelationshipAdmin)
 admin.site.register(Meeting,MeetingAdmin)
 admin.site.register(MeetingType,MeetingTypeAdmin)
 admin.site.register(Residence,ResidenceAdmin)
 admin.site.register(RoleType,RoleTypeAdmin)
-
+admin.site.register(Glossary,GlossaryAdmin)
