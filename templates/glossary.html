@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html class = "no-js" lang = "en">
+	<head>
+		<title>Glossary </title>
+
+		{% include 'top-links.html' %}
+		<link rel = "stylesheet" href = "static/css/index.css">
+	</head>
+	<body>
+		{% include 'nav-bar.html' %}
+		<h1> {{ glossary.word }} </h1>
+		
+		{% if glossaries %} <!--refers to name of variable in views containing all glossary entries-->
+			<ul class = "accordion" data-accordion>
+				{% for glossary in glossaries %}
+				<li class = "accordion-navigation">
+					<a href = "#panel1a"> {{ glossary.word }}</a>
+					<div id = "panel1a" class = "content">
+					 {{ glossary.definiton }}
+				 	</div>
+				 </li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<strong> There are no glossaries present right now. </strong>
+		{% endif %}
+
+
+ 		
+
+		{% include 'footer-simple.html' %}
+
+
+			</div> <!--import for end of inner wrap, end of off campus nav bar -->
+		</div>
+
+		{% include 'bottom-links.html' %}
+	</body>
+
+
+
+
+
+		
+
+
+</html>
+
+
