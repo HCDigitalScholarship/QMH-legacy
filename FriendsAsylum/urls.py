@@ -20,7 +20,7 @@ from . import views
 
 
 urlpatterns = [
-	url(r'^entry/$', 'FriendsAsylum.views.entry', name = 'GlossaryEntry'),
+	url(r'^glossary/$', 'FriendsAsylum.views.glossary', name = 'GlossaryEntry'),
 	url(r'^index/$', 'FriendsAsylum.views.index', name = 'Index'),
     	url(r'^$', views.Home.as_view(), name = 'home'),
 	url(r'^admin/', include(admin.site.urls)),

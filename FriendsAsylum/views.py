@@ -5,10 +5,12 @@ from django.shortcuts import render
 from models import Glossary
 
 
-def entry(request):
+def glossary(request):
 	glossary_list = Glossary.objects.all()
-	context_dict = {'glossaries': glossary_list}
-	return render(request, 'glossary.html', context_dict)
+	word_list = [glossary.word for glossary in glossary_list]
+	dict_list = [glossary.definition for glossary in glossary_list]
+	glossary_list = zip(word_list, dict_list)
+	return render(request, 'glossary.html', {'glossaries': glossary_list})
 
 def index(request):
 	return HttpResponse("hello world, youre at the polls index")

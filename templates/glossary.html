@@ -3,30 +3,191 @@
 <html class = "no-js" lang = "en">
 	<head>
 		<title>Glossary </title>
-
-		{% include 'top-links.html' %}
-		<link rel = "stylesheet" href = "static/css/index.css">
+		<meta charset = "utf-8" />
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+		<link rel = "stylesheet" href = "{% static "css/foundation.css" %}">
+		<link href = "https:googleapis.com/css?family=Tangerine|Shadows+Into+Light|Special+Elite|Poiret+One" rel = 'stylesheet' type = 'text/css'>
+		<link rel = "stylesheet" href = "{% static "css/accordion.css" %}">
+		<script src = "{% static "js/vendor/modernizr.js" %}"></script>
 	</head>
 	<body>
-		{% include 'nav-bar.html' %}
-		<h1> {{ glossary.word }} </h1>
+		
+      <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-medium-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="#">Quakers&amp;Mental Health</a></li>
+                <li><a href="#">About</a>
+                  <ul>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contribute to Research</a></li>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Future Directions</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Backround &amp; Context</a>
+                  <ul>
+                    <li><a href="#">Theology &amp; Mental Health</a></li>
+                    <li><a href="#">York Retreat</a></li>
+                    <li><a href="#">Other Asylums</a></li>
+                    <li><a href="#">Hicksite-Orthodox Schism</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#">History</a></li>
+                 <ul>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Governance &amp; Structure</a></li>
+                    <li><a href="#">Patient Profiles</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Moral Treatment</a></li>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Religious Life at the Asylum</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Downsides</a></li>
+                  </ul>
+                <li><a href="#">Medical Treatment</a>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Types of Treatment</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+
+    <!-- top bar code -->
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-medium-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "#">Quakers &amp; Mental Health</a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="has-dropdown"><a href="#">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "#">Learn More</a></li>
+                  <li><a href= "#"> Contribute to Research</a></li>
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Future Directions</a></li>
+                </ul>
+              </li>
+               <li class="has-dropdown"><a href="#"> Backround &amp; Context</a>
+               <ul class="dropdown">
+                <li><a href="#">Theology &amp; Mental Health</a></li>
+                <li><a href="#">The York Retreat</a></li>
+                <li><a href="#">Other Asylums</a></li>
+                <li><a href="#">Hicksite-Orthodox Schism</a></li>
+               </ul>
+              </li>
+              <li class="has-dropdown"><a href="#"> Early History</a>
+               <ul class="dropdown">
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                  <li><a href="#">Architecture</a></li>
+                  <li><a href="#">Governance &amp; Structure</a></li>
+                  <li><a href="#">Patient Profiles</a></li>
+
+                </ul>
+              </li>
+
+              <li class="has-dropdown"><a href="#">Moral Treatment</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Religious Life at the Asyum</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Downsides</a></li>
+               </ul>
+             </li>
+             <li class="has-dropdown"><a href="#">Medical Treament</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Types of Treament</a></li>
+               </ul>
+            </li>
+              <li class = "active"><a href="#">Glossary</a></li>
+              <li><a href="#">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>	
+
+
+
+
+
+
+
+
+ 		<div class = "row">
+			<div class = "large-12 columns">
+				<ul class = "tabs" data-tab>
+					<li class = "tab-title active"><a href = "#panel1"> Dropdown </a></li>
+					<li class = "tab-title"><a href = "#panel2"> Table </a> </li>
+				</ul>
+				<div class = "tabs-content">
+					<div class = "content active" id = "panel1">
 		
 		{% if glossaries %} <!--refers to name of variable in views containing all glossary entries-->
 			<ul class = "accordion" data-accordion>
-				{% for glossary in glossaries %}
-				<li class = "accordion-navigation">
-					<a href = "#panel1a"> {{ glossary.word }}</a>
-					<div id = "panel1a" class = "content">
-					 {{ glossary.definiton }}
-				 	</div>
-				 </li>
+				
+				{% for ab in glossaries %}
+					<li class = "accordion-navigation">
+						<a href = "#panel{{forloop.counter0}}"> {{ ab.0 }}</a>
+						<div id = "panel{{forloop.counter0}}" class = "content">
+					        	{{ ab.1 }}
+						</div>
+					 </li>
+					
 				{% endfor %}
 			</ul>
 		{% else %}
 			<strong> There are no glossaries present right now. </strong>
 		{% endif %}
-
-
+				</div>
+				<div class = "content" id = "panel2">
+				<table>
+					<thead>
+						<tr>
+							<th width = "200">Word</th>
+							<th width = "1000"> Definition</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% if glossaries %}
+								{% for ab in glossaries %}
+							<tr>
+								<td> {{ ab.0 }} </td>
+								<td> {{ ab.1 }} </td>
+							</tr>
+								{% endfor %}
+					</tbody>
+				</table>
+						{% else %}
+							<strong> There are no glossaries at this time. </strong>
+						{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+						
+		
  		
 
 		{% include 'footer-simple.html' %}
@@ -35,7 +196,13 @@
 			</div> <!--import for end of inner wrap, end of off campus nav bar -->
 		</div>
 
-		{% include 'bottom-links.html' %}
+		<!--	{% include 'bottom-links.html' %}-->
+		<script src = "{% static "js/vendor/jquery.js" %}"></script>
+		<script src = "{% static "js/foundation.min.js" %}"></script>
+		<script>
+			$(document).foundation();
+		</script>
+
 	</body>
 
 

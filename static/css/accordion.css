@@ -1,0 +1,34 @@
+.accordion .accordion-navigation > a, .accordion dd > a {
+      background: #EFEFEF;
+      color: #222222;
+      display: block;
+      font-family: Georgia;
+      font-size: 1rem;
+      margin-top: 1rem;
+      padding: 1rem; }
+
+
+ .full-width {
+  	max-width: 1400px;
+
+
+  }
+
+  .footer {
+    padding-top: 20px;
+  	text-align: center;
+  	font-family: Garamond;
+  	font-size: 40px;
+  	color: #fff;
+  	background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }
