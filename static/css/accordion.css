@@ -1,4 +1,24 @@
-.accordion .accordion-navigation > a, .accordion dd > a {
+#rowheader {
+    background-color: #909084;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#rowheader h1 {
+   color: #f1f1f1;
+   font-family: "Poiret One";
+   font-size: 80px;
+   padding-top: 40px;
+   padding-bottom: 40px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: center;
+    border-bottom: solid #333333 15px;
+
+}
+accordion .accordion-navigation > a, .accordion dd > a {
       background: #EFEFEF;
       color: #222222;
       display: block;
