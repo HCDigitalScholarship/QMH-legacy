@@ -38,7 +38,6 @@ class RelationshipType(models.Model):
 
 class PatientEntry(models.Model):
 	patient_Info = models.ForeignKey("Person", null = True)
-	age_at_Admittance = models.CharField("Age at Admittance", blank = True, null = True, max_length = 3)
 	admitdate = models.CharField("Entry Date", max_length = 15, blank = True)
 	exitdate = models.CharField("Departure Date", max_length = 15, blank = True) 
 	status = models.TextField("Status on Discharge", blank=True)
@@ -51,7 +50,7 @@ class PatientEntry(models.Model):
 
 
 	def __unicode__(self):
-		return unicode(self.patient_Info) +  " " + self.age_at_Admittance + " " +  self.admitdate + " " + self.exitdate + " " + self.status + " " +  self.weekly_Rate + " " + self.notes
+		return unicode(self.patient_Info) +  " " +  self.admitdate + " " + self.exitdate + " " + self.status + " " +  self.weekly_Rate + " " + self.notes
 		
 
 
@@ -161,16 +160,19 @@ class Text(models.Model):
 	volume = models.CharField("Vol. #", max_length = 4, blank = True, null = True)
 	text_Type = models.ForeignKey("Text_Type", null = True, blank = True)
 	author = models.ForeignKey("Person", blank = True, null = True, related_name = '%(class)s_Author')
-	clerk = models.ForeingKey("Person", blank = True, null = True, related_name = '%(class)s_Clerk')
+	clerk = models.ForeignKey("Person", blank = True, null = True, related_name = '%(class)s_Clerk')
 	dates = models.CharField("Dates of Text", max_length = 40, blank = True, null = True)
 	description = models.TextField("Description of Text", blank = True, null = True)
 	
-	def __unicode__(self);
+	def __unicode__(self):
 		return self.name + " " + self.volume + " " + unicode(self.text_Type) + " " + unicode(self.author) + " " + unicode(self.clerk) + " " + self.dates + " " + self.description
 
 class Text_Type(models.Model):
 	text_Type = models.CharField("Text Type", max_length = 100, blank = True, null = True)
 	description = models.TextField("Description of Text", null = True, blank = True)
+
+	class Meta:
+		verbose_name_plural = "Text Types"
 
 	def __unicode__(self):
 		return self.text_Type + " " + self.description
@@ -193,5 +195,8 @@ class Text_Relationship(models.Model):
 	person14 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_14')
 	person15 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_15')
 
+	class Meta:
+        	verbose_name_plural = "Text Relationship Types"
+
 	def __unicode(self):
-		return unicode(self.text) + " " unicode(self.person1) + " " +  unicode(self.person2) + " " +  unicode(self.person3) + " " +  unicode(self.person4) + " " +  unicode(self.person5) + " " +  unicode(self.person6) + " " +  unicode(self.person7) + " " +  unicode(self.person8) + " " +  unicode(self.person9) + " " +  unicode(self.person10) + " " +  unicode(self.person11) + " " +  unicode(self.person12) + " " +  unicode(self.person13) + " " +  unicode(self.person14) + " " +  unicode(self.person15) 
+		return unicode(self.text) + " " + unicode(self.person1) + " " + unicode(self.person2) + " " + unicode(self.person3) + " " + unicode(self.person4) + " " + unicode(self.person5) + " " + unicode(self.person6) + " " + unicode(self.person7) + " " + unicode(self.person8) + " " + unicode(self.person9) + " " + unicode(self.person10) + " " + unicode(self.person11) + " " + unicode(self.person12) + " " + unicode(self.person13) + " " + unicode(self.person14) + " " + unicode(self.person15) 

@@ -2,7 +2,7 @@
 from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
 from import_export import resources 
-from FriendsAsylum.models import Person, Relationship, RelationshipType, PatientEntry, Biography, Place, PlaceType, GeoPlace, MeetingtoPersonRelationship, Meeting, MeetingType, Residence, RoleType, Glossary
+from FriendsAsylum.models import Person, Relationship, RelationshipType, PatientEntry, Biography, Place, PlaceType, GeoPlace, MeetingtoPersonRelationship, Meeting, MeetingType, Residence, RoleType, Glossary, Text, Text_Type, Text_Relationship
 
 class PersonResource(resources.ModelResource):
 	class Meta:
@@ -160,6 +160,41 @@ class GlossaryAdmin(ImportExportModelAdmin):
 	fields = ['word', 'definition']
 	resource_class = GlossaryResource
 	pass
+
+class TextResource(resources.ModelResource):
+	class Meta:
+		model = Text
+		fields = ('id', 'name', 'volume', 'text_Type', 'author', 'clerk', 'dates', 'description')
+
+class TextAdmin(ImportExportModelAdmin):
+	fields = ['name', 'volume', 'text_Type', 'author', 'clerk', 'dates', 'description']
+	resource_class = TextResource
+	pass
+
+class Text_TypeResource(resources.ModelResource):
+	class Meta:
+		model = Text_Type
+		fields = ('id', 'text_Type', 'description')
+	
+class Text_TypeAdmin(ImportExportModelAdmin):
+	fields = ['text_Type', 'description']
+	resource_class = Text_TypeResource
+	pass
+
+class Text_RelationshipResource(resources.ModelResource):
+	class Meta:
+		model = Text_Relationship
+		fields = ('id', 'text', 'person1', 'person2', 'person3', 'person4', 'person5', 'person6', 'person7', 'person8', 'person9', 'person10', 'person11', 'person12', 'person13', 'person14', 'person15')
+
+class Text_RelationshipAdmin(ImportExportModelAdmin):
+	fields = ['text', 'person1', 'person2', 'person3', 'person4', 'person5', 'person6', 'person7', 'person8', 'person9', 'person10', 'person11', 'person12', 'person13', 'person14', 'person15']
+	resource_class = Text_RelationshipResource
+	pass
+
+
+
+
+
 #admin_site = MyAdminSite(name = 'myadmin')
 admin.site.register(Person,PersonAdmin)
 admin.site.register(Relationship,RelationshipAdmin)
@@ -175,3 +210,6 @@ admin.site.register(MeetingType,MeetingTypeAdmin)
 admin.site.register(Residence,ResidenceAdmin)
 admin.site.register(RoleType,RoleTypeAdmin)
 admin.site.register(Glossary,GlossaryAdmin)
+admin.site.register(Text,TextAdmin)
+admin.site.register(Text_Type,Text_TypeAdmin)
+admin.site.register(Text_Relationship,Text_RelationshipAdmin)

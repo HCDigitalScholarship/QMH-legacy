@@ -1,0 +1,112 @@
+/* custom css for ARCH.html*/
+
+.exoribit img {
+	width: 100%;
+	height: auto;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+
+#rowheader {
+	background-color: #909084;
+	padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#rowheader h1 {
+	color: #f1f1f1;
+	font-family: "Poiret One";
+	font-size: 80px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    border-bottom: solid #333333 15px;
+
+}
+
+
+	
+}
+
+#row1 {
+	margin-top: 0px;
+	background-color: white;
+	padding-bottom: 50px;
+}
+
+#row1 h2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 100px;
+	text-align: center;
+	font-family: "Tangerine";
+	font-size: 50px;
+}
+
+#row2 {
+	padding-top: 15px;
+	margin-top: 0px;
+	background-color: #CCCCB2;
+	border-bottom: solid #333333 15px;
+}
+
+#row2 h2 {
+	font-family: Georgia;
+	margin-left: 50px;
+}
+
+#row2 p {
+	text-align: left;
+	margin-left: 200px;
+	padding-bottom: 20px;
+	font-family: Times;
+	font-size: 19px;
+}
+
+#row3 {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+#row3 h3 {
+	margin-top: 15px;
+	font-size: 45px;
+	font-family: Georgia;
+	padding-bottom: 20px;
+}
+
+#row3 .button {
+	margin-top: 100px;
+	background-color: #D65CFF;
+	border-bottom-left-radius: 40.5px;
+	border-bottom-right-radius: 40.5px;
+	border-top-left-radius: 40.5px;
+	border-top-right-radius: 40.5px;
+
+}
+
+.footer {
+	margin-top: 0px;
+    padding-top: 20px;
+  	text-align: center;
+  	font-family: Garamond;
+  	font-size: 40px;
+  	color: #fff;
+  	background-color: #333333;
+    
+
+}
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }
