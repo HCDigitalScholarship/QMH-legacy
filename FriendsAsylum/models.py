@@ -43,16 +43,14 @@ class PatientEntry(models.Model):
 	status = models.TextField("Status on Discharge", blank=True)
 	weekly_Rate = models.CharField("Weekly Rate", max_length = 75, blank = True, null = True)
 	notes = models.TextField("Note Field", blank = True, null = True)
-
+	age = models.CharField("Age at Admittance", default = '', max_length = 3, null = True, blank = True)	
 	
 	class Meta:
 		verbose_name_plural = "Patient Entries"	
 
 
 	def __unicode__(self):
-		return unicode(self.patient_Info) +  " " +  self.admitdate + " " + self.exitdate + " " + self.status + " " +  self.weekly_Rate + " " + self.notes
-		
-
+		return unicode(self.patient_Info) +  " " +  self.admitdate + " " + self.exitdate + " " + self.status + " " +  self.weekly_Rate + " " + self.notes + " " + self.age
 
 class Biography(models.Model):
 	person_Info = models.ForeignKey("Person")
@@ -95,6 +93,7 @@ class GeoPlace(models.Model):
 	latitude = models.FloatField(null = True)
 	longitude = models.FloatField(null = True)
 	place_Info = models.ForeignKey("Place", blank = True, null = True)
+
 
 	def __unicode__(self):
 		return unicode(self.latitude) + " " + unicode(self.longitude) + " " + unicode(self.place_Info)

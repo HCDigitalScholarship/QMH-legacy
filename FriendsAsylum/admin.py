@@ -33,10 +33,10 @@ class RelationshipAdmin(ImportExportModelAdmin):
 class PatientEntryResource(resources.ModelResource):
 	class Meta:
 		model = PatientEntry
-		fields = ('id', 'patient_Info', 'admitdate', 'exitdate', 'status', 'weekly_Rate', 'notes') 
+		fields = ('id', 'patient_Info', 'admitdate', 'exitdate', 'status', 'weekly_Rate', 'notes', 'age') 
 
 class PatientEntryAdmin(ImportExportModelAdmin):
-	fields = ['patient_Info', 'admitdate', 'exitdate', 'status', 'weekly_Rate', 'notes']
+	fields = ['patient_Info', 'admitdate', 'exitdate', 'status', 'weekly_Rate', 'notes', 'age']
 	resource_class = PatientEntryResource
 	pass 
 
