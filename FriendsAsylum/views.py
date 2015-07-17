@@ -12,6 +12,19 @@ def glossary(request):
 	glossary_list = zip(word_list, dict_list)
 	return render(request, 'glossary.html', {'glossaries': glossary_list})
 
+def arch(request):
+	return render(request, 'FriendsARCH.html')
+
+def foundation(request):
+	return render(request, 'FriendsFOUND.html')
+
+def struct(request):
+	return render(request, 'FriendsGOV.html')
+
+def profiles(request):
+	return render(request, 'FriendsPRO.html')
+
+
 def index(request):
 	return HttpResponse("hello world, youre at the polls index")
 

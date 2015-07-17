@@ -1,0 +1,388 @@
+/* custom css for example.html*/
+ .overlay-container {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+ .overlay-container .overlay1 {
+    position: absolute; 
+    bottom: 0px;         
+    left: 30px;            
+    right: 0px; 
+    top: 36px;
+    color: black; /* pretty color of blue#7082A6 */
+    font-family: "Shadows Into Light";
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ 
+  banner img {
+    max-width: 100em;
+    margin: auto;
+    display: block;
+    background-color: #909084;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  header {
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+
+  #rowheader {
+	background-color: #909084;
+	padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#rowheader h1 {
+	color: #f1f1f1;
+	font-family: "Poiret One";
+	font-size: 80px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    border-bottom: solid #333333 15px; /*if you dont want that black line at the bottom of a title heading, get rid of this*/
+
+}
+
+
+/* quote section*/
+#row1 {
+	margin-top: 0px;
+	padding-top: 30px;
+	background-color: white;
+	padding-bottom: 30px;
+}
+
+#row1 h2 {
+	padding-top: 0px;
+	padding-bottom: 20px;
+	margin-left: 100px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-family: "Tangerine";
+	font-size: 56px;
+}
+
+
+/*Text Blurb Left*/
+#row2 {
+	padding-top: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	background-color: #CCCCB2;
+	margin-bottom: 0px;
+	
+}
+
+#row2 h2 {
+	font-family: Georgia;
+	margin-left: 50px;
+	padding-top: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#row2 p {
+	text-align: left;
+	margin-left: 200px;
+	padding-bottom: 30px;
+	font-family: Times;
+	font-size: 19px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Text Blurb Center*/
+#row3 {
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #909084;
+	
+}
+
+#row3 h2 {
+	padding-top: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-family: Georgia;
+	margin-left: 0px;
+}
+
+#row3 p {
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding-bottom: 30px;
+	font-family: Times;
+	font-size: 19px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+/* Text Blurb Right*/
+#row4 {
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #292C2F;
+	
+}
+
+#row4 h2 {
+	padding-top: 20px;
+	margin-top: 0px;
+	color: white;
+	margin-bottom: 0px;
+	text-align: right;
+	font-family: Georgia;
+	margin-left: 0px;
+	margin-right: 50px;
+}
+
+#row4 p {
+	text-align: right;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 30px;
+	font-family: Times;
+	font-size: 19px;
+	color: white;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Text Blurb Right Float Image*/
+#row8 {
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #CCCCB2;
+	
+}
+
+
+
+#row8 img {
+	float: right;
+	position: relative;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+	
+
+
+
+#row8 h2 {
+	padding-top: 20px;
+	margin-top: 0px;
+	color: black;
+	margin-bottom: 15px;
+	text-align: left;
+	font-family: Georgia;
+	margin-left: 20px;
+	margin-right: 0px;
+}
+
+#row8 p {
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 420px;
+	padding-bottom: 30px;
+	font-family: Times;
+	font-size: 19px;
+	color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+.clearfix {
+	overflow: auto;
+}
+
+/* Text Blurb Left Float Image*/
+#row9 {
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+	
+}
+
+
+
+#row9 img {
+	float: left;
+	position: relative;
+	margin-right: 0px;
+	margin-left: 30px;
+	margin-bottom: 40px;
+}
+	
+
+
+
+#row9 h2 {
+	padding-top: 20px;
+	margin-top: 0px;
+	color: black;
+	margin-bottom: 15px;
+	text-align: right;
+	font-family: Georgia;
+	margin-left: 20px;
+	margin-right: 0px;
+}
+
+#row9 p {
+	text-align: left;
+	margin-left: 420px;
+	margin-right: 0px;
+	padding-bottom: 0px;
+	font-family: Times;
+	font-size: 19px;
+	color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+#row9.clearfix1 {
+	overflow: auto;
+}
+
+
+/* Text Blurb Center*/
+#row10 {
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #909084;
+	
+}
+
+#row10 div.panel {
+	float: right;
+	position: relative;
+	margin-right: 40px;
+	margin-left: 30px;
+	margin-bottom: 40px;
+}
+
+#row10 h2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-family: Georgia;
+	margin-left: 0px;
+}
+
+#row10 p {
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding-bottom: 30px;
+	font-family: Times;
+	font-size: 19px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#row10.clearfix2 {
+	overflow: auto;
+}
+
+#row12 {
+	background-color: #CCCCB2;
+	padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#row12 h1 {
+	color: #f1f1f1;
+	font-family: "Tangerine";
+	font-size: 100px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    
+
+}
+
+
+  #orbit.exoribit img {
+	width: 100%;
+	height: auto;
+	margin-top:20px;
+	padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+
+    
+}
+  
+
+ #row6 {
+ 	margin-top: 0px;
+  	background-color: #909084;
+  }
+
+  #row6 h2 {
+  	font-family: "Poiret One", Georgia;
+  	color: black;
+  	text-align: center;
+  	margin-top: 0px;
+  }
+
+  #row6 h6 {
+  	color: black;
+  	font-size: 26px;
+  	text-align: center;
+  	font-family: "Shadows Into Light";
+  }
+
+  
+  .full-width {
+  	max-width: 1400px;
+
+
+  }
+
+  .footer {
+    padding-top: 20px;
+  	text-align: center;
+  	font-family: Garamond;
+  	font-size: 40px;
+  	color: #fff;
+  	background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

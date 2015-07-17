@@ -1,0 +1,223 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <title>Structure amp&; Governance</title>
+
+    {% include 'top-links.html' %}
+
+    <link rel = "stylesheet" href = "{% static "css/example.css" %}"> <!--this is your css file you will make changes to -->
+   </head> <!-- you always need all these links-->
+
+
+   <body>
+    <!--the following really long segment is just the code for the menu/navigation bar!!-->
+     <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="#">Quakers&amp;Mental Health</a></li>
+                <li><a href="#">About</a>
+                  <ul>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contribute to Research</a></li>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Future Directions</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Backround &amp; Context</a>
+                  <ul>
+                    <li><a href="#">Theology &amp; Mental Health</a></li>
+                    <li><a href="#">York Retreat</a></li>
+                    <li><a href="#">Other Asylums</a></li>
+                    <li><a href="#">Hicksite-Orthodox Schism</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#">History</a></li>
+                 <ul>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Governance &amp; Structure</a></li>
+                    <li><a href="#">Patient Profiles</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Moral Treatment</a></li>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Religious Life at the Asylum</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Downsides</a></li>
+                  </ul>
+                <li><a href="#">Medical Treatment</a>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Types of Treatment</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-large-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "#">Quakers &amp; Mental Health</a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="has-dropdown"><a href="#">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "#">Learn More</a></li>
+                  <li><a href= "#"> Contribute to Research</a></li>
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Future Directions</a></li>
+                </ul>
+              </li>
+               <li class="has-dropdown"><a href="#"> Backround &amp; Context</a>
+               <ul class="dropdown">
+                <li><a href="#">Theology &amp; Mental Health</a></li>
+                <li><a href="#">The York Retreat</a></li>
+                <li><a href="#">Other Asylums</a></li>
+                <li><a href="#">Hicksite-Orthodox Schism</a></li>
+               </ul>
+              </li>
+              <li class="active has-dropdown"><a href="#"> Early History</a>
+               <ul class="dropdown">
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                  <li><a href="#">Architecture</a></li>
+                  <li class = "active"><a href="#">Structure &amp; Governance </a></li>
+                  <li><a href="#">Patient Profiles</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown"><a href="#">Moral Treatment</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Religious Life at the Asyum</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Downsides</a></li>
+               </ul>
+             </li>
+             <li class="has-dropdown"><a href="#">Medical Treament</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Types of Treament</a></li>
+               </ul>
+            </li>
+              <li><a href="#">Glossary</a></li>
+              <li><a href="#">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>
+
+    <!-- end of navigation bar-->
+
+
+
+<!-- END OF IGNORE-->
+<!-- THIS IS WHERE ALL YOUR CONTENT GOES-->
+
+<!-- top image and text overlay-->
+<!--if you dont want any text overlay, just delete! (and delete from css file too!)-->
+    <header>
+      <div class = "banner">
+        <div class = "overlay-container">
+        <img src="{% static "Images/Daybooktext2.jpg" %}" alt="Friends Asylum.">
+        <div class = "overlay1 show-for-large-up">
+          <strong>Friends Governance & Structure</strong>
+        </div>
+      </div>
+      </div>
+    </header>
+
+  
+
+<!--AC would like some color to be added here-->
+  <!-- mixed smaller width two text and image blurb-->
+
+      <div class = "row" id = "row7">
+        <div class = "large-6 small-12 column">
+          
+          <p> The Asylum was run, in true Quaker fashion, using an interlocking system of committees. At the broadest level, the contributors who financed the Asylum (both individual Quakers and Monthly Meetings) met at the Yearly Meeting of Contributors to make large decisions about the welfare of the Asylum. In a more immediate way, the Board of Managers, which was made up of twenty contributors chosen at the Yearly Meeting of Contributors, was responsible for the business of the Asylum. The Board of Managers approved the admission and boarding rate of new patients, as well as supervised the Asylum’s finances and employees. A subset of the Board, the Visiting Managers, were responsible for visiting and inspecting the Asylum once a week and for inspecting the superintendent’s account book once a month. This kept the superintendent and his staff accountable for their behavior. </p>
+        </div>
+        <div class = "large-6 small-12  text-center column">
+          <p><a href ="#"> <img height = "350px" width = "350px" src = "{% static "Images/Samuel Bettle Sr..jpg" %}"></a></p>
+          <h6 class ="text-center"> Samuel Bettle, Sr., a member of the Board of Managers </h6>
+        </div>
+      </div>
+
+
+
+<!-- modal pop-out and text-blurb-->
+      <div class = "row" id = "row11">
+        <div class = "large-6 small-12 column text-center">
+          
+
+          <a href = "#" data-reveal-id = "firstModal" class = "radius large button"> Tension Between Doctor and Superintendent&hellip;</a>
+          <div id = "firstModal" class = "reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden = "true" role = "dialog">
+            <h3 id = "firstModalTitle"> Bonsall versus the Doctor </h3>
+            <p> For example, the patients complained to the Bonsalls about their diets, which were controlled by the doctor, not by the Bonsalls. Although Bonsall thought that their agitation about food was increasing their insanity, he could not overrule the doctor in order to change the menu. This annoyed him.
+            In another instance, Bonsall determined that a patient needed to be given a blister, but the doctor was out. Annoyed, Bonsall made the blister himself, despite his lack of medical authority. </p>
+            <a class = "close-reveal modal" aria-label = "Close">&#215;</a>
+          </div>
+        </div>
+        <div class = "large-6 small-12 column">
+          <h2 class ="text-center"> </h2>
+          <p> The superintendent of the Asylum, and his wife, the matron, answered to the Visiting Managers, and they were responsible for the day-to-day welfare of the patients, as well as running the farm and the household. The superintendent and matron also oversaw the caretakers, also known as keepers, who supervised, cleaned, and entertained the patients. The Resident Physician directed the patients’ medical care and diet (which was a part of their treatment). Since the physician also lived with the family, the overlapping responsibilities of the physician and the superintendent often caused friction between him and the superintendent. Other asylums solved this problem by appointing a doctor as the superintendent, but the Asylum did not think that medical experience was necessary to be a good superintendent. The Asylum’s interlocking structure of government worked because the people involved were Quakers. </p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {% include 'footer-simple.html' %}
+
+      
+
+
+
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+    
+    <!-- you also always need the following bottom links -->
+    {% include 'bottom-links.html' %}
+  </body>
+</html>

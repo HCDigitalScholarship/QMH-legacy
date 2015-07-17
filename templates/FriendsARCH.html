@@ -1,13 +1,14 @@
+{% load staticfiles %}
+
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link href='https://fonts.googleapis.com/css?family=Tangerine|Shadows+Into+Light|Special+Elite|Poiret+One' rel='stylesheet' type='text/css'>
-    <link rel = "stylesheet" href = "css/general.css" />
-    <script src="js/vendor/modernizr.js"></script>
+
     <title>Architecture</title>
+
+    {% include 'top-links.html' %}
+    <link rel = "stylesheet" href = "{% static "css/general.css" %}">
+
    </head>
 
    <body>
@@ -134,22 +135,22 @@
                   pause_on_hover: false;
                   next_on_click: true;">
             <li>
-              <img src="Images/carousel1.jpg">
+              <img src="{% static "Images/carousel1.jpg" %}">
               <div class = "orbit-caption">
                 The Trajectory of Friends Asylum
               </div>
             </li>
             <li>
-              <img src="Images/carousel2.jpg">
+              <img src="{% static "Images/carousel2.jpg" %}">
             </li>
             <li>
-              <img src="Images/carousel3.jpg">
+              <img src="{% static "Images/carousel3.jpg" %}">
             </li>
             <li>
-              <img src="Images/carousel4.jpg">
+              <img src="{% static "Images/carousel4.jpg" %}">
             </li>
             <li>
-              <img src="Images/carousel5.jpg">
+              <img src="{% static "Images/carousel5.jpg" %}">
             </li>
           </ul> 
     </header>
@@ -180,7 +181,7 @@
         <h3> Income &amp; Revenue Feature </h3>
           <div class = "row">
             <div class = "large-6 columns text-center">
-              <a class = "th radius" href ="#"><img height = "300px" width = "300px" src = "Images/Pie Chart3.jpg"></a>
+              <a class = "th radius" href ="#"><img height = "300px" width = "300px" src = "{% static "Images/Pie Chart3.jpg" %}"></a>
             </div>
             <div class = "large-6 columns text-center" id = "button">
               <a href = "#" class = "button round large"> Pie Chart </a>
@@ -203,45 +204,14 @@
 
 
   
+   {% include 'footer-simple.html' %}
 
-
-    <footer class = "footer" id = "footer1">
-      <div class = "row full-width">
-        <div class = "small-12 medium-6 large-6 columns" id = "vert">
-            <ul class = "no-bullet">
-           <li> Digital Scholarship</li>
-           <li> Haverford College Libraries</li>
-          <li>  370 Lancaster Avenue</li>
-          <li>  Haverford, PA 19041</li>
-           <li>  <a href = "http://library.haverford.edu/services/digital-scholarship/"> HaverfordDS Website </a></li>
-          </ul>
-          
-
-        </div>
-        <div class = "small-12 medium-6 large-6 columns">
-            <ul class = "no-bullet">
-              <li> Funding Provided By: </li>
-              <li> The Scattergood Foundation</li>
-              <li>1501 Cherry Street</li>
-              <li>Philadelphia, PA 19102 </li>
-               <li>  <a href = "http://www.scattergoodfoundation.org/">Scattergood Foundation Website </a></li>
-            </ul>
-         
-        </div>  
-        
-
-      </div>
-    </footer>
 
 
        </div><!-- end inner wrap, must go after ALL content -->
      </div><!-- end offcanvas -->
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+    {% include 'bottom-links.html' %}
+   
   </body>
 </html>
 

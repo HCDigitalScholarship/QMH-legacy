@@ -20,8 +20,12 @@ from . import views
 
 
 urlpatterns = [
+	url(r'^foundation/$', 'FriendsAsylum.views.foundation', name = 'Foundation Page'),
+	url(r'^profiles/$', 'FriendsAsylum.views.profiles', name = 'Patient Profiles'),
+	url(r'^struct$', 'FriendsAsylum.views.struct', name = 'Structure and Governance'),
 	url(r'^glossary/$', 'FriendsAsylum.views.glossary', name = 'GlossaryEntry'),
-	url(r'^index/$', 'FriendsAsylum.views.index', name = 'Index'),
+	url(r'^arch/$', 'FriendsAsylum.views.arch', name = 'Architecture Page'),
+	url(r'^polls/$', 'FriendsAsylum.views.index', name = 'Index'),
     	url(r'^$', views.Home.as_view(), name = 'home'),
 	url(r'^admin/', include(admin.site.urls)),
 ]
