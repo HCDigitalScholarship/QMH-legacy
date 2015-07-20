@@ -1,0 +1,147 @@
+/* custom css for patient.html*/
+
+ .overlay-container {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+ .overlay-container .overlay1 {
+    position: absolute; 
+    bottom: 0px;         
+    left: 20px;            
+    right: 0px; 
+    top: 0px;
+    color: white; /* pretty color of blue#7082A6 */
+    font-family: "Tangerine";
+    font-size: 90px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ 
+  banner img {
+    max-width: 100em;
+    margin: auto;
+    display: block;
+    background-color: #909084;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  header {
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+
+  #rowheader {
+	  background-color: #D1D1A3;
+	  padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-top: solid #333333 15px;
+    border-bottom: solid #333333 15px; /*if you dont want that black line at the bottom of a title heading, get rid of this*/
+
+
+}
+
+#rowheader h1 {
+	color: #333333;
+	font-family: "Poiret One";
+	font-size: 40px;
+	padding-top: 20px;
+  padding-left: 0px;
+	padding-bottom: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+   
+
+}
+
+#rowheader p {
+	text-align: left;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding-bottom: 30px;
+	font-family: Times;
+	font-size: 19px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+
+
+#row4 {
+    background-color: #909084;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  /*  border-top: solid #333333 15px; /*if you dont want that black line at the bottom of a title heading, get rid of this*/
+
+
+}
+
+#row4 h1 {
+  color: #333333;
+  font-family: "Poiret One";
+  font-size: 40px;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+   
+
+}
+
+#row4 p {
+  text-align: left;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-bottom: 30px;
+  font-family: Times;
+  font-size: 19px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+accordion .accordion-navigation > a, .accordion dd > a {
+      background: #EFEFEF;
+      color: #222222;
+      display: block;
+      font-family: Georgia;
+      font-size: 1rem;
+      margin-top: 1rem;
+      padding: 1rem;
+ }
+
+
+
+
+  .full-width {
+    max-width: 1400px;
+
+
+  }
+
+  .footer {
+    padding-top: 20px;
+    text-align: center;
+    font-family: Garamond;
+    font-size: 40px;
+    color: #fff;
+    background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

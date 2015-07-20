@@ -34,7 +34,28 @@
   }
 
 
-  #rowheader {
+#rowheader1 {
+	background-color: #CCCCB2;
+	padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#rowheader1 h1 {
+	color: #f1f1f1;
+	font-family: "Tangerine";
+	font-size: 80px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+   
+
+}
+
+rowheader {
 	background-color: #909084;
 	padding-top: 0px;
     margin-bottom: 0px;

@@ -1,0 +1,85 @@
+/* custom css for FriendsGOV.html*/
+
+ .overlay-container {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+ 
+  banner img {
+    max-width: 100em;
+    margin: auto;
+    display: block;
+    background-color: #909084;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  header {
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+ #rowheader1 {
+	background-color: #CCCCB2;
+	padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#rowheader1 h1 {
+	color: #f1f1f1;
+	font-family: "Tangerine";
+	font-size: 80px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+   
+
+}
+
+#row7 #pic {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+#row11 #first {
+	padding-top: 40px;
+	text-align: center;
+}
+
+
+
+
+
+  .full-width {
+  	max-width: 1400px;
+
+
+  }
+
+  .footer {
+    padding-top: 20px;
+  	text-align: center;
+  	font-family: Garamond;
+  	font-size: 40px;
+  	color: #fff;
+  	background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }
+
+

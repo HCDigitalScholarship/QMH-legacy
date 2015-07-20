@@ -2,11 +2,11 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <title>Structure amp&; Governance</title>
+    <title>Structure &amp; Governance</title>
 
     {% include 'top-links.html' %}
 
-    <link rel = "stylesheet" href = "{% static "css/example.css" %}"> <!--this is your css file you will make changes to -->
+    <link rel = "stylesheet" href = "{% static "css/gov.css" %}"> <!--this is your css file you will make changes to -->
    </head> <!-- you always need all these links-->
 
 
@@ -138,11 +138,21 @@
         <div class = "overlay-container">
         <img src="{% static "Images/Daybooktext2.jpg" %}" alt="Friends Asylum.">
         <div class = "overlay1 show-for-large-up">
-          <strong>Friends Governance & Structure</strong>
+         
         </div>
       </div>
       </div>
     </header>
+
+
+    <div id = "rowheader1">
+      <h1> <strong>Friends Governance &amp; Structure</strong> </h1>
+    </div>
+
+
+
+
+
 
   
 
@@ -150,11 +160,12 @@
   <!-- mixed smaller width two text and image blurb-->
 
       <div class = "row" id = "row7">
+	<h2>General Information </h2>
         <div class = "large-6 small-12 column">
           
           <p> The Asylum was run, in true Quaker fashion, using an interlocking system of committees. At the broadest level, the contributors who financed the Asylum (both individual Quakers and Monthly Meetings) met at the Yearly Meeting of Contributors to make large decisions about the welfare of the Asylum. In a more immediate way, the Board of Managers, which was made up of twenty contributors chosen at the Yearly Meeting of Contributors, was responsible for the business of the Asylum. The Board of Managers approved the admission and boarding rate of new patients, as well as supervised the Asylum’s finances and employees. A subset of the Board, the Visiting Managers, were responsible for visiting and inspecting the Asylum once a week and for inspecting the superintendent’s account book once a month. This kept the superintendent and his staff accountable for their behavior. </p>
         </div>
-        <div class = "large-6 small-12  text-center column">
+        <div class = "large-6 small-12  text-center column" id = "pic">
           <p><a href ="#"> <img height = "350px" width = "350px" src = "{% static "Images/Samuel Bettle Sr..jpg" %}"></a></p>
           <h6 class ="text-center"> Samuel Bettle, Sr., a member of the Board of Managers </h6>
         </div>
@@ -164,15 +175,14 @@
 
 <!-- modal pop-out and text-blurb-->
       <div class = "row" id = "row11">
-        <div class = "large-6 small-12 column text-center">
-          
+             
 
           <a href = "#" data-reveal-id = "firstModal" class = "radius large button"> Tension Between Doctor and Superintendent&hellip;</a>
           <div id = "firstModal" class = "reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden = "true" role = "dialog">
             <h3 id = "firstModalTitle"> Bonsall versus the Doctor </h3>
             <p> For example, the patients complained to the Bonsalls about their diets, which were controlled by the doctor, not by the Bonsalls. Although Bonsall thought that their agitation about food was increasing their insanity, he could not overrule the doctor in order to change the menu. This annoyed him.
             In another instance, Bonsall determined that a patient needed to be given a blister, but the doctor was out. Annoyed, Bonsall made the blister himself, despite his lack of medical authority. </p>
-            <a class = "close-reveal modal" aria-label = "Close">&#215;</a>
+            <a class = "close-reveal-modal" aria-label = "Close">&#215;</a>
           </div>
         </div>
         <div class = "large-6 small-12 column">
