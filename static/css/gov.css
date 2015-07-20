@@ -22,6 +22,7 @@
   }
 
  #rowheader1 {
+	border-bottom: solid #333333 15px;
 	background-color: #CCCCB2;
 	padding-top: 0px;
     margin-bottom: 0px;
@@ -42,22 +43,57 @@
 
 }
 
+
+#row7 h2 {
+	padding-left: 0px;
+	font-family: Georgia;
+	font-size: 40px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+
+}
+
+#row7 p {
+	padding-top: 0px;
+	font-family: Times;
+	padding-left: 10px;
+	font-size: 18px;
+}
+
 #row7 #pic {
-	padding-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+
+#row7 #pic h6 {
+	font-size: 13px;
+}
+
+#row11 {
+	background-color: #909084;
+	border-top: solid #333333 15px;
 	padding-bottom: 30px;
-
+	padding-top: 30px;
 }
 
-#row11 #first {
-	padding-top: 40px;
+
+#row11 h2 {
+	padding-top: 0px;
 	text-align: center;
+	font-family: Palatino;
+	padding-bottom: 10px;
 }
 
+#row11 p {
+	font-family: Georgia;
+	padding-left: 55px;
+	padding-right: 55px;
+	text-align: left;
+}
 
-
-
-
-  .full-width {
+.full-width {
   	max-width: 1400px;
 
 

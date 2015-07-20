@@ -36,11 +36,11 @@
 
 
   #rowheader {
-	  background-color: #D1D1A3;
+	  background-color: #d9d5c8;
 	  padding-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     margin-top: 0px;
-    border-top: solid #333333 15px;
+/*    border-top: solid #333333 15px;
     border-bottom: solid #333333 15px; /*if you dont want that black line at the bottom of a title heading, get rid of this*/
 
 
@@ -108,13 +108,16 @@
   margin-bottom: 0px;
 }
 
-accordion .accordion-navigation > a, .accordion dd > a {
+#newrow .accordion .accordion-navigation > a, .accordion dd > a {
       background: #EFEFEF;
       color: #222222;
       display: block;
       font-family: Georgia;
       font-size: 1rem;
       margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 60px;
+      margin-right: 60px;
       padding: 1rem;
  }
 

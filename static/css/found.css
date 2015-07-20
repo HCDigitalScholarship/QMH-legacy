@@ -1,0 +1,140 @@
+/* custom css for found.html*/
+ .overlay-container {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+ .overlay-container .overlay1 {
+    position: absolute; 
+    bottom: 0px;         
+    left: 30px;            
+    right: 0px; 
+    top: 6px;
+    color: white; /* pretty color of blue#7082A6 */
+    font-family: "Tangerine";
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ 
+  banner img {
+    max-width: 100em;
+    margin: auto;
+    display: block;
+    background-color: #909084;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  header {
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+
+/* Text Blurb Center*/
+#row10 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #909084;
+    
+}
+
+#row10 div.panel {
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+#row10 h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 55px;
+    font-family: Georgia;
+    margin-left: 0px;
+}
+
+#row10 p {
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 30px;
+    font-family: Times;
+    font-size: 19px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#row10 #rowfeat {
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+#row10 #rowfeat h3 {
+    margin-top: 15px;
+    font-size: 45px;
+    font-family: Georgia;
+    padding-bottom: 20px;
+}
+
+#row10 #rowfeat .button {
+    margin-top: 100px;
+    border-bottom-left-radius: 40.5px;
+    border-bottom-right-radius: 40.5px;
+    border-top-left-radius: 40.5px;
+    border-top-right-radius: 40.5px;
+
+}
+
+
+#row11 {
+
+}
+
+#row11 #first {
+	padding-top: 200px;
+}
+
+#row11 #second h2 {
+	font-family: Times;
+	
+
+}
+
+#row11 #second p {
+	font-family: Georgia;
+}
+
+
+
+
+.full-width {
+    max-width: 1400px;
+
+
+  }
+
+  .footer {
+    padding-top: 20px;
+    text-align: center;
+    font-family: Garamond;
+    font-size: 40px;
+    color: #fff;
+    background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }
