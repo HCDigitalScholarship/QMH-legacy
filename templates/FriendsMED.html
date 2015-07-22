@@ -1,0 +1,229 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+  
+  {% include 'top-links.html' %}
+    <link rel = "stylesheet" href = "{% static "css/med.css" %}"> <!--this is your css file you will make changes to -->
+    <title>Medical Treatment | Introduction</title>
+
+   </head> <!-- you always need all these links-->
+   <body>
+    <!--the following really long segment is just the code for the menu/navigation bar!!-->
+     <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="#">Quakers&amp;Mental Health</a></li>
+                <li><a href="#">About</a>
+                  <ul>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contribute to Research</a></li>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Future Directions</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Backround &amp; Context</a>
+                  <ul>
+                    <li><a href="#">Theology &amp; Mental Health</a></li>
+                    <li><a href="#">York Retreat</a></li>
+                    <li><a href="#">Other Asylums</a></li>
+                    <li><a href="#">Hicksite-Orthodox Schism</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#">History</a></li>
+                 <ul>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Governance &amp; Structure</a></li>
+                    <li><a href="#">Patient Profiles</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Moral Treatment</a></li>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Religious Life at the Asylum</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Downsides</a></li>
+                  </ul>
+                <li><a href="#">Medical Treatment</a>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Types of Treatment</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-large-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "#">Quakers &amp; Mental Health</a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="has-dropdown"><a href="#">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "#">Learn More</a></li>
+                  <li><a href= "#"> Contribute to Research</a></li>
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Future Directions</a></li>
+                </ul>
+              </li>
+               <li class="has-dropdown"><a href="#"> Backround &amp; Context</a>
+               <ul class="dropdown">
+                <li><a href="#">Theology &amp; Mental Health</a></li>
+                <li><a href="#">The York Retreat</a></li>
+                <li><a href="#">Other Asylums</a></li>
+                <li><a href="#">Hicksite-Orthodox Schism</a></li>
+               </ul>
+              </li>
+              <li class="has-dropdown"><a href="#"> Early History</a>
+               <ul class="dropdown">
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                  <li><a href="#">Architecture</a></li>
+                  <li><a href="#">Governance &amp; Structure</a></li>
+                  <li><a href="#">Patient Profiles</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown"><a href="#">Moral Treatment</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Religious Life at the Asyum</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Downsides</a></li>
+               </ul>
+             </li>
+             <li class="active has-dropdown"><a href="#">Medical Treament</a>
+               <ul class="dropdown">
+                <li class = "active"><a href="#">Introduction</a></li>
+                <li><a href="#">Types of Treament</a></li>
+               </ul>
+            </li>
+              <li><a href="#">Glossary</a></li>
+              <li><a href="#">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>
+
+    <!-- end of navigation bar-->
+
+
+
+<!-- END OF IGNORE-->
+
+
+
+<!-- top image and text overlay-->
+<!--if you dont want any text overlay, just delete! (and delete from css file too!)-->
+    <header>
+      <div class = "banner">
+        <div class = "overlay-container">
+        <img src="{% static "Images/gloss.jpg" %}" alt="Friends Asylum.">
+        <div class = "overlay1 show-for-large-up">
+         <!--<strong>Medical Treatment </strong>-->
+        </div>
+      </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+
+<!-- text center blurb -->
+       <div id = "row3"> 
+        <h1> Introduction to Medical Treatment </h1>
+        <p> Although medical treatment at the Asylum was not thought to be as useful or essential as moral treatment, it nevertheless played an important role in the treatment of many patients. Bonsall and the Asylum’s physicians used a variety of medical treatments that were thought to be helpful to people afflicted with insanity. These medical treatments do not seem to have been systematic: they often come up once in the Day Book, and then disappear. For example, Bonsall noted in 1817 that the doctor had dosed a few patients with salts, but he did not mention using salts as a treatment again. Several types of medical treatment, however, did get mentioned throughout the Day Book. The Asylum’s medical treatment consisted mostly of Shower Baths, blistering/bleeding, and electrical therapy. </p>
+      </div>
+
+
+ <!-- text blurb right-->
+
+      <div id = "row4"> 
+        <h2> Shower Baths </h2>
+        <p> The Asylum’s use of baths as a medical treatment for insanity was widely accepted in contemporary practice. During a Shower Bath, patients had buckets of cold water dumped on them. Subjecting patients to cold water was supposed to either calm them or enliven them, depending on which the patient needed. Bonsall wrote that the Shower Bath, “is a medical as well as in our view an essential part of the moral system proper to be pursued.” He thought the Shower Bath was a moral treatment as well as medical one because he used the Shower Bath as a coercive technique. When patients were reluctant to do what Bonsall wanted them to do, or when they did something wrong, they might be sent to the Shower Bath. For example, when Mary L. soiled her bed, her keeper Ruth Pierce scolded her, saying that she deserved a Shower Bath for her bad behavior. The Shower Bath was such an unpleasant threat that Mary L. ran away, and it took them almost two months to track her down and bring her back to the Asylum. </p>
+      </div>
+
+
+
+<!-- text blurb left and Image-->
+<!-- AC Is there a way to get some text italicized? Cantharides should be because it is the scientific name for the Spanish fly.--> 
+      <div id = "row8" class = "clearfix"> 
+        <h2> Blistering and Bleeding </h2>
+          <figure class = "text-center">
+          <img height = "420px" width = "420px" src = "{% static "Images/cantharides.jpg" %}"> 
+          <figcaption> The Spanish Fly, or Cantharides </figcaption>
+          </figure>
+
+          <p>Apart from the Shower Bath, the main form of medical relief given to the patients at the Asylum was blistering and/or bleeding. Blisters were plasters made from the dried-up bodies of Spanish flies, or cantharides, and they produced swelling and pus when put on the skin. At the Asylum, they were most often placed on patients’ shaved heads, although sometimes on the back of their necks or their ankles instead. Spurzheim wrote that a blister on the back of the neck would excite and distract a lethargic patient (224). However, most often at the Asylum, Bonsall and the doctors used blisters to quiet down “noisy” or “excited” patients. Bleeding, although less common than blistering, was also used to quiet rowdy and manic patients. Bleeding (and blisters) were thought to help because they got rid of the excess blood that was exciting the patients and making them insane. </p>
+      </div>
+
+
+<!-- modal pop-out and text-blurb-->
+      <div class = "row" id = "row11">
+        <div class = "large-6 small-12 column text-center" id = "modal">
+          <h2 class ="text-center">  </h2>
+          <a href = "#" data-reveal-id = "firstModal" class = "radius large button"> See the Electrical Machine's Inventory</a>
+          <div id = "firstModal" class = "reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden = "true" role = "dialog">
+            <h3 id = "firstModalTitle"> Electrical Machine Inventory </h3>
+            <p> “1 large electrical machine, 1 battery, 1 insulating stool, 2 large Leyden jars, 2 small d. bottles, 1 spotted bottle, 1 Bottle and Bells, 1 Thunderhouse, 1 Medical Electrometer, 1 Quadrant do., 1 pair electrical forceps, 1 large brass Ball, 1 spiral tube-chairs, 1 electrophorous, 1 stand and plate for figures, 1 universal discharger, 1 director (insulated), 1 jointed discharger (do.), 1 insulating stand and belt, 3 Glass plates (luminous words), 1 Book: essay on electricity, a Box, Table and Drawer for holding cylinder.”</p>
+            <a class = "close-reveal-modal" aria-label = "Close">&#215;</a>
+          </div>
+        </div>
+        <div class = "large-6 small-12 column" id = "ptext">
+          <h2 class ="text-center"> The Electrical Machine </h2>
+          <p> In Twelfth Month, 1817 Isaac Bonsall wrote that he had received an Electrical Machine, “a valuable present,” from the Visiting Managers. The next month, the Visiting Managers recorded an inventory of the Electrical Machine’s parts in their minutes. By 1817, the use of electricity to treat insanity (and a multitude of other ailments) was an unusual, but known, option, and Bonsall and the Managers thought that the Electrical Machine could be used to treat the patients. They could have read about using medicinal electricity in books like T. Gale’s Electricity, or Ethereal Fire, Considered, which even contained case studies concerning insanity. However, the Electrical Machine was unusual enough that Bonsall and the resident physician Dr. Lukens did not figure out how to use it on patients until 1820, when an acquaintance from Philadelphia came out to Frankford to teach them how it worked. </p>
+          <!-- AC Can the title of the book be italicized?--> 
+        </div>
+      </div>
+
+
+<!--Text blurb left-->
+    <div id = "row2"> 
+        <h2> Using the Electrical Machine </h2>
+        <p> The Electrical Machine was fragile and broke often, so it did not play a systematic role in the treatment of patients at the Asylum. However, Bonsall was enthusiastic about the machine's potential, and he used it frequently during the brief intervals in which it worked. In one instance, Bonsall used the machine on Benjamin W. and Nathan Y. Benajmin W. asked for the machine to be tried on him, and he insisted that the shocks they gave him were not harsh enough to do him any good, although Bonsall “thought afterwards his countenance looked better.” For the next two months, Bonsall recorded that he shocked some patients every few days, and that his new resident physician, Dr. C.F. Matlack, “is making a full experiment of the efficacy of Electricity on Benjamin [W.] and Nathan [Y.] They both seem the better of it.” However, the Electrical Machine broke shortly afterwards, meaning that the "full experiment" was never finished.  </p>
+      </div>
+
+
+
+
+
+
+
+        {% include 'footer-simple.html' %}
+         
+        
+
+      
+
+
+
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+    
+  {% include 'bottom-links.html' %}
+  </body>
+</html>

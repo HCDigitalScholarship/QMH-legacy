@@ -1,0 +1,182 @@
+  /* custom css for FriendsMORAL.html*/
+ .overlay-container {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+ .overlay-container .overlay1 {
+    position: absolute; 
+    bottom: 0px;         
+    left: 30px;            
+    right: 0px; 
+    top: 36px;
+    color: white; /* pretty color of blue#7082A6 */
+    font-family: "Shadows Into Light";
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ 
+  banner img {
+    max-width: 100em;
+    margin: auto;
+    display: block;
+    background-color: #909084;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  /* Text Blurb Center*/
+#row3 {
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 60px;
+  background-color: #CCCCB2;
+  
+}
+
+#row3 h2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 47px;
+  text-align: left;
+  font-family: Georgia;
+  margin-left: 0px;
+  padding-left: 50px;
+}
+
+#row3 p {
+  text-align: left;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-bottom: 30px;
+  font-family: Times;
+  font-size: 19px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#row3 #panel {
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  margin-left: 60px;
+  margin-right: 60px;
+
+}
+
+#row3 #panel h1 {
+   
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: "Tangerine";
+  font-size: 45px;
+}
+
+#row3 #panel cite {
+  font-size: 20px;
+  text-align: right;
+  padding-left: 690px;
+
+}
+
+
+/* Text Blurb Center*/
+#row5 {
+  padding-top: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  background-color: #909084;
+  
+}
+
+#row5 h2 {
+  padding-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: Georgia;
+  margin-left: 0px;
+}
+
+#row5 p {
+  text-align: left;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-bottom: 30px;
+  font-family: Times;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Text Blurb Right*/
+#row4 {
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: white
+  
+}
+
+
+#row4 h2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  color: #333333;
+  margin-bottom: 0px;
+  text-align: right;
+  font-family: Georgia;
+  margin-left: 0px;
+  margin-right: 50px;
+}
+
+#row4 p {
+  text-align: left;
+  margin-left: 80px;
+  margin-right: 50px;
+  padding-bottom: 30px;
+  font-family: Times;
+  font-size: 19px;
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+  .full-width {
+  	max-width: 1400px;
+
+
+  }
+
+  .footer {
+    padding-top: 20px;
+  	text-align: center;
+  	font-family: Garamond;
+  	font-size: 40px;
+  	color: #fff;
+  	background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

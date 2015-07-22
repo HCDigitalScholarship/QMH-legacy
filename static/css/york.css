@@ -1,0 +1,190 @@
+/* custom css for FriendsYORK.html*/
+ .overlay-container {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+ .overlay-container .overlay1 {
+    position: absolute; 
+    bottom: 0px;         
+    left: 30px;            
+    right: 10px; 
+    top: 295px;
+    text-align: right;
+    color: white; /* pretty color of blue#7082A6 */
+    font-family: Georgia;
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ 
+  banner img {
+    max-width: 100em;
+    margin: auto;
+    display: block;
+    background-color: #909084;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  /* Text Blurb Right Float Image*/
+#row8 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #CCCCB2;
+    
+}
+
+
+
+#row8 figure {
+    float: right;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+    
+
+
+
+#row8 h2 {
+    padding-top: 20px;
+    margin-top: 0px;
+    color: black;
+    font-size: 57px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: Georgia;
+    padding-left: 45px;
+    margin-right: 0px;
+}
+
+#row8 p {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 420px;
+    padding-bottom: 44px;
+    font-family: Times;
+    font-size: 19px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.clearfix {
+    overflow: auto;
+}
+
+/* Text Blurb Center*/
+#row3 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #909084;
+    
+}
+
+#row3 h2 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    font-size: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Georgia;
+    margin-left: 0px;
+}
+
+#row3 p {
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 45px;
+    font-family: Times;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+#row9 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    
+}
+
+
+
+#row9 figure {
+    float: left;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 40px;
+}
+    
+
+
+
+#row9 h2 {
+    padding-top: 20px;
+    margin-top: 0px;
+    color: black;
+    padding-right: 20px;
+    margin-bottom: 15px;
+    text-align: right;
+    font-family: Georgia;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+#row9 p {
+    text-align: left;
+    margin-left: 420px;
+    margin-right: 0px;
+    padding-bottom: 45px;
+    padding-right: 38px;
+    font-family: Times;
+    font-size: 19px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+#row9.clearfix1 {
+    overflow: auto;
+}
+
+
+  .full-width {
+    max-width: 1400px;
+
+
+  }
+
+  .footer {
+    padding-top: 20px;
+    text-align: center;
+    font-family: Garamond;
+    font-size: 40px;
+    color: #fff;
+    background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

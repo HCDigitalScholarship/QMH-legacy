@@ -254,7 +254,10 @@
 				
 				{% for abcdefg in patients %}
 					<li class = "accordion-navigation">
-						<a href = "#panel{{forloop.counter0}}"> {{ abcdefg.0 }}</a>
+						<a href = "#panel{{forloop.counter0}}"> {% for abc in abcdefg.0 %}
+							{{ abc.0 }}
+											{% endfor %}
+											</a>
 						<div id = "panel{{forloop.counter0}}" class = "content">
 					        <p>	Age on Arrival: {{ abcdefg.6 }} </p>
 						<p>	Admit Date: {{ abcdefg.1 }} </p>

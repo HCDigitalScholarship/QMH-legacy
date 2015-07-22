@@ -1,0 +1,200 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+
+  {% include 'top-links.html' %}
+    <link rel = "stylesheet" href = "{% static "css/moral.css" %}"> <!--this is your css file you will make changes to -->
+    <title>Moral Treatment | Introduction</title>
+
+   </head> <!-- you always need all these links-->
+   <body>
+    <!--the following really long segment is just the code for the menu/navigation bar!!-->
+     <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="#">Quakers&amp;Mental Health</a></li>
+                <li><a href="#">About</a>
+                  <ul>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contribute to Research</a></li>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Future Directions</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Backround &amp; Context</a>
+                  <ul>
+                    <li><a href="#">Theology &amp; Mental Health</a></li>
+                    <li><a href="#">York Retreat</a></li>
+                    <li><a href="#">Other Asylums</a></li>
+                    <li><a href="#">Hicksite-Orthodox Schism</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#">History</a></li>
+                 <ul>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Governance &amp; Structure</a></li>
+                    <li><a href="#">Patient Profiles</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Moral Treatment</a></li>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Religious Life at the Asylum</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Downsides</a></li>
+                  </ul>
+                <li><a href="#">Medical Treatment</a>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Types of Treatment</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-large-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "#">Quakers &amp; Mental Health</a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="has-dropdown"><a href="#">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "#">Learn More</a></li>
+                  <li><a href= "#"> Contribute to Research</a></li>
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Future Directions</a></li>
+                </ul>
+              </li>
+               <li class="has-dropdown"><a href="#"> Backround &amp; Context</a>
+               <ul class="dropdown">
+                <li><a href="#">Theology &amp; Mental Health</a></li>
+                <li><a href="#">The York Retreat</a></li>
+                <li><a href="#">Other Asylums</a></li>
+                <li><a href="#">Hicksite-Orthodox Schism</a></li>
+               </ul>
+              </li>
+              <li class="has-dropdown"><a href="#"> Early History</a>
+               <ul class="dropdown">
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                  <li><a href="#">Architecture</a></li>
+                  <li><a href="#">Governance &amp; Structure</a></li>
+                  <li><a href="#">Patient Profiles</a></li>
+                </ul>
+              </li>
+              <li class="active has-dropdown"><a href="#">Moral Treatment</a>
+               <ul class="dropdown">
+                <li class = 'active'><a href="#">Introduction</a></li>
+                <li><a href="#">Religious Life at the Asyum</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Downsides</a></li>
+               </ul>
+             </li>
+             <li class="has-dropdown"><a href="#">Medical Treament</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Types of Treament</a></li>
+               </ul>
+            </li>
+              <li><a href="#">Glossary</a></li>
+              <li><a href="#">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>
+
+    <!-- end of navigation bar-->
+
+
+<!-- top image and text overlay-->
+<!--if you don't want any text overlay, just delete! (and delete from css file too!)-->
+    <header>
+      <div class = "banner">
+        <div class = "overlay-container">
+        <img src="{% static "Images/MoralTreatment.jpg" %}" alt="Friends Asylum.">
+        <div class = "overlay1 show-for-large-up">
+         <strong> </strong> 
+        </div>
+      </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+<!-- text center blurb -->
+       <div id = "row3"> 
+        <h2> Introduction to Moral Treatment </h2>
+        <p> Moral treatment was the main way that the Asylum treated patients, and what differentiated Friends Asylum from other American asylums when it was first founded. As an 1825 history of the Asylum explained, “Although the use of drugs and medicaments is allowed, in almost every case, to be indispensible, less weight is attached to it in the Friends’ Asylum, than to moral treatment” (Waln 15). The Asylum implemented moral treatment, which involved almost every aspect of the patients' lives, by treating the patients as much like rational beings as possible, and “inspir[ing] their troubled minds, on every dawn of intellect, and in every moment of calmness… with consoling evidence, that they were indeed regarded as men and brethren” (Waln 4). Treating the patients like rational beings meant using restraint only as a last resort, to ensure the safety of the patient and those around him or her, not as a punishment. Under moral treatment, the superintendent and keepers treated the patients as individuals, and helped them to try to fix themselves. Some important facets of moral treatment at the Asylum were connections with the community, religious oversight, and occupational therapy. </p>
+    
+        <div class = "panel radius" id = "panel">
+        <h1>“[Moral treatment] leads many to struggle to conceal and overcome their morbid propensities; and, at least, materially assists them in confining their deviations, within such bounds, as do not make them obnoxious to the family."</h1>
+        <cite> ~Samuel Tuke, Description of the Retreat, 1813 </cite>
+        </div>
+      
+    </div>
+
+
+<!-- text center blurb -->
+<!-- AC Can the words Patient Profiles be a link to the Patient Profiles page?-->
+       <div id = "row5"> 
+        <h2> The Cruel Side of Moral Treatment </h2>
+        <p> Moral treatment was widely believed to be kinder than other types of treatment available to the mentally ill because it limited the use of physical restraint and did not condone corporal punsishment. Although moral treatment at the Asylum was non-violent and focused on getting the patients to try to take control of their lives again, some of moral treatment’s manifestations could be cruel. For some examples of the cruel side of moral treatment, see the stories of Nathan Y. and Abraham S. on the <a href = "54.164.46.81:8000/profiles"> Patient Profiles </a> page.  </p>
+      </div>
+
+
+
+<!-- text blurb right-->
+
+      <div id = "row4"> 
+
+        <h2> Was Moral Treatment Repressive or Familiar? </h2>
+        <p> The Quaker founders of the Retreat and the Asylum defended and explained their use of moral treatment by arguing its efficacy. Moral treatment was not good because it was less violent, they wrote, it was good because it made the mentally ill “conform for the good of the community” (Godlee 75). Scholar Fiona Godlee maintained that this focus on changing the outward behaviors of the patients to make them less obnoxious to the community contradicts Quaker faith and practice. Quakers are supposed to focus on the importance of inward changes of heart and making one’s behavior match one’s inner life. For Godlee, moral treatment’s focus on the comfort of other people, as opposed to the cure of the patients, made moral treatment seem deeply un-Quaker. Historian Anne Digby countered that Quakers have always placed great importance on self-control, and she argued that moral treatment’s coercive tactics would have seemed like a natural and familiar way to help mentally ill Quakers regain that self-control (68). The tension between these two viewpoints mirrors the tensions developing in American Quakerism, which would eventually lead to the <a href = "#">Hicksite-Orthodox Schism. </a> </p>
+        <!--AC Can the words Hicksite-Orthodox Schism be a link to the section on the Hicksite-Orthodox Schism?--> 
+      </div>
+
+
+
+
+
+
+
+
+
+        {% include 'footer-simple.html' %}
+
+      
+
+
+
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+    
+    {% include 'bottom-links.html' %}
+  </body>
+</html>
+

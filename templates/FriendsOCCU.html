@@ -1,0 +1,212 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    {% include 'top-links.html' %}
+    <link rel = "stylesheet" href = "{% static "css/occu.css" %}"> <!--this is your css file you will make changes to -->
+    <title>Occupational Therapy</title>
+
+   </head> <!-- you always need all these links-->
+   <body>
+    <!--the following really long segment is just the code for the menu/navigation bar!!-->
+     <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="#">Quakers&amp;Mental Health</a></li>
+                <li><a href="#">About</a>
+                  <ul>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contribute to Research</a></li>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Future Directions</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Backround &amp; Context</a>
+                  <ul>
+                    <li><a href="#">Theology &amp; Mental Health</a></li>
+                    <li><a href="#">York Retreat</a></li>
+                    <li><a href="#">Other Asylums</a></li>
+                    <li><a href="#">Hicksite-Orthodox Schism</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#">History</a></li>
+                 <ul>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Governance &amp; Structure</a></li>
+                    <li><a href="#">Patient Profiles</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Moral Treatment</a></li>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Religious Life at the Asylum</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Downsides</a></li>
+                  </ul>
+                <li><a href="#">Medical Treatment</a>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Types of Treatment</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-large-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "#">Quakers &amp; Mental Health</a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="has-dropdown"><a href="#">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "#">Learn More</a></li>
+                  <li><a href= "#"> Contribute to Research</a></li>
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Future Directions</a></li>
+                </ul>
+              </li>
+               <li class="has-dropdown"><a href="#"> Backround &amp; Context</a>
+               <ul class="dropdown">
+                <li><a href="#">Theology &amp; Mental Health</a></li>
+                <li><a href="#">The York Retreat</a></li>
+                <li><a href="#">Other Asylums</a></li>
+                <li><a href="#">Hicksite-Orthodox Schism</a></li>
+               </ul>
+              </li>
+              <li class="as-dropdown"><a href="#"> Early History</a>
+               <ul class="dropdown">
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                  <li><a href="#">Architecture</a></li>
+                  <li><a href="#">Governance &amp; Structure</a></li>
+                  <li><a href="#">Patient Profiles</a></li>
+                </ul>
+              </li>
+              <li class="active has-dropdown"><a href="#">Moral Treatment</a>
+               <ul class="dropdown">
+                <li class = "active"><a href="#">Introduction</a></li>
+                <li><a href="#">Religious Life at the Asyum</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Downsides</a></li>
+               </ul>
+             </li>
+             <li class="has-dropdown"><a href="#">Medical Treament</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Types of Treament</a></li>
+               </ul>
+            </li>
+              <li><a href="#">Glossary</a></li>
+              <li><a href="#">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>
+
+    <!-- end of navigation bar-->
+
+
+
+<!-- END OF IGNORE-->
+
+
+
+<!-- top image and text overlay-->
+<!--if you dont want any text overlay, just delete! (and delete from css file too!)-->
+    <header>
+      <div class = "banner">
+        <div class = "overlay-container">
+        <img src="{% static "Images/carousel4.jpg" %}" alt="Friends Asylum.">
+        <div class = "overlay1 show-for-large-up">
+          <strong></strong>
+        </div>
+      </div>
+      </div>
+    </header>
+
+
+<!-- main title header -->
+    <div id = "rowheader">
+      <h1> <strong>Occupational Therapy</strong> </h1>
+    </div>
+
+
+
+<!-- text blurb left and Image-->
+      <div id = "row8" class = "clearfix"> 
+        <h2> Work Therapy </h2>
+          <figure class = "text-center">
+          <img height = "400px" width = "400px" src = "{% static "Images/blueprint.jpg" %}"> 
+          <figcaption> A Map of Friends Asylum's farm </figcaption>
+          </figure>
+
+          <p>Occupational therapy was an important part of all asylums run on moral treatment, but it was especially crucial at the Asylum. Bonsall needed the patients to work on the farm and in the kitchen because the Asylum could not afford to hire enough help to run it without patient labor. Quite apart from the benefits to the Asylum, work was supposed to help the patients recover. An Asylum pamphlet argued that insanity was often “nourished by want of suitable occupation” (Waln 27), and Bonsall wrote in his Day Book that work acted as a “stimulant” which helped patients engage with the world again. Historian Patricia D’Antonio argued that the work made the patients feel like they were a part of the Asylum family, and gave them adult responsibilities, despite their subordinate role as patients (127). The male patients helped Bonsall and the gardener run the Asylum’s farm. They planted, plowed, cut wood, and hauled water, among other things. These jobs also gave the men exercise and access to fresh air. While the men were helping on the farm, female patients sewed, knitted, did laundry, and cooked. Their jobs were equally important in running the Asylum, but gave them much less access to exercise and fresh air. </p>
+      </div>
+
+
+
+<!-- text blurb right and image-->
+<div id = "row9" class = "clearfix1"> 
+        <h2> Recreational Therapy </h2>
+          <figure class = "text-center">
+          <img height = "350px" width = "350px" src = "{% static "Images/velocipede.jpg" %}"> 
+          <figcaption> A Velocipede </figcaption>
+          </figure>
+        
+
+          <p> The Asylum also used play as therapy. However, its early forays into recreational therapy were modest. The fact that the Asylum used recreational therapy at all is peculiar, given that Quakers, especially Orthodox ones, believed that most games were distractions from living a useful and holy life. Time spent playing was time that could not be spent thinking about God or doing good works. The Friends Asylum’s relative slowness to adopt recreational therapy may be explained by these beliefs. Bonsall did record instances of the Asylum’s use of recreational therapy in the early years. For example, the Asylum had a ball court in which the men played games like Nine Men’s Morris, and the Visiting Managers bought the patients a velocipede, or type of early bicycle, in June of 1819. The Managers’ promptitude in obtaining a velocipede is impressive, given that the velocipede had only been introduced to Philadelphia that spring. However, the Asylum’s ball court and velocipede pale in comparison to the multitude of recreational activities available at other early asylums.</p>
+      </div>
+
+
+
+
+
+
+<!-- text blurb left and Image-->
+      <div id = "row10" class = "clearfix"> 
+        <h2> Occupational Therapy at Other Asylums </h2>
+          <figure class = "text-center">
+          <img height = "400px" width = "400px" src = "{% static "Images/PAHospitalReadingRoom.jpg" %}"> 
+          <figcaption> Reading Room and Museum at the Pennsylvania Hospital </figcaption>
+          </figure>
+
+          <p>Other early American asylums also thought that giving the patients an occupation was necessary. However, they occupied their patients with games and leisure activities instead of productive work. For example, the Pennsylvania Hospital provided lectures, magic lantern slideshows, and plays for their patients almost every night. The Pennsylvania Hospital's occupational therapy system depended on the social class of the patient. Poorer patients were given the chance to work in the kitchens or garden for reduced board, while richer patients were encouraged to read, do fancy work, and cultivate hobbies. This system of social stratification was very different from the atmosphere at the Friends Asylum, where, an 1825 history explained, “Females, delicately reared, accustomed at home to little manual labor, may be found, willingly and cheerfully, assisting in the kitchen, or in the chambers” as a part of their treatment (Waln 29). The Friends Asylum did start moving towards leisure activities for the patients in the mid-1830s, but it was a shift away from the early conception of the Asylum as a family. </p>
+      </div>
+
+
+
+
+
+
+        {% include 'footer-simple.html' %}
+
+      
+
+
+
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+    
+    {% include 'bottom-links.html' %}
+  </body>
+</html>

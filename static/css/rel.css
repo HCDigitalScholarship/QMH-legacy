@@ -1,0 +1,231 @@
+/* custom css for example.html*/
+ .overlay-container {
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+ .overlay-container .overlay1 {
+    position: absolute; 
+    bottom: 0px;         
+    left: 30px;            
+    right: 0px; 
+    top: 36px;
+    color: white; /* pretty color of blue#7082A6 */
+    font-family: "Shadows Into Light";
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ 
+  banner img {
+    max-width: 100em;
+    margin: auto;
+    display: block;
+    background-color: #909084;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  header {
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+    #rowheader {
+    background-color: #333333;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#rowheader h1 {
+    color: #f1f1f1;
+    font-family: "Poiret One";
+    font-size: 80px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+   
+
+}
+
+/* quote section*/
+#row1 {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: white;
+    padding-bottom: 30px;
+    
+}
+
+#row1 h2 {
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: "Tangerine";
+    font-size: 50px;
+}
+
+#row1 cite {
+  font-size: 20px;
+  text-align: right;
+  font-family: Georgia;
+  padding-left: 690px;
+
+}
+
+/* Text Blurb Right Float Image*/
+#row8 {
+    border-bottom: solid #333333 15px;
+    border-top: solid #333333 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #CCCCB2;
+    
+}
+
+
+
+#row8 figure {
+    float: right;
+    padding-top: 20px;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+    
+
+
+
+#row8 h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+    color: black;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: Georgia;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+#row8 p {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 420px;
+    padding-bottom: 30px;
+    font-family: Times;
+    font-size: 19px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.clearfix {
+    overflow: auto;
+}
+
+
+* Text Blurb Center*/
+#row3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #909084;
+    
+}
+
+#row3 h2 {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Georgia;
+    margin-left: 0px;
+}
+
+#row3 p {
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 30px;
+    font-family: Times;
+    font-size: 19px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* Text Blurb Right*/
+#row4 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #909084;
+    
+}
+
+#row4 h2 {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    color: black;
+    margin-bottom: 0px;
+    text-align: right;
+    font-family: Georgia;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+
+#row4 p {
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding-bottom: 30px;
+    font-family: Times;
+    font-size: 19px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+  .full-width {
+    max-width: 1400px;
+
+
+  }
+
+  .footer {
+    padding-top: 20px;
+    text-align: center;
+    font-family: Garamond;
+    font-size: 40px;
+    color: #fff;
+    background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

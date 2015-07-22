@@ -1,0 +1,209 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    {% include "top-links.html" %}
+    <link rel = "stylesheet" href = "{% static "css/rel.css" %}"> <!--this is your css file you will make changes to -->
+    
+    <title> Religious Life</title>
+
+   </head> <!-- you always need all these links-->
+   <body>
+    <!--the following really long segment is just the code for the menu/navigation bar!!-->
+     <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="#">Quakers&amp;Mental Health</a></li>
+                <li><a href="#">About</a>
+                  <ul>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contribute to Research</a></li>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Future Directions</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Backround &amp; Context</a>
+                  <ul>
+                    <li><a href="#">Theology &amp; Mental Health</a></li>
+                    <li><a href="#">York Retreat</a></li>
+                    <li><a href="#">Other Asylums</a></li>
+                    <li><a href="#">Hicksite-Orthodox Schism</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#">History</a></li>
+                 <ul>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Governance &amp; Structure</a></li>
+                    <li><a href="#">Patient Profiles</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Moral Treatment</a></li>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Religious Life at the Asylum</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Downsides</a></li>
+                  </ul>
+                <li><a href="#">Medical Treatment</a>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Types of Treatment</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-large-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "#">Quakers &amp; Mental Health</a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="has-dropdown"><a href="#">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "#">Learn More</a></li>
+                  <li><a href= "#"> Contribute to Research</a></li>
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Future Directions</a></li>
+                </ul>
+              </li>
+               <li class="has-dropdown"><a href="#"> Backround &amp; Context</a>
+               <ul class="dropdown">
+                <li><a href="#">Theology &amp; Mental Health</a></li>
+                <li><a href="#">The York Retreat</a></li>
+                <li><a href="#">Other Asylums</a></li>
+                <li><a href="#">Hicksite-Orthodox Schism</a></li>
+               </ul>
+              </li>
+              <li class="has-dropdown"><a href="#"> Early History</a>
+               <ul class="dropdown">
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                  <li ><a href="#">Architecture</a></li>
+                  <li><a href="#">Governance &amp; Structure</a></li>
+                  <li><a href="#">Patient Profiles</a></li>
+                </ul>
+              </li>
+              <li class="active has-dropdown"><a href="#">Moral Treatment</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li class = "active"><a href="#">Religious Life at the Asyum</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Downsides</a></li>
+               </ul>
+             </li>
+             <li class="has-dropdown"><a href="#">Medical Treament</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Types of Treament</a></li>
+               </ul>
+            </li>
+              <li><a href="#">Glossary</a></li>
+              <li><a href="#">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>
+
+    <!-- end of navigation bar-->
+
+
+
+<!-- END OF IGNORE-->
+
+
+
+<!-- top image and text overlay-->
+<!--if you dont want any text overlay, just delete! (and delete from css file too!)-->
+    <header>
+      <div class = "banner">
+        <div class = "overlay-container">
+        <img src="{% static "Images/Silentmeeting.jpg" %}" alt="Friends Asylum.">
+        <div class = "overlay1 show-for-large-up">
+          <strong></strong>
+        </div>
+      </div>
+      </div>
+    </header>
+
+
+<!-- main title header -->
+    <div id = "rowheader">
+      <h1> <strong>Religious Life </strong> </h1>
+    </div>
+
+
+ <!--this is a place you can put quotes if you'd really like them to stand out-->
+ <!-- AC Can this quote be centered?--> 
+    <div id = "row1">
+        <h2>"[The] Asylum… is intended to furnish besides the requisite medical aid, such tender sympathetic attention and religious oversight as may soothe [the patients’] agitated minds and thereby under the Divine blessing facilitate their restoration of this inestimable gift [reason]."
+        <cite>~Contributors to the Friends Asylum, 1813  </cite>
+      </h2>
+    </div>
+
+
+
+<!-- text blurb left and Image-->
+      <div id = "row8" class = "clearfix"> 
+        <h2> Attending Meeting for Worship </h2>
+          <figure class = "text-center">
+          <img height = "400px" width = "400px" src = "{% static "Images/Frankford_Meeting_House.jpg" %}"> 
+          <figcaption> Frankford Friends Meeting </figcaption>
+          </figure>
+
+          <p>Bonsall allowed patients who he thought could sit quietly to accompany him and his family to Frankford Meeting each week. Many of the patients valued their time at Meeting. Hannah J. told Bonsall that, “the first time she went from here to Meeting it was very Mortifying. [S]he was very much humbled indeed[,] not doubting but that she would be looked upon as one of the Insane riding in the Crazy Carriage &c. but after getting to Meeting she felt sweet peace.” For Hannah J., Meeting provided a place where she was seen as more than her illness. Shortly after Hannah J.’s conversation with Bonsall, Bonsall noted that Hannah J. had spoken in Meeting without any hint of disapproval. No one was upset or embarrassed that a patient from the Asylum had given a message. Although Hannah J. had worried that the Frankford Friends would judge her, she was able to move beyond her fears and gain comfort from attending Meeting, as well as contribute to the worship of others. However, sometimes attending Meeting for Worship proved to be too much for some patients. See Ruth S.’s story in the Patient Profiles to learn about her experiences at Frankford Friends Meeting. </p>
+      </div>
+
+
+
+<!-- text center blurb -->
+       <div id = "row3"> 
+        <h2> Religious Treatment </h2>
+        <p> Bonsall used religion as a part of his treatment for some patients, like Benjamin W., who entered the Asylum depressed because he was convinced that he had ended his traveling ministry in Ireland and England too early. Although depression was often valued in the Quaker community as a part of the spiritual journey towards virtue, Benjamin W.’s depression was more extreme. As a way of reassuring Benjamin W. about the value of his ministry, Bonsall took him to Quarterly Meeting, and had him read the certificates from Britain and Ireland Yearly Meetings about his time in Britain and Ireland. Bonsall thought that hearing weighty Friends praise Benjamin W.’s spiritual gifts and actions would help Benjamin W. to see that his depression was not sensible. However, two months later, Bonsall wrote that Benjamin W. still suffered from “occasional depression which will probably be felt by him very frequently thro’ his life as his apprehension that he left England before he had fulfilled all the service required of him has made a deep impression on his mind and cannot easily be eradicated.” Bonsall’s attempts to reason Benjamin W. out of his depression through contact with the Quaker world did not succeed, and Bonsall recognized his failure. However, religious comfort was not the only way that Bonsall attempted to cure Benjamin W. Bonsall also subjected him to an early form of <a href = "#">electrical therapy.</a> </p>
+      </div>
+      <!-- AC Can the words "electrical therapy" be a link to the section on electrical therapy?--> 
+
+
+
+<!-- text blurb right-->
+
+      <div id = "row4"> 
+        <h2> Religious Life at Other Asylums </h2>
+        <p> The Friends Asylum’s overt emphasis on Quaker spirituality in treatment was unique among early American asylums because the Friends Asylum was the only American asylum made both by and for Quakers. Quakers involved in running other asylums, like Thomas Kirkbride of the Pennsylvania Hospital and Thomas Eddy of the New York Hospital, might have felt led by their Quaker faith to help with asylums, but they could not overtly use that Quaker faith as a part of their treatment method because their patients were not all Quaker. Thomas Eddy did argue that religious means could be used to help treat patients if “done with great care and circumspection.”  However, Eddy did not mean Quaker faith. Since the New York Hospital was a public institution, it served patients of a variety of religions, and Eddy went on to write about the usefulness of helping each patient recreate his or her individual religious rituals as much as possible. Eddy’s version of religious therapy in asylums could not be strictly Quaker, unlike that of Friends Asylum. </p>
+      </div>
+
+
+
+
+
+      {% include 'footer-simple.html' %}
+
+      
+
+
+
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+    
+    {% include 'bottom-links.html' %}
+  </body>
+</html>

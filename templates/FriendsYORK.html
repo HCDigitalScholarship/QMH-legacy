@@ -1,0 +1,203 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+  
+  {% include 'top-links.html' %}  
+
+    <link rel = "stylesheet" href = "{% static "css/york.css" %}"> <!--this is your css file you will make changes to -->
+   
+    <title>The York Retreat</title>
+
+   </head> <!-- you always need all these links-->
+   <body>
+    <!--the following really long segment is just the code for the menu/navigation bar!!-->
+     <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="#">Quakers&amp;Mental Health</a></li>
+                <li><a href="#">About</a>
+                  <ul>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contribute to Research</a></li>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Future Directions</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Backround &amp; Context</a>
+                  <ul>
+                    <li><a href="#">Theology &amp; Mental Health</a></li>
+                    <li><a href="#">York Retreat</a></li>
+                    <li><a href="#">Other Asylums</a></li>
+                    <li><a href="#">Hicksite-Orthodox Schism</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#">History</a></li>
+                 <ul>
+                    <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Governance &amp; Structure</a></li>
+                    <li><a href="#">Patient Profiles</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Moral Treatment</a></li>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Religious Life at the Asylum</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Downsides</a></li>
+                  </ul>
+                <li><a href="#">Medical Treatment</a>
+                  <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Types of Treatment</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-large-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "#">Quakers &amp; Mental Health</a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="has-dropdown"><a href="#">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "#">Learn More</a></li>
+                  <li><a href= "#"> Contribute to Research</a></li>
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Related Projects</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Future Directions</a></li>
+                </ul>
+              </li>
+               <li class="active has-dropdown"><a href="#"> Backround &amp; Context</a>
+               <ul class="dropdown">
+                <li><a href="#">Theology &amp; Mental Health</a></li>
+                <li class = "active"><a href="#">The York Retreat</a></li>
+                <li><a href="#">Other Asylums</a></li>
+                <li><a href="#">Hicksite-Orthodox Schism</a></li>
+               </ul>
+              </li>
+              <li class="has-dropdown"><a href="#"> Early History</a>
+               <ul class="dropdown">
+                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
+                  <li><a href="#">Architecture</a></li>
+                  <li><a href="#">Governance &amp; Structure</a></li>
+                  <li><a href="#">Patient Profiles</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown"><a href="#">Moral Treatment</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Religious Life at the Asyum</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Downsides</a></li>
+               </ul>
+             </li>
+             <li class="has-dropdown"><a href="#">Medical Treament</a>
+               <ul class="dropdown">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Types of Treament</a></li>
+               </ul>
+            </li>
+              <li><a href="#">Glossary</a></li>
+              <li><a href="#">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>
+
+    <!-- end of navigation bar-->
+
+
+
+<!-- END OF IGNORE-->
+
+
+
+<!-- top image and text overlay-->
+<!--if you dont want any text overlay, just delete! (and delete from css file too!)-->
+    <header>
+      <div class = "banner">
+        <div class = "overlay-container">
+        <img src="{% static "Images/YorkRetreatheader.jpg" %}" alt="Friends Asylum.">
+        <div class = "overlay1 show-for-large-up">
+         <!-- <strong>The York Retreat &amp; Other Asylums</strong>-->
+        </div>
+      </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+<!-- text blurb left and Image-->
+      <div id = "row8" class = "clearfix"> 
+        <h2> The York Retreat </h2>
+          <figure class = "text-center">
+          <img height = "500px" width = "500px" src = "{% static "Images/YorkRetreat1.jpg" %}"> 
+          <figcaption> The York Retreat </figcaption>
+          </figure>
+          
+
+          <p> Quakers founded the York Retreat, a mental institution in York, England, after a negative experience in the existing network of asylums. In 1790, a Quaker named Hannah Mills was placed in the York Asylum, a non-Quaker institution. Her family, who lived far away, asked Quakers in York to visit her, but they were not allowed to do so. Shortly afterwards, she died under mysterious circumstances. This incident galvanized York Quakers to form their own asylum. They argued that a Quaker asylum would respect the connections between groups of Quakers and therefore allow visits from Quakers who were not family members. An institution founded specifically by and for Quakers would have the added benefit of protecting the Quaker patients from the corrupting influences of the world’s people. They also reasoned that a familiar, Quaker environment would be conducive to a cure. The staff in the asylum would work to cherish the Inner Light in patients in order to try to cure them. An early history of the Retreat articulated this model of treatment, noting that they “treat… the patient as much in the manner of a rational being as the state of his mind will possibly allow” (Account of the Retreat 56). Thus, the York Retreat was founded in 1796 on the principles of kindness and equality, even for those who were insane. The York Retreat served as a model for the Friends Asylum and many other asylums. </p>
+      </div>
+
+
+<!-- text center blurb -->
+       <div id = "row3"> 
+        <h2> Moral Treatment </h2>
+        <p> Although the Retreat and the Asylum were founded specifically to treat Quaker patients with Quaker methods, they did not operate in a vacuum. Other mental institutions in Europe and the United States were also experimenting with less violent treatment of the insane at the time. These asylums called their methods moral treatment, and resolved to use as little restraint as possible and help the patients regain control over their minds. The most famous reformer in Europe was Philippe Pinel, who worked in the Salpêtrière and the Bicêtre in France. Pinel coined the term moral treatment. </p>
+      </div>
+
+
+
+<!-- text blurb right and image-->
+
+<div id = "row9" class = "clearfix1"> 
+        <h2> American Asylums and Moral Treatment</h2>
+          <figure class = "text-center">
+          <img height = "450px" width = "450px" src = "{% static "Images/PAHospital.jpg" %}"> 
+          <figcaption> The Pennsylvania Hospital for the Insane </figcaption>
+          </figure>
+        
+
+          <p>In America, the Friends Asylum was the first private asylum to be founded and run on the system of moral treatment. Several public hospitals, like the New York Hospital and the Pennsylvania Hospital, which served insane patients as well as others, began to try to implement moral treatment for their patients as well. These hospitals struggled to incorporate moral treatment into the systems they already had. Later, both hospitals opened separate buildings for their insane patients, which allowed them to complete their transitions to moral treatment because the new buildings were designed accordingly. Quakers were involved in the administration of both the Pennsylvania Hospital and the New York Hospital, although neither hospital was affiliated with the Society of Friends. In Connecticut, Dr. Eli Todd founded a private hospital, the Hartford Retreat, based on the example of the York Retreat. The Hartford Retreat was not Quaker at all. As can be seen from these other asylums, moral treatment was not necessarily a Quaker method. However, moral treatment at the York Retreat and the Friends Asylum did take on a distinctly Quaker flavor. </p>
+      </div>
+
+
+
+
+      {% include 'footer-simple.html' %}
+
+      
+
+
+
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+    {% include 'bottom-links.html' %}
+  </body>
+</html>

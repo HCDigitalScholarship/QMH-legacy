@@ -1,4 +1,4 @@
-/* custom css for FriendsARCH.html*/
+/* custom css for ARCH.html*/
 
 .exoribit img {
 	width: 100%;
@@ -8,9 +8,18 @@
     
 }
 
+header .orbit-bullets-container {
+	position: absolute;
+	bottom: 4%;
+	right: 45%;
+	li {
+		width: 2rem;
+		height: 2rem;
+	}
+}
 
 #rowheader {
-	background-color: #909084;
+	background-color: #CCCCB2;
 	padding-top: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -18,15 +27,18 @@
 }
 
 #rowheader h1 {
-	color: #f1f1f1;
+	color: #333333;
 	font-family: "Poiret One";
 	font-size: 80px;
 	padding-top: 40px;
 	padding-bottom: 40px;
+	padding-left: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: center;
     border-bottom: solid #333333 15px;
+   
+    
 
 }
 
@@ -35,15 +47,18 @@
 }
 
 #row1 {
-	margin-top: 0px;
+	
+	
 	background-color: white;
+	margin-top: 0px;
 	padding-bottom: 50px;
 }
 
 #row1 h2 {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-left: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
 	text-align: center;
 	font-family: "Tangerine";
 	font-size: 50px;
@@ -52,8 +67,9 @@
 #row2 {
 	padding-top: 15px;
 	margin-top: 0px;
-	background-color: #CCCCB2;
-	border-bottom: solid #333333 15px;
+	background-color: #909084;
+	border-top: solid #333333 15px;
+
 }
 
 #row2 h2 {
@@ -64,6 +80,7 @@
 #row2 p {
 	text-align: left;
 	margin-left: 200px;
+	padding-right: 50px;
 	padding-bottom: 20px;
 	font-family: Times;
 	font-size: 19px;
@@ -89,6 +106,63 @@
 	border-top-left-radius: 40.5px;
 	border-top-right-radius: 40.5px;
 
+}
+
+#row8 {
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #CCCCB2;
+	
+}
+
+
+
+#row8 img {
+	float: right;
+	position: relative;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	padding-top: 67px;
+}
+	
+
+
+
+#row8 h2 {
+	padding-top: 30px;
+	margin-top: 0px;
+	color: black;
+	font-size: 60px;
+	margin-bottom: 15px;
+	font-family: Georgia;
+	margin-left: 0px;
+	margin-right: 65px;
+}
+
+#row8 #panel {
+	padding-left: 100px;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-right: 50px;
+}
+
+#row8 p {
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 420px;
+	padding-bottom: 30px;
+	font-family: Times;
+	font-size: 19px;
+	color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+.clearfix {
+	overflow: auto;
 }
 
 .footer {
