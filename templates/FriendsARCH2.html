@@ -72,7 +72,7 @@
 
           <section class="top-bar-section">
             <ul class = "left">
-            <li> <a href= "#">Quakers &amp; Mental Health</a></li>
+            <li> <a href= "/">Quakers &amp; Mental Health</a></li>
             </ul> 
             <ul class = "right">
               <li class="has-dropdown"><a href="#">About</a>
@@ -176,10 +176,11 @@
         <h3> Income &amp; Revenue Feature </h3>
           <div class = "row">
             <div class = "large-6 columns text-center">
-              <a class = "th radius" href ="#"><img height = "300px" width = "300px" src = "{% static "Images/Pie Chart3.jpg" %}"></a>
+              <a class = "th radius" href ="/pieq"><img height = "300px" width = "300px" src = "{% static "Images/Pie Chart3.jpg" %}"></a>
             </div>
             <div class = "large-6 columns text-center" id = "button">
-              <a href = "#" class = "button round large"> Pie Chart </a>
+              <a href = "/pieq" class = "button round large"> Pie Chart with Philly </a>
+		<a href = "/pieq2" class = "button round large"> Pie Chart without Philadelphia </a>
             </div>
 
           </div>
@@ -195,11 +196,20 @@
           <h5> A Loud Night </h5>
           <blockquote> "Last night a very disturbing one. Martha F. commenced making a noise after which several of the other Women [joined in and] kept it up nearly all night." <cite> Isaac Bonsall, June 1822 </cite></blockquote>
         </div>
+	<div class = "row full-width">
+	<div class = "large-6 medium-12 small-12 columns">
+	  <p>Despite the amount of thought that the founders put into the construction of the building, their lack of experience with mentally ill people meant that they failed to consider the problem of noisy patients. Used to their quiet and orderly Quaker home lives, they did not realize that many of the patients at the Asylum would be very loud, and often make noises all night. For example, Ruth S. spent weeks at a time knocking at her door all night unless she was fastened to her bed.  This kept other patients, as well as the superintendent, Isaac Bonsall, and the caretakers, awake. Sometimes the noise of one patient started a chain reaction, and other patients quickly joined in the din. Bonsall tried to deal with the noise problems by putting loud patients on the third floor, away from other patients, and begging them to be quiet at night, but these fixes did not prove satisfactory. By 1822, Bonsall wrote despairingly of his desire to build a separate building to house noisy patients. He knew that the Board of Managers would not agree because the Asylum was not full, and they saw no need to construct a new building when the existing one had plenty of room.  It was not until 1828, several years after Bonsall had left the Asylum, that the contributors agreed to add little buildings for the noisy patients at the ends of each wing. </p> 	
+</div>
+	<div class = "large-6 medium-12 small-12 columns" id = 'pic'>
 
-          <img height = "400px" width = "400px" src = "{% static "Images/blueprint.jpg" %}"> 
+	<ul class = "clearing-thumbs" data-clearing>
+
+         <li><a class = "th" href = "{% static "Images/blueprint.jpg" %}"> <img data-caption = "Blueprint, cite" height = "400px" width = "400px" src = "{% static "Images/blueprint.jpg" %}"></a></li>
+	</ul>
+	</div>
+        </div>
+
         
-
-          <p>Despite the amount of thought that the founders put into the construction of the building, their lack of experience with mentally ill people meant that they failed to consider the problem of noisy patients. Used to their quiet and orderly Quaker home lives, they did not realize that many of the patients at the Asylum would be very loud, and often make noises all night. For example, Ruth S. spent weeks at a time knocking at her door all night unless she was fastened to her bed.  This kept other patients, as well as the superintendent, Isaac Bonsall, and the caretakers, awake. Sometimes the noise of one patient started a chain reaction, and other patients quickly joined in the din. Bonsall tried to deal with the noise problems by putting loud patients on the third floor, away from other patients, and begging them to be quiet at night, but these fixes did not prove satisfactory. By 1822, Bonsall wrote despairingly of his desire to build a separate building to house noisy patients. He knew that the Board of Managers would not agree because the Asylum was not full, and they saw no need to construct a new building when the existing one had plenty of room.  It was not until 1828, several years after Bonsall had left the Asylum, that the contributors agreed to add little buildings for the noisy patients at the ends of each wing. </p>
       </div>
 
 

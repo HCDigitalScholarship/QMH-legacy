@@ -41,9 +41,9 @@
   padding-bottom: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 47px;
+  font-size: 45px;
   text-align: left;
-  font-family: Georgia;
+  font-family: "Quintessential", Georgia;
   margin-left: 0px;
   padding-left: 50px;
 }
@@ -53,7 +53,7 @@
   margin-left: 80px;
   margin-right: 80px;
   padding-bottom: 30px;
-  font-family: Times;
+  font-family: "Amiri", Times;
   font-size: 19px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -82,7 +82,7 @@
 #row3 #panel cite {
   font-size: 20px;
   text-align: right;
-  padding-left: 690px;
+  padding-left: 660px;
 
 }
 
@@ -102,8 +102,9 @@
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
-  font-family: Georgia;
+  font-family: "Quintessential", Georgia;
   margin-left: 0px;
+ font-size: 45px;
 }
 
 #row5 p {
@@ -111,7 +112,7 @@
   margin-left: 80px;
   margin-right: 80px;
   padding-bottom: 30px;
-  font-family: Times;
+  font-family: "Amiri", Times;
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -134,9 +135,10 @@
   color: #333333;
   margin-bottom: 0px;
   text-align: right;
-  font-family: Georgia;
+  font-family: "Quintessential", Georgia;
   margin-left: 0px;
   margin-right: 50px;
+font-size: 45px;
 }
 
 #row4 p {
@@ -144,7 +146,7 @@
   margin-left: 80px;
   margin-right: 50px;
   padding-bottom: 30px;
-  font-family: Times;
+  font-family: "Amiri", Times;
   font-size: 19px;
   color: black;
   margin-top: 0px;

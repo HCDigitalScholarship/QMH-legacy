@@ -8,13 +8,13 @@
  .overlay-container .overlay1 {
     position: absolute; 
     bottom: 0px;         
-    left: 30px;            
-    right: 10px; 
-    top: 295px;
-    text-align: right;
+    left: 0px;            
+    right: 0px; 
+    top:255px;
+    text-align: center;
     color: white; /* pretty color of blue#7082A6 */
-    font-family: Georgia;
-    font-size: 40px;
+    font-family: "Cinzel Decorative";
+    font-size: 50px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -54,10 +54,10 @@
     padding-top: 20px;
     margin-top: 0px;
     color: black;
-    font-size: 57px;
+    font-size: 45px;
     margin-bottom: 15px;
     text-align: left;
-    font-family: Georgia;
+    font-family: "Quintessential";
     padding-left: 45px;
     margin-right: 0px;
 }
@@ -67,7 +67,7 @@
     margin-left: 50px;
     margin-right: 420px;
     padding-bottom: 44px;
-    font-family: Times;
+    font-family: "Amiri";
     font-size: 19px;
     color: black;
     margin-top: 0px;
@@ -92,10 +92,10 @@
     padding-top: 30px;
     padding-bottom: 10px;
     margin-top: 0px;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 0px;
     text-align: center;
-    font-family: Georgia;
+    font-family: "Quintessential";
     margin-left: 0px;
 }
 
@@ -104,7 +104,7 @@
     margin-left: 80px;
     margin-right: 80px;
     padding-bottom: 45px;
-    font-family: Times;
+    font-family: "Amiri";
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -140,8 +140,9 @@
     padding-right: 20px;
     margin-bottom: 15px;
     text-align: right;
-    font-family: Georgia;
+    font-family: "Quintessential";
     margin-left: 20px;
+	font-size: 43px;
     margin-right: 0px;
 }
 
@@ -151,7 +152,7 @@
     margin-right: 0px;
     padding-bottom: 45px;
     padding-right: 38px;
-    font-family: Times;
+    font-family: "Amiri";
     font-size: 19px;
     color: black;
     margin-top: 0px;

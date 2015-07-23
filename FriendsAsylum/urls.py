@@ -20,8 +20,10 @@ from . import views
 
 
 urlpatterns = [
-	url(r'^foundation/$', 'FriendsAsylum.views.foundation', name = 'Foundation Page'),
+	url(r'^found/$', 'FriendsAsylum.views.found', name = 'Foundation Page'),
 	url(r'^profiles/$', 'FriendsAsylum.views.profiles', name = 'Patient Profiles'),
+	url(r'^pieq2/$', 'FriendsAsylum.views.pieq2', name = "Pie chart wo philly"),
+	url(r'^pieq/$', 'FriendsAsylum.views.pieq', name = "Pie chart of quaker meetings"),
 	url(r'^structure/$', 'FriendsAsylum.views.structure', name = 'Structure and Governance'),
 	url(r'^religion/$', 'FriendsAsylum.views.religion', name = 'Religion'),
 	url(r'^medical/$', 'FriendsAsylum.views.medical', name = 'Medical'),

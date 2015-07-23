@@ -49,7 +49,7 @@
     margin-bottom: 0px;
     text-align: center;
     font-size: 50px;
-    font-family: Georgia;
+    font-family: "Quintessential", Georgia;
     margin-left: 0px;
 }
 
@@ -58,7 +58,7 @@
     margin-left: 80px;
     margin-right: 80px;
     padding-bottom: 40px;
-    font-family: Times;
+    font-family: "Amiri", Times;
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -79,10 +79,10 @@
     padding-right: 45px;
     margin-top: 0px;
     color: white;
-    font-size: 42px;
+    font-size: 43px;
     margin-bottom: 0px;
     text-align: right;
-    font-family: Georgia;
+    font-family: "Quintessential", Georgia;
     margin-left: 0px;
     margin-right: 50px;
 }
@@ -92,7 +92,7 @@
     margin-left: 80px;
     margin-right: 50px;
     padding-bottom: 40px;
-    font-family: Times;
+    font-family: "Amiri", Times;
     font-size: 19px;
     color: white;
     margin-top: 0px;
@@ -129,9 +129,10 @@
     color: black;
     margin-bottom: 15px;
     text-align: left;
-    font-family: Georgia;
+    font-family: "Quintessential", Georgia;
     margin-left: 20px;
     margin-right: 0px;
+	font-size: 45px;
 }
 
 #row8 p {
@@ -139,7 +140,7 @@
     margin-left: 50px;
     margin-right: 420px;
     padding-bottom: 30px;
-    font-family: Times;
+    font-family: "Amiri", Times;
     font-size: 19px;
     color: black;
     margin-top: 0px;
@@ -151,6 +152,14 @@
     overflow: auto;
 }
 
+button, .button {
+	background-color: #333333;
+}
+
+.button:hover {
+	background-color: #707070;
+}
+
 #row11 #modal {
     padding-top: 210px;
 
@@ -159,13 +168,14 @@
 #row11 #ptext h2 {
     padding-top: 30px;
     padding-bottom: 10px;
-    font-family:  Georgia;
+    font-family:  "Quintesential", Georgia;
+	font-size: 43px;
 }
 
 #row11 #ptext p {
     font-size: 17px;
     padding-bottom: 20px;
-    font-family: Times;
+    font-family: "Amiri", Times;
 }
 
 
@@ -179,12 +189,13 @@
 }
 
 #row2 h2 {
-    font-family: Georgia;
+    font-family: "Quintessential", Georgia;
     margin-left: 50px;
     padding-top: 30px;
     padding-bottom: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
+	font-size: 43px;
     
 }
 
@@ -192,7 +203,7 @@
     text-align: left;
     padding-bottom: 30px;
     padding-left: 80px;
-    font-family: Times;
+    font-family: "Amiri", Times;
     font-size: 19px;
     margin-top: 0px;
     margin-bottom: 0px;

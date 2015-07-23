@@ -11,11 +11,12 @@
     bottom: 0px;         
     left: 0px;
     text-align: right;            
-    right: 30px; 
-    top: 15px;
+    right: 7px; 
+    top: 20px;
     color: white; /* pretty color of blue#7082A6 */
-    font-family: "Shadows Into Light";
-    font-size: 40px;
+    font-family: "Cinzel Decorative";
+    
+    font-size: 27px;
     margin-bottom: 0px;
     margin-top: 0px;
     padding-bottom: 0px;
@@ -48,16 +49,26 @@
 	margin-top:0px;
 	padding-top: 20px;
 	padding-left: 100px;
-	font-size: 60px;
-	font-family: Times;
+	font-size: 43px;
+	font-family: "Quintessential";
 }
 
 #row11 p {
 	font-size: 18px;
+	font-family: "Amiri";
 }
  #row11 #second {
  	padding-bottom: 30px;
  }
+
+button, .button {
+	background-color: #333333;
+	
+}
+
+.button:hover {
+	background-color: #707070;
+}
 
 
 
@@ -88,7 +99,8 @@
 	color: black;
 	margin-bottom: 15px;
 	text-align: left;
-	font-family: Georgia;
+ 	font-size: 43px;
+	font-family: "Quintessential";
 	margin-left: 20px;
 	margin-right: 0px;
 }
@@ -98,7 +110,7 @@
 	margin-left: 50px;
 	margin-right: 420px;
 	padding-bottom: 30px;
-	font-family: Times;
+	font-family: "Amiri";
 	font-size: 19px;
 	color: black;
 	margin-top: 0px;
@@ -119,6 +131,8 @@
 	padding-right: 50px;
 	padding-top: 30px;
 	padding-bottom: 10px;
+	font-size; 43px;
+	font-family: "Quintessential";
 }
 
 
@@ -142,7 +156,7 @@
 	margin-left: 45px;
 	padding-right: 30px;
 	padding-bottom: 35px;
-	font-family: Times;
+	font-family: "Amiri";
 	font-size: 19px;
 	color: black;
 	margin-top: 0px;

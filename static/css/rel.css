@@ -43,9 +43,9 @@
 
 #rowheader h1 {
     color: #f1f1f1;
-    font-family: "Poiret One";
-    font-size: 80px;
-    padding-top: 30px;
+    font-family: "Cinzel Decorative";
+    font-size: 60px;
+    padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -65,21 +65,21 @@
 
 #row1 h2 {
     padding-top: 30px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-bottom: 20px;
     margin-left: 0px;
     margin-bottom: 0px;
     text-align: center;
-    font-family: "Tangerine";
-    font-size: 50px;
+    font-family: "Petit Formal Script";
+    font-size: 30px;
 }
 
 #row1 cite {
   font-size: 20px;
   text-align: right;
   font-family: Georgia;
-  padding-left: 690px;
+  padding-left: 500px;
 
 }
 
@@ -114,9 +114,10 @@
     color: black;
     margin-bottom: 15px;
     text-align: left;
-    font-family: Georgia;
+    font-family: "Quintessential", Georgia;
     margin-left: 20px;
     margin-right: 0px;
+	font-size: 45px;
 }
 
 #row8 p {
@@ -124,7 +125,7 @@
     margin-left: 50px;
     margin-right: 420px;
     padding-bottom: 30px;
-    font-family: Times;
+    font-family: "Amiri", Times;
     font-size: 19px;
     color: black;
     margin-top: 0px;
@@ -137,13 +138,13 @@
 }
 
 
-* Text Blurb Center*/
+/* Text Blurb Center*/
 #row3 {
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: #909084;
+    background-color: white;
     
 }
 
@@ -153,7 +154,8 @@
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
-    font-family: Georgia;
+    font-family: "Quintessential", Georgia;
+	font-size: 45px;
     margin-left: 0px;
 }
 
@@ -162,7 +164,7 @@
     margin-left: 80px;
     margin-right: 80px;
     padding-bottom: 30px;
-    font-family: Times;
+    font-family: "Amiri", Times;
     font-size: 19px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -186,8 +188,9 @@
     color: black;
     margin-bottom: 0px;
     text-align: right;
-    font-family: Georgia;
+    font-family: "Quintessential", Georgia;
     margin-left: 0px;
+	font-size: 45px;
     margin-right: 50px;
 }
 
@@ -196,7 +199,7 @@
     margin-left: 100px;
     margin-right: 50px;
     padding-bottom: 30px;
-    font-family: Times;
+    font-family: "Amiri", Times;
     font-size: 19px;
     color: black;
     margin-top: 0px;

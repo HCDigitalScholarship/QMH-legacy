@@ -34,7 +34,7 @@ def profiles(request):
 def arch(request):
 	return render(request, 'FriendsARCH2.html')
 
-def foundation(request):
+def found(request):
 	return render(request, 'FriendsFOUND.html')
 
 def structure(request):
@@ -57,6 +57,12 @@ def theology(request):
 
 def york(request):
 	return render(request, 'FriendsYORK.html')
+
+def pieq(request):
+	return render(request, 'quakerpiechart.html')
+
+def pieq2(request):
+	return render(request, 'quakerpiechartwophilly.html')
 
 def index(request):
 	return HttpResponse("hello world, youre at the polls index")

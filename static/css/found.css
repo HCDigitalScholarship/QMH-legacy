@@ -8,12 +8,13 @@
  .overlay-container .overlay1 {
     position: absolute; 
     bottom: 0px;         
-    left: 30px;            
+    left: 0px;            
     right: 0px; 
-    top: 6px;
+    top: 330px;
+    text-align: center;
     color: white; /* pretty color of blue#7082A6 */
-    font-family: "Tangerine";
-    font-size: 100px;
+    font-family: "Cinzel Decorative";
+    font-size: 60px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -33,6 +34,20 @@
     margin-top: 0px;
   }
 
+  #row1 h1 {
+	padding-top: 20px;
+	font-family: "Quintessential";
+	font-size: 50px;
+  }
+
+  #row1 p {
+	font-size: 19px;
+	font-family: "Amiri", Times;
+	padding-bottom: 10px;
+  }
+   #row1 {
+	padding-bottom: 20px;
+  }
 
 /* Text Blurb Center*/
 #row10 {
@@ -55,8 +70,8 @@
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
-    font-size: 55px;
-    font-family: Georgia;
+    font-size: 50px;
+    font-family: "Quintessential";
     margin-left: 0px;
 }
 
@@ -65,7 +80,7 @@
     margin-left: 80px;
     margin-right: 80px;
     padding-bottom: 30px;
-    font-family: Times;
+    font-family: "Amiri", Times;
     font-size: 19px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -78,8 +93,8 @@
 
 #row10 #rowfeat h3 {
     margin-top: 15px;
-    font-size: 45px;
-    font-family: Georgia;
+    font-size: 50px;
+    font-family: "Quintessential", Georgia;
     padding-bottom: 20px;
 }
 
@@ -89,12 +104,16 @@
     border-bottom-right-radius: 40.5px;
     border-top-left-radius: 40.5px;
     border-top-right-radius: 40.5px;
+    
+}
+
+button, .button {
+	background-color: #333333;
 
 }
 
-
-#row11 {
-
+.button:hover {
+	background-color: #707070;
 }
 
 #row11 #first {
@@ -102,13 +121,16 @@
 }
 
 #row11 #second h2 {
-	font-family: Times;
+	font-family: "Quintessential", Georgia;
+	font-size: 43px	
 	
 
 }
 
 #row11 #second p {
-	font-family: Georgia;
+	font-family: "Amiri", Times;
+	font-size: 18px;
+
 }
 
 

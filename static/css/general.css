@@ -1,17 +1,20 @@
-/* custom css for ARCH.html*/
+/* custom css for ARCH2.html*/
 
 .exoribit img {
 	width: 100%;
 	height: auto;
     margin: 0 auto;
     display: block;
-    
+    margin-bottom: 0px;
+	padding-bottom: 0px; 
 }
 
 header .orbit-bullets-container {
 	position: absolute;
 	bottom: 4%;
 	right: 45%;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 	li {
 		width: 2rem;
 		height: 2rem;
@@ -28,13 +31,13 @@ header .orbit-bullets-container {
 
 #rowheader h1 {
 	color: #333333;
-	font-family: "Poiret One";
-	font-size: 80px;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	font-family: "Cinzel Decorative", Georgia;
+	font-size: 65px;
+	padding-top: 20px;
+	margin-top: 0px;
+	padding-bottom: 20px;
 	padding-left: 0px;
     margin-bottom: 0px;
-    margin-top: 0px;
     text-align: center;
     border-bottom: solid #333333 15px;
    
@@ -44,14 +47,13 @@ header .orbit-bullets-container {
 
 
 	
-}
 
 #row1 {
 	
 	
 	background-color: white;
 	margin-top: 0px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 }
 
 #row1 h2 {
@@ -60,8 +62,8 @@ header .orbit-bullets-container {
 	padding-left: 50px;
 	padding-right: 50px;
 	text-align: center;
-	font-family: "Tangerine";
-	font-size: 50px;
+	font-family: "Petit Formal Script";
+	font-size: 30px;
 }
 
 #row2 {
@@ -73,8 +75,9 @@ header .orbit-bullets-container {
 }
 
 #row2 h2 {
-	font-family: Georgia;
+	font-family: "Quintessential", Georgia;
 	margin-left: 50px;
+	font-size: 50px;
 }
 
 #row2 p {
@@ -82,7 +85,7 @@ header .orbit-bullets-container {
 	margin-left: 200px;
 	padding-right: 50px;
 	padding-bottom: 20px;
-	font-family: Times;
+	font-family: "Amiri",Times;
 	font-size: 19px;
 }
 
@@ -93,24 +96,34 @@ header .orbit-bullets-container {
 
 #row3 h3 {
 	margin-top: 15px;
-	font-size: 45px;
-	font-family: Georgia;
+	font-size: 50px;
+	font-family: "Quintessential", Georgia;
 	padding-bottom: 20px;
 }
 
+button, .button {
+	background-color: #333333;
+}
+
+.button:hover {
+	background-color: #707070;
+}
+
+
 #row3 .button {
 	margin-top: 100px;
-	background-color: #D65CFF;
 	border-bottom-left-radius: 40.5px;
-	border-bottom-right-radius: 40.5px;
+	border-bottom-right-radius:40.5px;
 	border-top-left-radius: 40.5px;
 	border-top-right-radius: 40.5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 
 }
 
 #row8 {
 	padding-top: 0px;
-	margin-top: 0px;
+	margin-top: 50px;
 	margin-bottom: 0px;
 	background-color: #CCCCB2;
 	
@@ -118,13 +131,12 @@ header .orbit-bullets-container {
 
 
 
-#row8 img {
-	float: right;
-	position: relative;
-	margin-right: 30px;
-	margin-left: 30px;
-	margin-bottom: 30px;
-	padding-top: 67px;
+#row8 #pic {
+	text-align: center;
+	padding-top: 150px;
+	padding-left: 50px;
+	
+
 }
 	
 
@@ -134,9 +146,9 @@ header .orbit-bullets-container {
 	padding-top: 30px;
 	margin-top: 0px;
 	color: black;
-	font-size: 60px;
-	margin-bottom: 15px;
-	font-family: Georgia;
+	font-size: 50px;
+	padding-bottom: 25px;
+	font-family: "Quintessential", Georgia;
 	margin-left: 0px;
 	margin-right: 65px;
 }
@@ -150,20 +162,18 @@ header .orbit-bullets-container {
 
 #row8 p {
 	text-align: left;
-	margin-left: 50px;
-	margin-right: 420px;
+	margin-left: 20px;
+	margin-right: 0px;
 	padding-bottom: 30px;
-	font-family: Times;
-	font-size: 19px;
+	font-family: "Amiri", Times;
+	font-size: 18px;
 	color: black;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
 
-.clearfix {
-	overflow: auto;
-}
+
 
 .footer {
 	margin-top: 0px;

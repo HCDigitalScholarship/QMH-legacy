@@ -20,7 +20,7 @@
   .overlay-container .overlay1 {
     position: absolute; 
     bottom: 10px;         
-    left: 850px;            
+    left: 0px;            
     right: 0px; 
     top: 35px;
     color: white;
@@ -33,12 +33,14 @@
   .overlay-container .overlay2 {
     position: absolute;
     bottom: 0px;
-    left: 10px;
+    left: 0px;
     right: 0px;
-    top: 36px;
+    text-align: center;
+    top: 20px;
     color: white;
-    font-family: "Poiret One";
-    font-size: 30px;
+    font-family: "Cinzel Decorative";
+    font-style: bold;
+    font-size: 53px;
     margin-bottom: 0px;
     margin-top: 0px;
 
@@ -81,8 +83,8 @@
   #row3 h6 {
   	
   	color: black;
-  	font-family: Georgia;
-  	font-size: 18px;
+  	font-family: "Amiri";
+  	font-size: 20px;
   	padding-left: 80px;
   	padding-right: 80px;
   	

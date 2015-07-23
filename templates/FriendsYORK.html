@@ -35,8 +35,6 @@
                   <ul>
                     <li><a href="#">Theology &amp; Mental Health</a></li>
                     <li><a href="#">York Retreat</a></li>
-                    <li><a href="#">Other Asylums</a></li>
-                    <li><a href="#">Hicksite-Orthodox Schism</a></li>
                   </ul>
                 </li>
                  <li><a href="#">History</a></li>
@@ -51,14 +49,12 @@
                   <ul>
                     <li><a href="#">Introduction</a></li>
                     <li><a href="#">Religious Life at the Asylum</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Downsides</a></li>
+                    <li><a href="#">Occupational Therapy</a></li>
                   </ul>
                 <li><a href="#">Medical Treatment</a>
                   <ul>
                     <li><a href="#">Introduction</a></li>
-                    <li><a href="#">Types of Treatment</a></li>
-                  </ul>
+                   </ul>
                 </li>
                 <li><a href="#">Glossary</a></li>
                 <li><a href="#">Bibliography &amp; Credits</a></li>
@@ -75,7 +71,7 @@
 
           <section class="top-bar-section">
             <ul class = "left">
-            <li> <a href= "#">Quakers &amp; Mental Health</a></li>
+            <li> <a href= "/">Quakers &amp; Mental Health</a></li>
             </ul> 
             <ul class = "right">
               <li class="has-dropdown"><a href="#">About</a>
@@ -87,37 +83,33 @@
                   <li><a href="#">Future Directions</a></li>
                 </ul>
               </li>
-               <li class="active has-dropdown"><a href="#"> Backround &amp; Context</a>
+               <li class="active has-dropdown"><a href="/theology"> Backround &amp; Context</a>
                <ul class="dropdown">
-                <li><a href="#">Theology &amp; Mental Health</a></li>
+                <li><a href="/theology">Theology &amp; Mental Health</a></li>
                 <li class = "active"><a href="#">The York Retreat</a></li>
-                <li><a href="#">Other Asylums</a></li>
-                <li><a href="#">Hicksite-Orthodox Schism</a></li>
-               </ul>
+                              </ul>
               </li>
-              <li class="has-dropdown"><a href="#"> Early History</a>
+              <li class="has-dropdown"><a href="/found"> Early History</a>
                <ul class="dropdown">
-                  <li><a href="http://ds.haverford.edu/scattergoodjournals/exhibits/show/tsjournals/intro">Foundation</a></li>
-                  <li><a href="#">Architecture</a></li>
-                  <li><a href="#">Governance &amp; Structure</a></li>
-                  <li><a href="#">Patient Profiles</a></li>
+                  <li><a href="/found">Foundation</a></li>
+                  <li><a href="/arch">Architecture</a></li>
+                  <li><a href="/structure">Governance &amp; Structure</a></li>
+                  <li><a href="/profiles">Patient Profiles</a></li>
                 </ul>
               </li>
-              <li class="has-dropdown"><a href="#">Moral Treatment</a>
+              <li class="has-dropdown"><a href="/moral">Moral Treatment</a>
                <ul class="dropdown">
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Religious Life at the Asyum</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Downsides</a></li>
-               </ul>
+                <li><a href="/moral">Introduction</a></li>
+                <li><a href="/religion">Religious Life at the Asyum</a></li>
+                               </ul>
              </li>
-             <li class="has-dropdown"><a href="#">Medical Treament</a>
+             <li class="has-dropdown"><a href="/medical">Medical Treament</a>
                <ul class="dropdown">
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Types of Treament</a></li>
+                <li><a href="/medical">Introduction</a></li>
+                
                </ul>
             </li>
-              <li><a href="#">Glossary</a></li>
+              <li><a href="/glossary">Glossary</a></li>
               <li><a href="#">Bibliography &amp; Credits</a></li>
             </ul>
           </section>
@@ -139,7 +131,7 @@
         <div class = "overlay-container">
         <img src="{% static "Images/YorkRetreatheader.jpg" %}" alt="Friends Asylum.">
         <div class = "overlay1 show-for-large-up">
-         <!-- <strong>The York Retreat &amp; Other Asylums</strong>-->
+ <strong>The York Retreat &amp; Other Asylums</strong>
         </div>
       </div>
       </div>
@@ -155,7 +147,9 @@
       <div id = "row8" class = "clearfix"> 
         <h2> The York Retreat </h2>
           <figure class = "text-center">
-          <img height = "500px" width = "500px" src = "{% static "Images/YorkRetreat1.jpg" %}"> 
+	<ul class = "clearing-thumbs" data-clearing>
+         <li><a class = "th" href = "{% static "Images/YorkRetreat1.jpg"%}"> <img data-caption = "York Retreat, cite" height = "500px" width = "500px" src = "{% static "Images/YorkRetreat1.jpg" %}"></a></li>
+	</ul> 
           <figcaption> The York Retreat </figcaption>
           </figure>
           
@@ -177,7 +171,9 @@
 <div id = "row9" class = "clearfix1"> 
         <h2> American Asylums and Moral Treatment</h2>
           <figure class = "text-center">
-          <img height = "450px" width = "450px" src = "{% static "Images/PAHospital.jpg" %}"> 
+	<ul class = "clearing-thumbs" data-clearing>
+         <li><a class = "th" href = "{% static "Images/PAHospital.jpg" %}"> <img data-caption= "PA Hospital, cite" height = "450px" width = "450px" src = "{% static "Images/PAHospital.jpg" %}"></a></li>
+	</ul> 
           <figcaption> The Pennsylvania Hospital for the Insane </figcaption>
           </figure>
         

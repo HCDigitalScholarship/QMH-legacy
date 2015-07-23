@@ -22,18 +22,18 @@
   }
 
  #rowheader1 {
-	border-bottom: solid #333333 15px;
-	background-color: #CCCCB2;
+
+	background-color: #333333;
 	padding-top: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
-
+	
 }
 
 #rowheader1 h1 {
 	color: #f1f1f1;
-	font-family: "Tangerine";
-	font-size: 80px;
+	font-family: "Cinzel Decorative";
+	font-size: 50px;
 	padding-top: 30px;
 	padding-bottom: 20px;
     margin-bottom: 0px;
@@ -46,8 +46,8 @@
 
 #row7 h2 {
 	padding-left: 0px;
-	font-family: Georgia;
-	font-size: 40px;
+	font-family: "Quintessential", Georgia;
+	font-size: 43px;
 	padding-top: 15px;
 	padding-bottom: 5px;
 
@@ -55,7 +55,7 @@
 
 #row7 p {
 	padding-top: 0px;
-	font-family: Times;
+	font-family: "Amiri",Times;
 	padding-left: 10px;
 	font-size: 18px;
 }
@@ -63,13 +63,12 @@
 #row7 #pic {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 50px;
+
 
 }
 
 
-#row7 #pic h6 {
-	font-size: 13px;
-}
 
 #row11 {
 	background-color: #909084;
@@ -82,15 +81,27 @@
 #row11 h2 {
 	padding-top: 0px;
 	text-align: center;
-	font-family: Palatino;
+	font-family: "Quintessential", Palatino;
 	padding-bottom: 10px;
+	font-size: 43px;
 }
 
 #row11 p {
-	font-family: Georgia;
+	font-family: "Amiri",Georgia;
 	padding-left: 55px;
 	padding-right: 55px;
 	text-align: left;
+	font-size: 20px;
+
+
+}
+
+button, .button {
+	background-color: #333333;
+}
+
+.button:hover {
+	background-color: #707070;
 }
 
 .full-width {
