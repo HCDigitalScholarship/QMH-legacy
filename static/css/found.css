@@ -33,6 +33,20 @@
     margin-bottom: 0px;
     margin-top: 0px;
   }
+ 
+  h3#firstModalTitle {
+	font-family: "EB Garamond";
+}
+  h3#secondModalTitle {
+	font-family: "EB Garamond";
+}
+  #secondModal p {
+	font-family: "Amiri";
+}
+  #firstModal p {
+	font-family: "Amiri";
+}
+
 
   #row1 h1 {
 	padding-top: 20px;
@@ -109,7 +123,7 @@
 
 button, .button {
 	background-color: #333333;
-
+	font-family: "EB Garamond";
 }
 
 .button:hover {

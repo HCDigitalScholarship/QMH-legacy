@@ -33,6 +33,19 @@
     margin-top: 0px;
   }
 
+  h3#firstModalTitle {
+	font-family: "EB Garamond";
+
+}
+   #firstModal p {
+		font-family: "Amiri";
+}
+
+	
+
+
+
+
   /* Text Blurb Center*/
 #row3 {
     padding-top: 0px;
@@ -154,6 +167,7 @@
 
 button, .button {
 	background-color: #333333;
+	font-family: "EB Garamond";
 }
 
 .button:hover {

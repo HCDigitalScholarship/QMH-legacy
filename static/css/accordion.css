@@ -18,6 +18,10 @@
     border-bottom: solid #333333 15px;
 
 }
+.tabs dd > a, .tabs .tab-title > a {
+	font-family: "Cinzel";
+	font-weight: bold;
+}
 .accordion .accordion-navigation > a, .accordion dd > a {
       background: #EFEFEF;
       color: #222222;
