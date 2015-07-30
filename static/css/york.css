@@ -8,12 +8,12 @@
 
  .overlay-container .overlay1 {
     position: absolute;
-    display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;  
     bottom: 0px;         
-    left: 0px;            
-    right: 0px; 
-    top:250px;
+    margin-left: auto; 
+    margin-right: auto;
+    left: 0;
+    right: 0;   
     text-align: center;
     color: white; /* pretty color of blue#7082A6 */
     font-family: "Cinzel Decorative";
@@ -25,99 +25,60 @@
   banner img {
     max-width: 100em;
     margin: auto;
-    display: block;
+    display: relative;
     background-color: #909084;
     margin-bottom: 0px;
     margin-top: 0px;
     vertical-align: text-bottom;
   }
- body p {
-	font-size: 19px;
-	font-family: "Amiri";
-}
+ 
 
-
-  /* Text Blurb Right Float Image*/
 #row8 {
-    padding-top: 0px;
-    margin-top: 0px;
+    padding-top:40px;
+    
+    margin-top: 0px;  
     margin-bottom: 0px;
     background-color: #CCCCB2;
     
 }
 
-
-
-#row8 figure {
-    float: right;
-    position: relative;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    padding-top: 50px;
-}
-    
-
-
-
-#row8 h2 {
-    padding-top: 20px;
-    margin-top: 0px;
-    color: black;
-    font-size: 45px;
-    margin-bottom: 15px;
-    text-align: left;
-    font-family: "Quintessential";
-    padding-left: 45px;
-    margin-right: 0px;
-}
-
 #row8 p {
-    text-align: left;
-    margin-left: 50px;
-    margin-right: 420px;
-    padding-bottom: 44px;
-    font-family: "Amiri";
-    font-size: 19px;
-    color: black;
-    margin-top: 0px;
-    margin-bottom: 0px;
+	font-size: 20px;
+}
+.row.full-width {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.row.full-width h2 {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	font-size: 45px;
+	font-family: "Quintessential";
+}
+
+.row.full-width p {
+	font-family: "Amiri";
+	font-size: 19px;
+	padding-bottom: 10px;
+	text-align: left;	
 }
 
 
-.clearfix {
-    overflow: auto;
-}
 
-/* Text Blurb Center*/
+/*Text Blurb Center*/
 #row3 {
-    padding-top: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     background-color: #909084;
     
 }
 
 #row3 h2 {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    margin-top: 0px;
-    font-size: 45px;
-    margin-bottom: 0px;
     text-align: center;
-    font-family: "Quintessential";
-    margin-left: 0px;
+    
 }
 
-#row3 p {
-    text-align: left;
-    margin-left: 80px;
-    margin-right: 80px;
-    padding-bottom: 45px;
-    font-family: "Amiri";
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
 
 #row9 {
@@ -128,49 +89,17 @@
     
 }
 
-
-
-#row9 figure {
-    float: left;
-    position: relative;
-    margin-right: 0px;
-    margin-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 40px;
-}
-    
-
+ 
 
 
 #row9 h2 {
-    padding-top: 20px;
-    margin-top: 0px;
-    color: black;
-    padding-right: 20px;
-    margin-bottom: 15px;
-    text-align: right;
-    font-family: "Quintessential";
-    margin-left: 20px;
-	font-size: 43px;
-    margin-right: 0px;
+    text-align: center;
+    
 }
 
-#row9 p {
-    text-align: left;
-    margin-left: 420px;
-    margin-right: 0px;
-    padding-bottom: 45px;
-    padding-right: 38px;
-    font-family: "Amiri";
-    font-size: 19px;
-    color: black;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+#row9 #figure1 {
+	padding-top: 100px;
 
-
-#row9.clearfix1 {
-    overflow: auto;
 }
 
 
@@ -184,7 +113,6 @@
     padding-top: 20px;
     text-align: center;
     font-family: Garamond;
-    font-size: 40px;
     color: #fff;
     background-color: #292C2F;
     
