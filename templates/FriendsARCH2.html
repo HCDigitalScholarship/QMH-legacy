@@ -126,15 +126,11 @@
                 pause_on_hover: false;
                 next_on_click: true;">
             <li>
-              <img src="{% static "Images/Asylumfloorplan2.jpg" %}">
-              
-            </li>
-            <li>
               <img src="{% static "Images/carousel1.jpg" %}">
               <div class = "orbit-caption">
-                The Trajectory of Friends Asylum
+                The Trajectory of Friends Asylum's Architecture
               </div>
-            </li>li
+            </li>
             <li>
               <img src= "{% static "Images/carousel2.jpg" %}">
             </li>
@@ -159,16 +155,33 @@
 
 
     <div id = "row1">
-        <h2>"The free circulation of air, the great supporter of life, is of primary importance [in the treatment of the insane]."
-        <h2><cite> ~Robert Waln Jr. </cite></h2>
-      </h2>
+	<div class = "row full-width">
+        <h1>"The free circulation of air, the great supporter of life, is of primary importance [in the treatment of the insane]."
+        <h6><cite> ~Robert Waln Jr. </cite></h6>
+      </h1>
     </div>
+</div>
 
-
-  <div id = "row2"> 
+  <div id = "row2">
+	<div class = "row full-width">
+	<div class = "large-7 medium-12 small-12 columns"> 
         <h2> Light and Air</h2>
         <p> The Building Committee put a lot of thought into their architectural decisions about the Asylum because, according to the tenets of moral treatment, architecture influenced patients’ recovery. The Committee based the Asylum’s architecture on that of the Retreat. At the Retreat, the architect had put rooms on both sides of the hallway, which left some of the rooms dark and gloomy. So the Asylum’s Building Committee made sure to put patient rooms only on one side of the hallway, with windows on the opposite side of the hall, ensuring that all patients had access to curative fresh air and light. This fit in with Quaker ideas about equality. All patients deserved equal access to air and light. The Building Committee also worried about keeping the Asylum safe. They wanted the building to hold the patients securely, but did not want it to look or feel like a prison, which they thought would harm the patients’ recovery and insult their dignity. For this reason, they put iron sashes painted to look like wood in the windows, which made the Asylum look less forboding. The Asylum continued to use these type of windows even after patients arrived and began smashing panes of glass with alarming frequency, showing that the Asylum’s appearance of normalcy mattered more than the inconvenience of putting in new panes of glass every few days. </p>
       </div>
+<div class = "large-5 medium-12 small-12 columns">
+	<div class = "hide-for-medium-down">
+		<br> </br>
+		<br> </br>
+		<br> </br>
+		<br> </br>
+	</div>
+	<figure class = "text-center">
+		<img height= "500px" width = "500px" src = "{% static "Images/windows.jpg" %}">
+		<figcaption> Windows at Friends Hospital, Current Day</figcaption>
+	</figure>	
+</div>
+</div>
+</div>
 
 
 <div class = "row" id = "row3">
@@ -190,22 +203,27 @@
     </div>
 
 
-       <div id = "row8" class = "clearfix"> 
-       <h2 class = "text-right"> Noisy Patients </h2>
+       <div id = "row8">
+	<div class = "row full-width"> 
+       <h2> Noisy Patients </h2>
         <div class = "panel radius" id = "panel">
           <h5> A Loud Night </h5>
           <blockquote> "Last night a very disturbing one. Martha F. commenced making a noise after which several of the other Women [joined in and] kept it up nearly all night." <cite> Isaac Bonsall, July 21, 1822 </cite></blockquote>
         </div>
+	</div>
 	<div class = "row full-width">
-	<div class = "large-6 medium-12 small-12 columns">
+	<div class = "large-12 medium-12 small-12 columns">
 	  <p>Despite the amount of thought that the founders put into the construction of the building, their lack of experience with mentally ill people meant that they failed to consider the problem of noisy patients. Used to their quiet and orderly Quaker home lives, they did not realize that many of the patients at the Asylum would be very loud, and often make noises all night. For example, Ruth S. spent weeks at a time knocking at her door all night unless she was fastened to her bed.  This kept other patients, as well as the superintendent, Isaac Bonsall, and the caretakers, awake. Sometimes the noise of one patient started a chain reaction, and other patients quickly joined in the din. Bonsall tried to deal with the noise problems by putting loud patients on the third floor, away from other patients, and begging them to be quiet at night, but these fixes did not prove satisfactory. By 1822, Bonsall wrote despairingly of his desire to build a separate building to house noisy patients. He knew that the Board of Managers would not agree because the Asylum was not full, and they saw no need to construct a new building when the existing one had plenty of room.  It was not until 1828, several years after Bonsall had left the Asylum, that the contributors agreed to add little buildings for the noisy patients at the ends of each wing. </p> 	
 </div>
-	<div class = "large-6 medium-12 small-12 columns" id = 'pic'>
+	<div class = "large-12 medium-12 small-12 columns text-center">
+	<figure class = "text-center">
+	<ul class = "large-block-grid-1" data-clearing>
 
-	<ul class = "clearing-thumbs" data-clearing>
-
-         <li><a class = "th" href = "{% static "Images/Asylumfloorplan2.jpg" %}"> <img data-caption = "Blueprint, cite" height = "400px" width = "400px" src = "{% static "Images/Asylumfloorplan2.jpg" %}"></a></li>
+         <li><a class = "th" href = "{% static "Images/Asylumfloorplan2.jpg" %}"> <img data-caption = "Blueprint, cite" height = "600px" width = "600px" src = "{% static "Images/Asylumfloorplan2.jpg" %}"></a></li>
 	</ul>
+	<figcaption> Floor plan of ground level of the Asylum</figcaption>
+	</figure>
+	<br> </br>
 	</div>
         </div>
 
@@ -229,7 +247,7 @@
     {% include 'footer-simple.html' %}
 
 
- <p> <a href = "/found"> Foundation </a>| <a href = "/structure">Structure &amp; Governance </a>| <a href = "/profiles">Patient Profiles</a> </p>
+  <a href = "/found"> Foundation </a>| <a href = "/structure">Structure &amp; Governance </a>| <a href = "/profiles">Patient Profiles</a>
         </div>        
          
         

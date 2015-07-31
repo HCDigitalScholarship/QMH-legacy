@@ -45,18 +45,41 @@ header .orbit-bullets-container {
 
 }
 
+.row.full-width {
+padding-bottom: 0px;
+margin-bottom: 0px;
+padding-left:20px;
+padding-right:20px;
+}
 
-	
+.row.full-width h2 {
+padding-top: 30px;
+padding-bottom: 10px;
+font-size: 45px;
+font-family: "Quintessential";
+}
+
+.row.full-width p {
+font-family: "Amiri";
+font-size: 19px;
+padding-bottom: 10px;
+text-align: left;
+}
+
+figcaption {
+font-family: "Amiri";
+font-size: 15px;
+}
 
 #row1 {
 	
-	
+    	padding-top: 10px;	
 	background-color: white;
 	margin-top: 0px;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 }
 
-#row1 h2 {
+#row1 h1 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 50px;
@@ -66,28 +89,26 @@ header .orbit-bullets-container {
 	font-size: 30px;
 }
 
+#row1 cite {
+	right: 0px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;	
+	padding-right: 230px;
+	text-align: right;
+	
+}
+
 #row2 {
-	padding-top: 15px;
 	margin-top: 0px;
 	background-color: #909084;
 	border-top: solid #333333 15px;
 
 }
 
-#row2 h2 {
-	font-family: "Quintessential", Georgia;
-	margin-left: 50px;
-	font-size: 50px;
-}
 
-#row2 p {
-	text-align: left;
-	margin-left: 200px;
-	padding-right: 50px;
-	padding-bottom: 20px;
-	font-family: "Amiri",Times;
-	font-size: 19px;
-}
 
 #row3 {
 	padding-top: 30px;
@@ -123,7 +144,6 @@ button, .button {
 
 #row8 {
 	padding-top: 0px;
-	margin-top: 50px;
 	margin-bottom: 0px;
 	background-color: #CCCCB2;
 	
@@ -131,45 +151,12 @@ button, .button {
 
 
 
-#row8 #pic {
-	text-align: center;
-	padding-top: 150px;
-	padding-left: 50px;
-	
 
-}
-	
-
-
-
-#row8 h2 {
-	padding-top: 30px;
-	margin-top: 0px;
-	color: black;
-	font-size: 50px;
-	padding-bottom: 25px;
-	font-family: "Quintessential", Georgia;
-	margin-left: 0px;
-	margin-right: 65px;
-}
 
 #row8 #panel {
-	padding-left: 100px;
-	margin-left: 50px;
-	margin-right: 50px;
-	padding-right: 50px;
-}
 
-#row8 p {
-	text-align: left;
-	margin-left: 20px;
-	margin-right: 0px;
-	padding-bottom: 30px;
-	font-family: "Amiri", Times;
-	font-size: 18px;
-	color: black;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	padding-left: 50px;
+	
 }
 
 
@@ -180,7 +167,6 @@ button, .button {
     padding-top: 20px;
   	text-align: center;
   	font-family: Garamond;
-  	font-size: 40px;
   	color: #fff;
   	background-color: #333333;
     

@@ -51,58 +51,40 @@
 
 }
 
-
-#row7 h2 {
-	padding-left: 0px;
-	font-family: "Quintessential", Georgia;
-	font-size: 43px;
-	padding-top: 15px;
-	padding-bottom: 5px;
-
+.row.full-width {
+padding-bottom: 0px;
+margin-bottom: 0px;
+padding-left:20px;
+padding-right:20px;
 }
 
-#row7 p {
-	padding-top: 0px;
-	font-family: "Amiri",Times;
-	padding-left: 10px;
-	font-size: 18px;
+.row.full-width h2 {
+padding-top: 30px;
+padding-bottom: 10px;
+font-size: 45px;
+font-family: "Quintessential";
 }
 
-#row7 #pic {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 50px;
-
-
+.row.full-width p {
+font-family: "Amiri";
+font-size: 19px;
+padding-bottom: 10px;
+text-align: left;
 }
 
+figcaption {
+font-family: "Amiri";
+font-size: 15px;
+}
 
 
 #row11 {
 	background-color: #909084;
 	border-top: solid #333333 15px;
-	padding-bottom: 30px;
-	padding-top: 30px;
-}
-
-
-#row11 h2 {
-	padding-top: 0px;
-	text-align: center;
-	font-family: "Quintessential", Palatino;
-	padding-bottom: 10px;
-	font-size: 43px;
-}
-
-#row11 p {
-	font-family: "Amiri",Georgia;
-	padding-left: 55px;
-	padding-right: 55px;
-	text-align: left;
-	font-size: 20px;
-
 
 }
+
+
 
 button, .button {
 	background-color: #333333;
@@ -123,7 +105,6 @@ button, .button {
     padding-top: 20px;
   	text-align: center;
   	font-family: Garamond;
-  	font-size: 40px;
   	color: #fff;
   	background-color: #292C2F;
     
