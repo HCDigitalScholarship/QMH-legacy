@@ -31,6 +31,7 @@ urlpatterns = [
 	url(r'^occu/$', 'FriendsAsylum.views.occu', name = "Occupational Therapy"),
 	url(r'^theology/$', 'FriendsAsylum.views.theology', name = "Theology and Religion"),
 	url(r'^york/$', 'FriendsAsylum.views.york', name = "The York Retreat"),
+        url(r'^bibliography/$', 'FriendsAsylum.views.bibliography', name = "Bibliography and Credits"),
 	url(r'^glossary/$', 'FriendsAsylum.views.glossary', name = 'GlossaryEntry'),
 	url(r'^arch/$', 'FriendsAsylum.views.arch', name = 'Architecture Page'),
 	url(r'^polls/$', 'FriendsAsylum.views.index', name = 'Index'),

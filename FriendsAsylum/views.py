@@ -58,6 +58,9 @@ def theology(request):
 def york(request):
 	return render(request, 'FriendsYORK.html')
 
+def bibliography(request):
+	return render(request, 'bib.html')
+
 def pieq(request):
 	return render(request, 'quakerpiechart.html')
 

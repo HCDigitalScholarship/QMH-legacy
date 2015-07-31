@@ -34,13 +34,12 @@
  
 
 #row8 {
-    padding-top:40px;
-    
     margin-top: 0px;  
     margin-bottom: 0px;
     background-color: #CCCCB2;
     
 }
+
 
 #row8 p {
 	font-size: 20px;
@@ -66,7 +65,10 @@
 	text-align: left;	
 }
 
-
+figcaption {
+	font-family: "Amiri";
+	font-size: 15px;
+}
 
 /*Text Blurb Center*/
 #row3 {
@@ -98,7 +100,7 @@
 }
 
 #row9 #figure1 {
-	padding-top: 100px;
+	padding-top: 150px;
 
 }
 

@@ -1,0 +1,130 @@
+/* custom css for bib.html*/
+  #rowheader {
+	background-color: #707070;
+	padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#rowheader h1 {
+	color: #f1f1f1;
+	font-family: "Cinzel Decorative";
+	font-size: 40px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+   
+
+}
+
+
+
+ul.tabs {
+	padding-top: 100px;
+    text-align: center;
+    background-color: #707070;
+
+
+}
+
+ul.tabs li {
+
+    float: none !important;
+    display: inline-block;
+}
+
+
+ul.tabs li a {
+	margin-left: 10px;
+	border-radius: 4px 4px 0 0;
+
+	
+
+
+}
+
+.tabs dd > a, .tabs .tab-title > a {
+	background-color: #333333;
+	color: white;
+	font-family: "Cinzel";
+	font-size: 20px;
+}
+
+#list li {
+	font-family: "Amiri";
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-size: 19px;
+
+
+}
+
+#panel4 h2 {
+	font-family: "Quintessential";
+	font-size: 35px;
+
+}
+
+#panel4 li, p {
+	font-family: "Amiri";
+	font-size: 19px;
+}
+#row5 {
+	padding: 0px;
+	margin: 0px;
+	background-color: #707070;
+}
+.accordion {
+	margin: 10px;
+	margin-bottom: 50px;
+	
+}
+
+.accordion .accordion-navigation > a, .accordion dd > a {
+	background-color: #333333;
+	color: white;
+	font-family: "Cinzel";
+	font-size: 20px;
+	text-align: center;
+
+
+}
+
+.accordion .accordion-navigation {
+
+	padding-bottom: 5px;
+}
+
+
+.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+	color: #333333;
+	
+}
+
+  .full-width {
+  	max-width: 1400px;
+
+
+  }
+
+  .footer {
+  	margin-top: 0px;
+    padding-top: 30px;
+  	text-align: center;
+  	font-family: Garamond;
+  	color: #fff;
+  	background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

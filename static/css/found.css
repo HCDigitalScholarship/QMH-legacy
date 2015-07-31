@@ -7,19 +7,23 @@
 
  .overlay-container .overlay1 {
     position: absolute; 
-    bottom: 0px;         
-    left: 0px;            
-    right: 0px; 
-    top: 330px;
+        
+    vertical-align: middle;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto; 
+    margin-right: auto;
     text-align: center;
     color: white; /* pretty color of blue#7082A6 */
     font-family: "Cinzel Decorative";
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
  
   banner img {
+   position: relative;
     max-width: 100em;
     margin: auto;
     display: block;
@@ -48,20 +52,27 @@
 }
 
 
-  #row1 h1 {
-	padding-top: 20px;
-	font-family: "Quintessential";
-	font-size: 50px;
-  }
+.row.full-width {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	padding-left:20px;
+	padding-right:20px;
+}
 
-  #row1 p {
-	font-size: 19px;
-	font-family: "Amiri", Times;
+.row.full-width h2 {
+	padding-top: 30px;
 	padding-bottom: 10px;
-  }
-   #row1 {
-	padding-bottom: 20px;
-  }
+	font-size: 45px;
+	font-family: "Quintessential";
+}
+
+.row.full-width p {
+	font-family: "Amiri";
+	font-size: 19px;
+	padding-bottom: 10px;
+	text-align: left;	
+}
+
 
 /* Text Blurb Center*/
 #row10 {
@@ -69,9 +80,9 @@
     margin-top: 0px;
     margin-bottom: 0px;
     background-color: #909084;
-    
+    padding-bottom: 30px;
 }
-
+/*
 #row10 div.panel {
     margin-right: 60px;
     margin-left: 60px;
@@ -110,7 +121,7 @@
     font-size: 50px;
     font-family: "Quintessential", Georgia;
     padding-bottom: 20px;
-}
+}*/
 
 #row10 #rowfeat .button {
     margin-top: 100px;
@@ -130,25 +141,14 @@ button, .button {
 	background-color: #707070;
 }
 
-#row11 #first {
+#row11 button, .button{
+      padding-top: 100px
 
 }
 
-#row11 #second h2 {
-	font-family: "Quintessential", Georgia;
-	font-size: 43px	
-	
-
+aside#first {
+	padding-top: 150px;
 }
-
-#row11 #second p {
-	font-family: "Amiri", Times;
-	font-size: 18px;
-
-}
-
-
-
 
 .full-width {
     max-width: 1400px;
@@ -162,7 +162,7 @@ button, .button {
     font-family: Garamond;
     color: #fff;
     background-color: #292C2F;
-    
+     
 
   }
 
