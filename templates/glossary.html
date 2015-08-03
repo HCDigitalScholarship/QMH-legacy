@@ -105,7 +105,7 @@
               <li class="has-dropdown"><a href="/moral">Moral Treatment</a>
                <ul class="dropdown">
                 <li><a href="/moral">Introduction</a></li>
-                <li><a href="/religion">Religious Life at the Asyum</a></li>
+                <li><a href="/religion">Religious Life at the Asylum</a></li>
                 <li><a href="/occu">Occupational Therapy</a></li>
               
                </ul>
@@ -117,7 +117,7 @@
                </ul>
             </li>
               <li class = "active"><a href="#">Glossary</a></li>
-              <li><a href="#">Bibliography &amp; Credits</a></li>
+              <li><a href="/bibliography">Bibliography &amp; Credits</a></li>
             </ul>
           </section>
         </nav>
@@ -135,11 +135,11 @@
  		<div class = "row">
 			<div class = "large-12 columns">
 				<ul class = "tabs" data-tab>
-					<li class = "tab-title active"><a href = "#panel1"> Dropdown </a></li>
-					<li class = "tab-title"><a href = "#panel2"> Table </a> </li>
+					<li class = "tab-title"><a href = "#panel2"> Dropdown </a></li>
+					<li class = "tab-title active"><a href = "#panel1"> Table </a> </li>
 				</ul>
 				<div class = "tabs-content">
-					<div class = "content active" id = "panel1">
+					<div class = "content" id = "panel2">
 		
 		{% if glossaries %} <!--refers to name of variable in views containing all glossary entries-->
 			<ul class = "accordion" data-accordion>
@@ -158,7 +158,7 @@
 			<strong> There are no glossaries present right now. </strong>
 		{% endif %}
 				</div>
-				<div class = "content" id = "panel2">
+				<div class = "content active" id = "panel1">
 				<table>
 					<thead>
 						<tr>

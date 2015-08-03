@@ -4,19 +4,6 @@
     margin-bottom: 0px;
     margin-top: 0px;
   }
-
- .overlay-container .overlay1 {
-    position: absolute; 
-    bottom: 0px;         
-    left: 30px;            
-    right: 0px; 
-    top: 36px;
-    color: white; /* pretty color of blue#7082A6 */
-    font-family: "Shadows Into Light";
-    font-size: 100px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
  
   banner img {
     max-width: 100em;
@@ -27,6 +14,33 @@
     margin-top: 0px;
   }
 
+.row.full-width {
+padding-bottom: 0px;
+margin-bottom: 0px;
+padding-left:20px;
+padding-right:20px;
+}
+
+.row.full-width h2 {
+padding-top: 30px;
+padding-bottom: 10px;
+font-size: 45px;
+font-family: "Quintessential";
+}
+
+.row.full-width p {
+font-family: "Amiri";
+font-size: 19px;
+padding-bottom: 10px;
+text-align: left;
+}
+
+figcaption {
+font-family: "Amiri";
+font-size: 15px;
+}
+
+
   /* Text Blurb Center*/
 #row3 {
   padding-top: 0px;
@@ -36,35 +50,13 @@
   
 }
 
-#row3 h2 {
-  padding-top: 30px;
-  padding-bottom: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-size: 45px;
-  text-align: left;
-  font-family: "Quintessential", Georgia;
-  margin-left: 0px;
-  padding-left: 50px;
-}
-
-#row3 p {
-  text-align: left;
-  margin-left: 80px;
-  margin-right: 80px;
-  padding-bottom: 30px;
-  font-family: "Amiri", Times;
-  font-size: 19px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 
 #row3 #panel {
-  padding-bottom: 20px;
+  padding-bottom: 65px;
   margin-bottom: 0px;
   margin-left: 60px;
   margin-right: 60px;
-
+  position: relative;
 }
 
 #row3 #panel h1 {
@@ -82,14 +74,18 @@
 #row3 #panel cite {
   font-size: 20px;
   text-align: right;
-  padding-left: 660px;
+  position: absolute;
+  margin-left: auto;
+   margin-right: auto;
+	right: 0;
+	left: 0;
+	right: 0;
 
 }
 
 
-/* Text Blurb Center*/
 #row5 {
-  padding-top: 30px;
+ 
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 20px;
@@ -98,27 +94,10 @@
 }
 
 #row5 h2 {
-  padding-bottom: 10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: center;
-  font-family: "Quintessential", Georgia;
-  margin-left: 0px;
- font-size: 45px;
+	text-align: center;
 }
 
-#row5 p {
-  text-align: left;
-  margin-left: 80px;
-  margin-right: 80px;
-  padding-bottom: 30px;
-  font-family: "Amiri", Times;
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 
-/* Text Blurb Right*/
 #row4 {
   padding-top: 0px;
   margin-top: 0px;
@@ -127,33 +106,9 @@
   
 }
 
-
 #row4 h2 {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  margin-top: 0px;
-  color: #333333;
-  margin-bottom: 0px;
   text-align: right;
-  font-family: "Quintessential", Georgia;
-  margin-left: 0px;
-  margin-right: 50px;
-font-size: 45px;
-}
-
-#row4 p {
-  text-align: left;
-  margin-left: 80px;
-  margin-right: 50px;
-  padding-bottom: 30px;
-  font-family: "Amiri", Times;
-  font-size: 19px;
-  color: black;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-
+  }
 
 
 
@@ -168,7 +123,6 @@ font-size: 45px;
     padding-top: 20px;
   	text-align: center;
   	font-family: Garamond;
-  	font-size: 40px;
   	color: #fff;
   	background-color: #292C2F;
     

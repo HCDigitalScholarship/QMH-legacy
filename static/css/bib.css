@@ -72,6 +72,12 @@ ul.tabs li a {
 	font-family: "Amiri";
 	font-size: 19px;
 }
+
+#panel4 p.abby {
+	margin-bottom: 5px;
+	padding-bottom: 15px;
+	border-bottom: 2px #333333 solid;
+}
 #row5 {
 	padding: 0px;
 	margin: 0px;
