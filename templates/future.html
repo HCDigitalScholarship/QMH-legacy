@@ -1,0 +1,223 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    {% include 'top-links.html' %}
+
+    <link rel = "stylesheet" href = "{% static "css/future.css" %}"> <!--this is your css file you will make changes to -->
+    
+    <title>Future Directions</title>
+   </head> <!-- you always need all these links-->
+   <body>
+
+     <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="/">Quakers&amp;Mental Health</a></li>
+                <li><a href="/essay">About</a>
+                  <ul>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contribute to Research</a></li>
+                    <li><a href="/essay">Related Projects</a></li>
+                    <li><a href="/features">Features</a></li>
+                    <li><a href="#">Future Directions</a></li>
+                  </ul>
+                </li>
+                <li><a href="/theology">Background &amp; Context</a>
+                  <ul>
+                    <li><a href="/theology">Theology &amp; Mental Health</a></li>
+                    <li><a href="/york">York Retreat</a></li>
+                    
+                  </ul>
+                </li>
+                 <li><a href="/found">Early History</a></li>
+                 <ul>
+                    <li><a href="/found">Foundation</a></li>
+                    <li><a href="/arch">Architecture</a></li>
+                    <li><a href="/structure">Structure&amp; Governance  </a></li>
+                    <li><a href="/profiles">Patient Profiles</a></li>
+                  </ul>
+                </li>
+                <li><a href="/moral">Moral Treatment</a></li>
+                  <ul>
+                    <li><a href="/moral">Introduction</a></li>
+                    <li><a href="/religion">Religious Life at the Asylum</a></li>
+                    <li><a href="/occu">Occupational Therapy</a></li>
+                    
+                  </ul>
+                <li><a href="/medical">Medical Treatment</a>
+                  <ul>
+                    <li><a href="/medical">Introduction</a></li>
+                   
+                  </ul>
+                </li>
+                <li><a href="/glossary">Glossary</a></li>
+                <li><a href="/bibliography">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-large-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "/">Quakers &amp; Mental Health</a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="active has-dropdown"><a href="#">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "#">Learn More</a></li>
+                  <li><a href= "#"> Contribute to Research</a></li>
+                  <li><a href="/essay">Related Projects</a></li>
+                  <li><a href="/features">Features</a></li>
+                  <li class = "active"><a href="#">Future Directions</a></li>
+                </ul>
+              </li>
+               <li class="has-dropdown"><a href="/theology"> Background &amp; Context</a>
+               <ul class="dropdown">
+                <li><a href="/theology">Theology &amp; Mental Health</a></li>
+                <li><a href="/york">The York Retreat</a></li>
+               </ul>
+              </li>
+              <li class="has-dropdown"><a href="/found"> Early History</a>
+               <ul class="dropdown">
+                  <li><a href="/found">Foundation</a></li>
+                  <li><a href="/arch">Architecture</a></li>
+                  <li><a href="/structure"> Structure&amp; Governance </a></li>
+                  <li><a href="/profiles">Patient Profiles</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown"><a href="/moral">Moral Treatment</a>
+               <ul class="dropdown">
+                <li><a href="/moral">Introduction</a></li>
+                <li><a href="/religion">Religious Life at the Asylum</a></li>
+                <li><a href="/occu">Occupational Therapy</a></li>
+          
+               </ul>
+             </li>
+             <li class="has-dropdown"><a href="/medical">Medical Treament</a>
+               <ul class="dropdown">
+                <li><a href="/medical">Introduction</a></li>
+                
+               </ul>
+            </li>
+              <li><a href="/glossary">Glossary</a></li>
+              <li><a href="/bibliography">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>
+
+ <div id = "rowheader">
+      <h1> <strong>Future Directions </strong> </h1>
+    </div>
+
+<div class = "row">
+  <div class = "small-4 columns">
+ <ul class="accordion" data-accordion role="tablist">
+  <li class="accordion-navigation">
+    <a href="#panel1a" role="tab" id="panel1a-heading" aria-controls="panel1a">Gender</a>
+    <div id="panel1a" class="content" role="tabpanel" aria-labelledby="panel1a-heading">
+      Panel 1. Lorem ipsum dolor
+    </div>
+  </li>
+  <li class="accordion-navigation">
+    <a href="#panel2a"  role="tab" id="panel2a-heading" aria-controls="panel2a">Other Quaker History</a>
+    <div id="panel2a" class="content row" role="tabpanel" aria-labelledby="panel2a-heading">
+      <div class = "large-12 columns">
+      Panel 2. Lorem ipsum dolor hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    </div>
+    </div>
+  </li>
+  <li class="accordion-navigation">
+    <a href="#panel3a" role="tab" id="panel3a-heading" aria-controls="panel3a">Architecture</a>
+    <div id="panel3a" class="content" role="tabpanel" aria-labelledby="panel3a-heading">
+      Panel 3. Lorem ipsum dolor
+    </div>
+  </li>
+</ul>
+</div>
+<div class = "small-4 columns">
+ <ul class="accordion" data-accordion role="tablist">
+  <li class="accordion-navigation">
+    <a href="#panel1b" role="tab" id="panel1b-heading" aria-controls="panel1b">The Asylum throughout History</a>
+    <div id="panel1b" class="content" role="tabpanel" aria-labelledby="panel1b-heading">
+      Panel 1. Lorem ipsum dolor
+    </div>
+  </li>
+  <li class="accordion-navigation">
+    <a href="#panel2b"  role="tab" id="panel2b-heading" aria-controls="panel2b">Social Class</a>
+    <div id="panel2b" class="content" role="tabpanel" aria-labelledby="panel2b-heading">
+      Panel 2. Lorem ipsum dolor
+    </div>
+  </li>
+  <li class="accordion-navigation">
+    <a href="#panel3b" role="tab" id="panel3b-heading" aria-controls="panel3b">Economics and Finances</a>
+    <div id="panel3b" class="content" role="tabpanel" aria-labelledby="panel3b-heading">
+      Panel 3. Lorem ipsum dolor
+    </div>
+  </li>
+</ul>
+</div>
+<div class = "small-4 columns">
+ <ul class="accordion" data-accordion role="tablist">
+  <li class="accordion-navigation">
+    <a href="#panel1d" role="tab" id="panel1d-heading" aria-controls="panel1d">Treatment and Medical Care</a>
+    <div id="panel1d" class="content" role="tabpanel" aria-labelledby="panel1d-heading">
+      Panel 1. Lorem ipsum dolor
+    </div>
+  </li>
+  <li class="accordion-navigation">
+    <a href="#panel2d"  role="tab" id="panel2d-heading" aria-controls="panel2d">The Underground Railroad and the Asylum</a>
+    <div id="panel2d" class="content" role="tabpanel" aria-labelledby="panel2d-heading">
+      Panel 2. Lorem ipsum dolor
+    </div>
+  </li>
+  <li class="accordion-navigation">
+    <a href="#panel3d" role="tab" id="panel3d-heading" aria-controls="panel3d">Interesting Patients</a>
+    <div id="panel3d" class="content" role="tabpanel" aria-labelledby="panel3d-heading">
+      Morgan Hinchman
+      Ruth
+      Benjamin White
+    </div>
+  </li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+    {% include 'footer-simple.html' %}
+
+              <a href = "#"> About </a> | <a href = "#"> Learn More </a> |<a href = "#">  Contribute to Research</a>| <a href = "#"> Related Projects </a> | <a href = "#"> Features </a> 
+        </div>
+        
+        
+
+      </div>
+    </footer>
+      
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+    {% include 'bottom-links.html' %}
+  </body>
+</html>
+

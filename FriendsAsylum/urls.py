@@ -20,6 +20,9 @@ from . import views
 
 
 urlpatterns = [
+	url(r'^essay/$', 'FriendsAsylum.views.essay', name = "Framing Essay"),
+	url(r'^features/$', 'FriendsAsylum.views.features', name = "Website Features"),
+	url(r'^future/$', 'FriendsAsylum.views.future', name = "Future Directions"),
 	url(r'^found/$', 'FriendsAsylum.views.found', name = 'Foundation Page'),
 	url(r'^profiles/$', 'FriendsAsylum.views.profiles', name = 'Patient Profiles'),
 	url(r'^pieq2/$', 'FriendsAsylum.views.pieq2', name = "Pie chart wo philly"),

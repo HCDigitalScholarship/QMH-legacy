@@ -1,0 +1,44 @@
+/* custom css for pdf.html */
+
+body {
+
+	background-color: #f0f0f0;
+}
+
+#pdf {
+    margin: 1em auto;
+    border: 10px solid #707070;
+    width: 600px;
+    height: 700px;
+}
+
+#ref {
+
+	font-family: "Quintessential";
+}
+
+.full-width {
+  	max-width: 1400px;
+
+
+  }
+
+  .footer {
+  	margin-top: 20px;
+    padding-top: 30px;
+  	text-align: center;
+  	font-family: Garamond;
+  	
+  	color: #fff;
+  	background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

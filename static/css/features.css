@@ -1,0 +1,99 @@
+/* custom css for features.html */
+
+#rowheader {
+	background-color: #909084;
+	padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#rowheader h1 {
+	color: #f1f1f1;
+	font-family: "Cinzel";
+	font-size: 80px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+   
+
+}
+
+/* the following is adapted from foundation examples of image overlays: http://zurb.com/building-blocks/image-hover-effects*/
+/* css for overlay.css */
+
+body {
+	background-color: #f0f0f0;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 4px; 
+	margin: 17px;}
+
+.image-overlay-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; 
+  
+}
+
+
+.overlay-fade-in img {
+  transition: all 0.2s linear; }
+.overlay-fade-in .image-overlay-content {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out; }
+.overlay-fade-in h2 {
+  color: #f2f2f2;
+  font-size: 1.8rem;
+  font-family: "Cinzel";
+  margin-top: 60%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.7); }
+
+.overlay-fade-in:hover img {
+  transform: scale(1.7); }
+.overlay-fade-in:hover .image-overlay-content {
+  opacity: 1; }
+.overlay-fade-in:hover h2, .overlay-fade-in p, .overlay-fade-in .button {
+  opacity: 1; }
+/*end of using foundation.com example*/
+
+.full-width {
+  	max-width: 1400px;
+
+
+  }
+
+  .footer {
+  	margin-top: 20px;
+    padding-top: 30px;
+  	text-align: center;
+  	font-family: Garamond;
+  	
+  	color: #fff;
+  	background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

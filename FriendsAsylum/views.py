@@ -31,6 +31,15 @@ def profiles(request):
 	return render(request, 'patient.html', {'patients': patient_list})
 
 
+def essay(request):
+	return render(request, 'pdf.html')
+
+def features(request):
+	return render(request, 'features.html')
+
+def future(request):
+	return render(request, 'future.html')
+
 def arch(request):
 	return render(request, 'FriendsARCH2.html')
 

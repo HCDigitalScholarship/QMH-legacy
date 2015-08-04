@@ -1,0 +1,158 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+   {% include 'top-links.html' %}
+	<title> Framing Essay </title>
+	<link rel = "stylesheet" href = "{% static "css/pdf.css" %}"> <!--this is your css file you will make changes to -->
+	<script type="text/javascript" src="{% static "js/pdfobject.js" %}"></script>
+</head>
+
+<body>
+
+
+	<div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="/">Quakers&amp;Mental Health</a></li>
+                <li><a href="/essay">About</a>
+                  <ul>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Contribute to Research</a></li>
+                    <li><a href="#">Related Projects</a></li>
+                    <li><a href="/features">Features</a></li>
+                    <li><a href="/future">Future Directions</a></li>
+                  </ul>
+                </li>
+                <li><a href="/theology">Background &amp; Context</a>
+                  <ul>
+                    <li><a href="/theology">Theology &amp; Mental Health</a></li>
+                    <li><a href="/york">York Retreat</a></li>
+                    
+                  </ul>
+                </li>
+                 <li><a href="/found">Early History</a></li>
+                 <ul>
+                    <li><a href="/found">Foundation</a></li>
+                    <li><a href="/arch">Architecture</a></li>
+                    <li><a href="/structure">Structure&amp; Governance  </a></li>
+                    <li><a href="/profiles">Patient Profiles</a></li>
+                  </ul>
+                </li>
+                <li><a href="/moral">Moral Treatment</a></li>
+                  <ul>
+                    <li><a href="/moral">Introduction</a></li>
+                    <li><a href="/religion">Religious Life at the Asylum</a></li>
+                    <li><a href="/occu">Occupational Therapy</a></li>
+                    
+                  </ul>
+                <li><a href="/medical">Medical Treatment</a>
+                  <ul>
+                    <li><a href="/medical">Introduction</a></li>
+                   
+                  </ul>
+                </li>
+                <li><a href="/glossary">Glossary</a></li>
+                <li><a href="/bibliography">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-large-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "/">Quakers &amp; Mental Health</a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="active has-dropdown"><a href="#">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "#">Learn More</a></li>
+                  <li><a href= "#"> Contribute to Research</a></li>
+                  <li class = "active"><a href="#">Related Projects</a></li>
+                  <li><a href="/features">Features</a></li>
+                  <li><a href="/future">Future Directions</a></li>
+                </ul>
+              </li>
+               <li class="has-dropdown"><a href="/theology"> Background &amp; Context</a>
+               <ul class="dropdown">
+                <li><a href="/theology">Theology &amp; Mental Health</a></li>
+                <li><a href="/york">The York Retreat</a></li>
+               </ul>
+              </li>
+              <li class="has-dropdown"><a href="/found"> Early History</a>
+               <ul class="dropdown">
+                  <li><a href="/found">Foundation</a></li>
+                  <li><a href="/arch">Architecture</a></li>
+                  <li><a href="/structure"> Structure&amp; Governance </a></li>
+                  <li><a href="/profiles">Patient Profiles</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown"><a href="/moral">Moral Treatment</a>
+               <ul class="dropdown">
+                <li><a href="/moral">Introduction</a></li>
+                <li><a href="/religion">Religious Life at the Asylum</a></li>
+                <li><a href="/occu">Occupational Therapy</a></li>
+          
+               </ul>
+             </li>
+             <li class="has-dropdown"><a href="/medical">Medical Treament</a>
+               <ul class="dropdown">
+                <li><a href="/medical">Introduction</a></li>
+                
+               </ul>
+            </li>
+              <li><a href="/glossary">Glossary</a></li>
+              <li><a href="/bibliography">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>
+
+    <!-- end of navigation bar-->
+<!-- insert in the document body -->
+<div class = "text-center" id = "pdf">
+<object data="{% static "pdfs/FriendsAsylumPaper.pdf" %}" 
+        type='application/pdf' 
+        width='100%' 
+        height='100%'>
+
+<p>It appears your Web browser is not configured to display PDF files. 
+No worries, just <a href = "{% static "pdfs/FriendsAsylumPaper.pdf" %}">click here to download the PDF file.</a></p>
+
+</object>
+</div>
+
+<p id = "ref" class = "text-center"> Or if you would prefer, simply download the Friends Asylum Framing Essay by Abigail Corcoran at the link <a href = "{% static "pdfs/FriendsAsylumPaper.pdf" %}" > here </a> </p>
+
+
+ {% include 'footer-simple.html' %}
+
+           <a href = "#"> About </a> | <a href = "#"> Contribute to Research </a> |<a href = "#"> Features </a>| <a href = "#"> Future Directions </a> 
+        </div>
+        
+        
+
+      </div>
+    </footer>
+
+
+
+
+
+	</div> <!--end of navbar -->
+</div>
+{% include 'bottom-links.html' %}
+</body>
+</html>

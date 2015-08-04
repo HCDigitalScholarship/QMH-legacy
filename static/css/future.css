@@ -1,0 +1,76 @@
+/* cutom css for future.html */
+
+/* custom css for features.html */
+
+#rowheader {
+	/*background-color: #909084;*/
+	padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#rowheader h1 {
+	color: #333333;
+	font-family: "Cinzel";
+	font-size: 80px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+   
+
+}
+
+li.accordion-navigation {
+
+  padding-top: 15px;
+
+}
+
+.accordion .accordion-navigation > a, .accordion dd > a { 
+  border-radius: 130px;
+  width: 230px;
+  height: 230px;
+  background: #EFEFEF none repeat scroll 0% 0%;
+  color: #333333;
+  display: block;
+  font-family: "Quintessential", sans-serif;
+  font-size: 1.2rem;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+
+
+.full-width {
+  	max-width: 1400px;
+
+
+  }
+
+  .footer {
+  	margin-top: 20px;
+    padding-top: 30px;
+  	text-align: center;
+  	font-family: Garamond;
+  	
+  	color: #fff;
+  	background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }
