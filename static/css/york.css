@@ -21,6 +21,24 @@
     margin-bottom: 0px;
     margin-top: 0px;
 }
+
+
+.overlay-container .overlay2 {
+    position: absolute;
+    top: 0;
+    opacity: 0.7;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: "Amiri";
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
  
   banner img {
     max-width: 100em;
@@ -32,6 +50,16 @@
     vertical-align: text-bottom;
   }
  
+  h3#mTitle {
+	font-family: "EB Garamond";
+}
+
+ #mModal p {
+
+	font-family: "Amiri";
+}
+
+
 
 #row8 {
     margin-top: 0px;  
@@ -79,6 +107,10 @@ figcaption {
 #row3 h2 {
     text-align: center;
     
+}
+
+#row3 p {
+	padding-bottom: 40px;
 }
 
 

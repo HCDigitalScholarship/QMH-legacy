@@ -154,9 +154,9 @@
 
 <!--AC would like some color to be added here-->
   <!-- mixed smaller width two text and image blurb-->
-
+ <div id = "row7">
       <div class = "row full-width">
-	<div id = "row7">
+
 	<h2>Asylum Committees </h2>
         <div class = "large-7 medium-12 small-12 columns">
           
@@ -174,24 +174,25 @@
 </div>
 
 
-<!-- modal pop-out and text-blurb-->
-<div id = "row11">
-<div class = "row full-width">
 
-     <h2 class = "text-center">Life at the Asylum </h2>
+<div id ="row3">
+<div class = "row">
+      <div class = "large-12 columns text-center">
+        <h3> Contribution Pie Chart by Meeting </h3>
+          <div class = "row">
+            <div class = "large-6 columns text-center">
+              <a class = "th radius" href ="/pieq"><img height = "300px" width = "300px" src = "{% static "Images/Pie Chart3.jpg" %}"></a>
+            </div>
+            <div class = "large-6 columns text-center" id = "button">
+              <a href = "/pieq" class = "button round large"> Pie Chart with Philadelphia Meeting </a>
+                <a href = "/pieq2" class = "button round large"> Pie Chart without Philadelphia </a>
+            </div>
 
-<p> The superintendent of the Asylum, and his wife, the matron, answered to the Visiting Managers, and they were responsible for the day-to-day welfare of the patients, as well as running the farm and the household. The superintendent and matron also oversaw the caretakers, or keepers, who supervised, cleaned, and entertained the patients. The Resident Physician directed the patients’ medical care and diet (which was a part of their treatment). Since the physician lived with the family, the overlapping responsibilities of the physician and the superintendent often caused friction between him and the superintendent. Other asylums solved this problem by appointing a doctor as the superintendent, but the Asylum did not think that medical experience was necessary to be a good superintendent. </p>
-<div class = "text-center">
-<a href = "#" data-reveal-id = "firstModal" class = "radius large button">Learn More&hellip;</a>
-          <div id = "firstModal" class = "reveal-modal medium" data-reveal aria-labelledby="firstModalTitle" aria-hidden = "true" role = "dialog">
-            <h3 id = "firstModalTitle"> Bonsall versus the Doctor </h3>
-            <p> In one instance, the patients complained to the Bonsalls about their diets, which were controlled by the doctor, not by the Bonsalls. Although Bonsall thought that their agitation about food was increasing their insanity, he could not overrule the doctor in order to change the menu. This frustrated him (First Month, 11, 1821).
-            In another instance, Bonsall determined that a patient needed to be given a blister, but the doctor was out. Annoyed, Bonsall made the blister himself, despite his lack of medical authority (Third Month, 17, 1820). </p>
-            <a class = "close-reveal-modal" aria-label = "Close">&#215;</a>
           </div>
-        </div>
-       </div>
+
+
       </div>
+    </div>
 </div>
 
 
@@ -200,6 +201,36 @@
 
 
 
+
+
+<!-- modal pop-out and text-blurb-->
+<div id = "row11">
+<div class = "row full-width">
+ <h2 class ="text-center"> Life at the Asylum </h2>
+</div>
+ <div class = "row full-width">
+        <article class = "medium-12 small-12 large-6 large-push-6 columns">
+
+          <p> The superintendent of the Asylum, and his wife, the matron, answered to the Visiting Managers, and they were responsible for the day-to-day welfare of the patients, as well as running the farm and the household. The superintendent and matron also oversaw the caretakers, or keepers, who supervised, cleaned, and entertained the patients. The Resident Physician directed the patients’ medical care and diet (which was a part of their treatment). Since the physician lived with the family, the overlapping responsibilities of the physician and the superintendent often caused friction between him and the superintendent. Other asylums solved this problem by appointing a doctor as the superintendent, but the Asylum did not think that medical experience was necessary to be a good superintendent. </p>
+       
+ </article>
+    <aside class = "small-12 medium-12 large-6 large-pull-6 columns text-center">
+        <div class = "panel">
+           <h3 id = "secondModalTitle">Bonsall versus Doctor</h3>
+            <p> In one instance, the patients complained to the Bonsalls about their diets, which were controlled by the doctor, not by the Bonsalls. Although Bonsall thought that their agitation about food was increasing their insanity, he could not overrule the doctor in order to change the menu. This frustrated him <a href = "#" data-reveal-id ="mModal">(First Month, 11, 1821)</a>. In another instance, Bonsall determined that a patient needed to be given a blister, but the doctor was out. Annoyed, Bonsall made the blister himself, despite his lack of medical authority <a href = "#" data-reveal-id = "mModal">(Third Month, 17, 1820)</a>.</p>
+
+</div>          
+ <div id = "mModal" class = "reveal-modal small" data-reveal aria-labelledby = "mTitle" aria-hidden = "true" role= "dialog"><p id = "mTitle">Bonsall, Isaac. Superintendent’s Day Book, Friends Hospital Records, Quaker and Special Collections, Haverford College, Haverford, Pennsylvania. 
+
+</p>
+        <a class = 'close-reveal-modal' aria-label= "Close">&#215;</a>
+
+	</div>
+        </aside>
+
+      </div>
+	</div>
+	</div>
 
 
 

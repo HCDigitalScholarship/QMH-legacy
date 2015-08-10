@@ -22,6 +22,26 @@
     margin-top: 0px;
     padding-bottom: 0px;
 }
+
+.overlay-container .overlay2 {
+    position: absolute;
+    bottom: 0;
+    opacity: 0.7;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: "Amiri";
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+
+
  
   banner img {
     max-width: 100em;
@@ -50,6 +70,28 @@
   #secondModal p {
 	font-family: "Amiri";
 }
+
+
+  h3#modalTitle {
+        font-family: "EB Garamond";
+}
+
+ #myModal p {
+
+        font-family: "Amiri";
+}
+
+
+  h3#mTitle {
+        font-family: "EB Garamond";
+}
+
+ #mModal p {
+
+        font-family: "Amiri";
+}
+
+
 
 #row11 {
 	background-color: #909084;
@@ -109,51 +151,34 @@ font-family: "Amiri";
 font-size: 15px;
 }
 
-#row9 {
+#row9
+{
+
 	background-color: white;
-
 }
 
-#row9 h2 {
-	padding-right: 50px;
-	padding-top: 30px;
-	padding-bottom: 10px;
-	font-size; 43px;
-	font-family: "Quintessential";
-}
-
-
-#row9 figure {
-	float: left;
-	position: relative;
+#row9 figure.panel {
+	vertical-align: middle;
+	right: 0;
+	left: 0;
+	margin-left: 50%;
+	margin-right: auto;
+	padding-top: 0;
+ 	margin-bottom:0px;
+	width: 500px;
+	height: 400px;
 	margin-right: 0px;
 	margin-left: 0px;
-	margin-bottom: 0px;
-	padding-top: 40px;
-	padding-left: 45px;
-	padding-right: 37px;
-}
 	
 
-
-#row9 p {
-	text-align: left;
+}
 	
-	margin-right: 0px;
-	margin-left: 45px;
-	padding-right: 30px;
-	padding-bottom: 35px;
-	font-family: "Amiri";
-	font-size: 19px;
-	color: black;
-	margin-top: 0px;
-	margin-bottom: 0px;
+#row9 figure {
+	padding-bottom: 30px;
+	padding-top: 0;
+	margin-top: 0;
 }
 
-
-#row9.clearfix1 {
-	overflow: auto;
-}
 
 
 .full-width {

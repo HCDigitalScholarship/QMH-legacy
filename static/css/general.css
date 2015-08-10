@@ -32,14 +32,14 @@ header .orbit-bullets-container {
 #rowheader h1 {
 	color: #333333;
 	font-family: "Cinzel Decorative", Georgia;
-	font-size: 65px;
+	font-size: 45px;
 	padding-top: 20px;
 	margin-top: 0px;
 	padding-bottom: 20px;
 	padding-left: 0px;
     margin-bottom: 0px;
     text-align: center;
-    border-bottom: solid #333333 15px;
+
    
     
 
@@ -72,7 +72,8 @@ font-size: 15px;
 }
 
 #row1 {
-	
+	border-bottom: solid #333333 15px;
+	border-top: solid #333333 15px;	
     	padding-top: 10px;	
 	background-color: white;
 	margin-top: 0px;
@@ -104,23 +105,12 @@ font-size: 15px;
 #row2 {
 	margin-top: 0px;
 	background-color: #909084;
-	border-top: solid #333333 15px;
+	
 
 }
 
 
 
-#row3 {
-	padding-top: 30px;
-	padding-bottom: 50px;
-}
-
-#row3 h3 {
-	margin-top: 15px;
-	font-size: 50px;
-	font-family: "Quintessential", Georgia;
-	padding-bottom: 20px;
-}
 
 button, .button {
 	background-color: #333333;
@@ -131,16 +121,6 @@ button, .button {
 }
 
 
-#row3 .button {
-	margin-top: 100px;
-	border-bottom-left-radius: 40.5px;
-	border-bottom-right-radius:40.5px;
-	border-top-left-radius: 40.5px;
-	border-top-right-radius: 40.5px;
-	padding-bottom: 10px;
-	padding-top: 10px;
-
-}
 
 #row8 {
 	padding-top: 0px;
@@ -151,12 +131,15 @@ button, .button {
 
 
 
+#row8 h5 {
+	font-family: "Amiri";
+}
 
-
-#row8 #panel {
+#row8 blockquote {
 
 	padding-left: 50px;
-	
+	font-family: "Amiri";
+	font-size: 17px;
 }
 
 

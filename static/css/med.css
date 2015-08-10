@@ -57,6 +57,30 @@ font-family: "Amiri";
 font-size: 15px;
 }
 
+ h3#mTitle {
+	font-family: "EB Garamond";
+}
+ #mModal p {
+	font-family: "Amiri";
+}
+
+  h3#aTitle {
+	font-family: "EB Garamond";
+}
+ #aModal p {
+	font-family: "Amiri";
+}
+
+  h3#bTitle {
+	font-family: "EB Garamond";
+}
+ #bModal p {
+	font-family: "Amiri";
+}
+
+
+
+
   /* Text Blurb Center*/
 #row3 {
     padding-top: 0px;
