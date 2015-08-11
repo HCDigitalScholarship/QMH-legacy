@@ -20,6 +20,8 @@ from . import views
 
 
 urlpatterns = [
+	url(r'^contrib/$', 'FriendsAsylum.views.contrib', name = "Contribute to Research"),
+	url(r'^related/$', 'FriendsAsylum.views.related', name = "Related Projects"),
 	url(r'^essay/$', 'FriendsAsylum.views.essay', name = "Framing Essay"),
 	url(r'^features/$', 'FriendsAsylum.views.features', name = "Website Features"),
 	url(r'^future/$', 'FriendsAsylum.views.future', name = "Future Directions"),

@@ -1,0 +1,234 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    {% include 'top-links.html' %}
+
+    <link rel = "stylesheet" href = "{% static "css/contrib.css" %}"> <!--this is your css file you will make changes to -->
+    <title>Contribute</title>
+   </head> <!-- you always need all these links-->
+   
+
+   <body>
+    <!--the following really long segment is just the code for the menu/navigation bar!!-->
+     <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="/">Quakers&amp;Mental Health</a></li>
+                <li><a href="/theology">About</a>
+                  <ul>
+                    <li><a href="/theology">Learn More</a></li>
+                    <li><a href="#">Contribute to Research</a></li>
+                    <li><a href="/related">Related Projects</a></li>
+                    <li><a href="/features">Features</a></li>
+                    <li><a href="/future">Future Directions</a></li>
+                  </ul>
+                </li>
+                <li><a href="/theology">Backround &amp; Context</a>
+                  <ul>
+                    <li><a href="/theology">Theology &amp; Mental Health</a></li>
+                    <li><a href="/york">York Retreat</a></li>
+
+                  </ul>
+                </li>
+                 <li><a href="/found">Early History</a></li>
+                 <ul>
+                    <li><a href="/found">Foundation</a></li>
+                    <li><a href="/arch">Architecture</a></li>
+                    <li><a href="/structure"> Structure &amp; Governance</a></li>
+                    <li><a href="/profiles">Patient Profiles</a></li>
+                  </ul>
+                </li>
+                <li><a href="/moral">Moral Treatment</a></li>
+                  <ul>
+                    <li><a href="/moral">Introduction</a></li>
+                    <li><a href="/religion">Religious Life at the Asylum</a></li>
+                    <li><a href="/occu">Occupational Therapy</a></li>
+                    
+                  </ul>
+                <li><a href="/medical">Medical Treatment</a>
+                  <ul>
+                    <li><a href="/medical">Introduction</a></li>
+                    
+                  </ul>
+                </li>
+                <li><a href="/glossary">Glossary</a></li>
+                <li><a href="/bibliograpy">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-large-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "/">Quakers &amp; Mental Health</a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="active has-dropdown"><a href="/theology">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "/theology">Learn More</a></li>
+                  <li class = "active"><a href= "#"> Contribute to Research</a></li>
+                  <li><a href="/related">Related Projects</a></li>
+                  <li><a href="/features">Features</a></li>
+                  <li><a href="/future">Future Directions</a></li>
+                </ul>
+              </li>
+               <li class="has-dropdown"><a href="/theology"> Backround &amp; Context</a>
+               <ul class="dropdown">
+                <li><a href="/theology">Theology &amp; Mental Health</a></li>
+                <li><a href="/york">The York Retreat</a></li>
+            
+               </ul>
+              </li>
+              <li class = "has-dropdown"><a href="/found"> Early History</a>
+               <ul class="dropdown">
+                  <li><a href="/found">Foundation</a></li>
+                  <li><a href="/arch">Architecture</a></li>
+                  <li><a href="/structure"> Structure &amp; Governance</a></li>
+                  <li><a href="/profiles">Patient Profiles</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown"><a href="/moral">Moral Treatment</a>
+               <ul class="dropdown">
+                <li><a href="/moral">Introduction</a></li>
+                <li><a href="/religion">Religious Life at the Asylum</a></li>
+                <li><a href="/occu">Occupational Therapy</a></li>
+               </ul>
+             </li>
+             <li class="has-dropdown"><a href="/medical">Medical Treament</a>
+               <ul class="dropdown">
+                <li><a href="/medical">Introduction</a></li>
+               
+               </ul>
+            </li>
+              <li><a href="/glossary">Glossary</a></li>
+              <li><a href="/bibliography">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>
+
+    <!-- end of navigation bar-->
+ <div id = "rowheader">
+      <h1> <strong>Contribute to Research </strong> </h1>
+    </div>
+
+
+
+<div id = "row11">
+  
+     <div class = "row full-width" data-equalizer>
+  <article class = "large-8 large-push-4 medium-12 small-12 columns" data-equalizer-watch>
+    <h2 class ="text-center"> Django Data Contributions </h2>
+    
+    <p> Django info here </p>
+    <aside class= "text-center">
+  
+        <a href="/admin" class="button radius">Add to Django Database!&nbsp;&nbsp;&nbsp;<i class="fi-arrow-right"></i></a>
+      
+    </aside>
+
+  </article>
+  <aside class = "large-4 large-pull-8  medium-12 small-12 columns text-center" data-equalizer-watch>
+        <figure>
+  <img height = "300px" width = "300px" src = "{% static "Images/django.png" %}">
+        
+  </figure>
+  </aside>
+  </div>
+  </div>
+</div>
+
+
+
+        <div id = "row14">
+
+  <div class = "row full-width"> 
+    <div class = "large-8 medium-12 small-12 columns"> 
+      <h2 class ="text-center">Omeka Exhibits</h2>
+    
+   <p>All about creating your own Omeka exhibits. </p>
+   <p>  Need certain permissions to do, email lallen@haverford.edu to get started.</p>
+
+   <aside class = 'text-center'>
+      <a href = "https://ds-omeka.haverford.edu/friends-asylum/admin" class = "button radius">Create an Exhibit&nbsp;&nbsp;&nbsp;<i class="fi-arrow-right"></i></a>
+    </aside>
+
+</div>
+
+
+
+<div class = "large-4 medium-12 small-12 columns">
+  
+   <figure class = "text-center">
+        <ul class = "large-block-grid-1 small-block-grid-1" data-clearing>
+        <li><img height = "300px" width = "300px" src = "{% static "Images/scatter.png" %}"></li>
+        </ul> 
+         
+          </figure>      
+</div>
+</div>
+</div>
+
+
+<div id = "row11">
+  
+     <div class = "row full-width" data-equalizer>
+  <article class = "large-8 large-push-4 medium-12 small-12 columns" data-equalizer-watch>
+    <h2 class ="text-center"> Omeka Transcription </h2>
+    
+    <p> Play with some of the original texts from Friends Asylum and help us transcibe them digitally! </p>
+    <aside class= "text-center">
+      <a href="https://ds-omeka.haverford.edu/friends-asylum" class="button radius">Start Transcribing&nbsp;&nbsp;&nbsp;<i class="fi-arrow-right"></i></a>
+        
+      
+    </aside>
+
+  </article>
+  <aside class = "large-4 large-pull-8  medium-12 small-12 columns text-center" data-equalizer-watch>
+        <figure>
+  <img height = "400px" width = "400px" src = "{% static "Images/scripto.png" %}">
+        
+  </figure>
+  </aside>
+  </div>
+  </div>
+</div>
+ 
+
+
+
+
+
+
+
+
+  {% include 'footer-simple.html' %}
+
+              <a href = "/theology"> About </a> | <a href = "/theology"> Learn More </a> | <a href = "/related"> Related Projects </a> | <a href = "/features"> Features </a> | <a href = "/future"> Future Directions </a> 
+        </div>
+        
+        
+
+      </div>
+    </footer>
+      
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+    {% include 'bottom-links.html' %}
+  </body>
+</html>

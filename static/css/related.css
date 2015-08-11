@@ -1,0 +1,111 @@
+/*custom CSS for related.html */
+
+ 
+
+
+
+ /* Text Blurb Right Float Image*/
+#row14 {
+    padding-bottom: 30px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #CCCCB2;
+    
+}
+
+
+#row11 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: solid #333333 7px;
+    border-top: solid #333333 7px;
+
+}
+
+ #rowheader {
+    background-color: #707070;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+
+}
+
+#rowheader h1 {
+    color: #f1f1f1;
+    font-family: "Cinzel Decorative";
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+   
+
+}
+
+
+
+.row.full-width {
+padding-bottom: 0px;
+margin-bottom: 0px;
+padding-left:20px;
+padding-right:20px;
+}
+
+.row.full-width h2 {
+padding-top: 30px;
+padding-bottom: 10px;
+font-size: 45px;
+font-family: "Quintessential";
+}
+
+.row.full-width p {
+font-family: "Amiri";
+font-size: 19px;
+padding-bottom: 10px;
+text-align: left;
+}
+
+figcaption {
+font-family: "Amiri";
+font-size: 15px;
+}
+
+button, .button {
+    background-color: #333333;
+    font-family: "EB Garamond";
+}
+
+.button:hover {
+    background-color: #707070;
+}
+
+  .full-width {
+    max-width: 1400px;
+
+
+  }
+
+  .footer {
+   
+    padding-top: 30px;
+    text-align: center;
+    font-family: Garamond;
+    
+    color: #fff;
+    background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }
+
+  

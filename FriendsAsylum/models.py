@@ -65,7 +65,7 @@ class Biography(models.Model):
 
 
 class Place(models.Model):
-	name = models.CharField("Name of Place", max_length = 50, blank = True, null = True)
+	name = models.CharField("Name of Place", max_length = 100, blank = True, null = True)
 	original_Address = models.CharField("Original Address Place", max_length = 150, blank = True, null = True)
 	current_Address = models.CharField("Current Address Place", max_length = 150, blank = True, null = True)
 	state = models.CharField("State", max_length = 20, blank = True, null = True)

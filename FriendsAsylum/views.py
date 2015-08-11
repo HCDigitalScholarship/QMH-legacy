@@ -30,6 +30,11 @@ def profiles(request):
 	patient_list = zip(person_list, admit_list, exit_list, stat_list, rate_list, note_list, age_list)
 	return render(request, 'patient.html', {'patients': patient_list})
 
+def contrib(request):
+	return render(request, 'contrib.html')
+
+def related(request):
+	return render(request, 'related.html')
 
 def essay(request):
 	return render(request, 'pdf.html')
