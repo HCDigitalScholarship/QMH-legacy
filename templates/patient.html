@@ -249,19 +249,32 @@
 		{% if patients %} <!--refers to name of variable in views containing all patient entries-->
 			<ul class = "accordion" data-accordion>
 				
-				{% for abcdefg in patients %}
+				{% for patient in patients %}
+									
 					<li class = "accordion-navigation">
-						<a href = "#panel{{forloop.counter0}}"> {% for abc in abcdefg.0 %}
-							{{ abc.0 }}
-											{% endfor %}
+						<a href = "#panel{{forloop.counter0}}">Name: {{ patient.patient_Info.first_name }}<br>
+	Birth: {{ patient.patient_Info.birth }}<br>
+	Death: {{ patient.patient_Info.death }}<br>
+	Gender: {{ patient.patient_Info.gender }}<br>
+	{% if patient.patient_Info.birthplace %}
+
+	Birthplace: {{ patient.patient_Info.birthplace }}
+	
+	{% else %}
+	Birthplace:
+	{% endif %}	
+	
+											
 											</a>
-						<div id = "panel{{forloop.counter0}}" class = "content">
-					        <p>	Age on Arrival: {{ abcdefg.6 }} </p>
-						<p>	Admit Date: {{ abcdefg.1 }} </p>
-					        <p>	Exit Date: {{ abcdefg.2 }} </p>
-						<p>	Status on Exit: {{ abcdefg.3 }} </p>
-						<p>	Weekly Rate Paid: {{ abcdefg.4 }} </p>
-						<p>	Significant Notes: {{ abcdefg.5 }} </p>
+
+			
+					<div id = "panel{{forloop.counter0}}" class = "content">
+					        <p>	Age on Arrival: {{ patient.age }} </p>
+						<p>	Admit Date: {{ patient.admitdate }} </p>
+					        <p>	Exit Date: {{ patient.exitdate }} </p>
+						<p>	Status on Exit: {{ patient.status }} </p>
+						<p>	Weekly Rate Paid: {{ patient.weekly_Rate }} </p>
+						<p>	Significant Notes: {{ patient.notes }} </p>
 							
 						</div>
 					 </li>
