@@ -15,19 +15,7 @@ def glossary(request):
 
 
 def profiles(request):
-	patient_list = PatientEntry.objects.all()
-	person_list = patient_list.patient_Info.objects.all()
-	first_list = [person.first_name for person in person_list]
-	alias_list = [person.alias for person in person_list]
-	birth_list = [person.birth for person in person_list]
-	person_list = zip(first_list, alias_list, birth_list)
-	admit_list = [patient.admitdate for patient in patient_list]
-	exit_list = [patient.exitdate for patient in patient_list]
-	stat_list = [patient.status for patient in patient_list]
-	rate_list = [patient.weekly_Rate for patient in patient_list]
-	note_list = [patient.notes for patient in patient_list]
-	age_list = [patient.age for patient in patient_list]
-	patient_list = zip(person_list, admit_list, exit_list, stat_list, rate_list, note_list, age_list)
+	patient_list = PatientEntry.objects.order_by('patient_Info')
 	return render(request, 'patient.html', {'patients': patient_list})
 
 def contrib(request):

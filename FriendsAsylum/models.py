@@ -8,9 +8,9 @@ class Person(models.Model):
 	death =  models.CharField("Death Date", max_length=20, blank = True)
 	gender =  models.CharField("Gender", blank = True, null = True,  max_length=20)
 	birthplace = models.ForeignKey("Place", blank = True, null = True, related_name = "birth_place")	
-	role = models.ForeignKey("RoleType", blank = True, null = True, related_name = '%(class)s_Role_1' )
-	role2 = models.ForeignKey("RoleType", blank = True, null = True, related_name = '%(class)s_Role_2')
-	role3 = models.ForeignKey("RoleType", blank = True, null = True, related_name = '%(class)s_Role_3')
+	role = models.ForeignKey("RoleType", blank = True, null=True, related_name = '%(class)s_Role_1')
+	role2 = models.ForeignKey("RoleType", blank = True, null= True, related_name = '%(class)s_Role_2')
+	role3 = models.ForeignKey("RoleType", blank = True, null=True, related_name = '%(class)s_Role_3')
 
 	def __unicode__(self):
 		return self.first_name + " " + self.last_name  + " " + self.alias + " " + self.birth +  " " + self.death + " " + self.gender + " " + unicode(self.birthplace) + " " + unicode(self.role) + " " + unicode(self.role2) + " " + unicode(self.role3)          
@@ -134,8 +134,8 @@ class Residence(models.Model):
 		return unicode(self.residence) + " " + self.date_Lived_There + " " + unicode(self.person)
 
 class RoleType(models.Model):
-	role = models.CharField("Role_Type", max_length = 50, blank = True, null = True)
-	description = models.TextField("Description of Role", blank = True, null = True)
+	role = models.CharField("Role_Type", max_length = 50, null = True, blank = True)
+	description = models.TextField("Description of Role", null = True, blank = True)
 	class Meta:
        		verbose_name_plural = "Role Types"
 
