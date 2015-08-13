@@ -1,44 +1,12 @@
 /* custom css for patient.html*/
 
- .overlay-container {
-    position: relative;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
 
- .overlay-container .overlay1 {
-    position: absolute; 
-    bottom: 0px;         
-    left: 20px;            
-    right: 0px; 
-    top: 0px;
-    color: white; /* pretty color of blue#7082A6 */
-    font-family: "Tangerine";
-    font-size: 90px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
- 
-  banner img {
-    max-width: 100em;
-    margin: auto;
-    display: block;
-    background-color: #909084;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  header {
-    padding: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
 
 
   #rowheader {
 	  background-color: #d9d5c8;
 	  padding-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     margin-top: 0px;
 /*    border-top: solid #333333 15px;
     border-bottom: solid #333333 15px; /*if you dont want that black line at the bottom of a title heading, get rid of this*/
@@ -48,7 +16,7 @@
 
 #rowheader h1 {
 	color: #333333;
-	font-family: "Poiret One";
+	font-family: "Cinzel Decorative";
 	font-size: 40px;
 	padding-top: 20px;
   padding-left: 0px;
@@ -65,7 +33,7 @@
 	margin-left: 80px;
 	margin-right: 80px;
 	padding-bottom: 30px;
-	font-family: Times;
+	font-family: "Amiri";
 	font-size: 19px;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -78,6 +46,9 @@
     padding-top: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
+	padding-bottom: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
   /*  border-top: solid #333333 15px; /*if you dont want that black line at the bottom of a title heading, get rid of this*/
 
 
@@ -85,11 +56,12 @@
 
 #row4 h1 {
   color: #333333;
-  font-family: "Poiret One";
+  font-family: "Quintessential";
   font-size: 40px;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-left: 0px;
-  padding-bottom: 10px;
+  padding-right: 0px;
+  padding-bottom:0px;
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
@@ -99,27 +71,97 @@
 
 #row4 p {
   text-align: left;
-  margin-left: 80px;
-  margin-right: 80px;
-  padding-bottom: 30px;
-  font-family: Times;
+  padding-bottom: 0px;
+  font-family: "Amiri";
   font-size: 19px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-#newrow .accordion .accordion-navigation > a, .accordion dd > a {
-      background: #EFEFEF;
-      color: #222222;
-      display: block;
-      font-family: Georgia;
-      font-size: 1rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      margin-left: 60px;
-      margin-right: 60px;
-      padding: 1rem;
- }
+ul.tabs {
+	margin-top: 0px;
+	padding-top: 30px;
+    text-align: center;
+    background-color: #d9d5c8;
+
+
+}
+
+ul.tabs li {
+
+    float: none !important;
+    display: inline-block;
+}
+
+
+ul.tabs li a {
+	margin-left: 10px;
+	border-radius: 4px 4px 0 0;
+
+	
+
+
+}
+
+.tabs dd > a, .tabs .tab-title > a {
+	background-color: #AEA881;;
+	
+	font-family: "Cinzel";
+	font-size: 20px;
+}
+
+.content p, h5, blockquote {
+	font-family: "Amiri";
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-size: 19px;
+
+
+}
+
+#panel4 h2 {
+	font-family: "Quintessential";
+	font-size: 35px;
+
+}
+
+#panel4 li, p {
+	font-family: "Amiri";
+	font-size: 19px;
+}
+#row5 {
+	padding: 0px;
+	margin: 0px;
+	background-color: #d9d5c8;
+}
+.accordion {
+	margin: 10px;
+	margin-bottom: 50px;
+	
+}
+
+.accordion .accordion-navigation > a, .accordion dd > a {
+	background-color: #f0f0f0;
+	
+	font-family: "Cinzel";
+	font-size: 20px;
+
+
+
+}
+
+.accordion .accordion-navigation {
+
+	padding-bottom: 5px;
+}
+
+
+
+
+.row .row{
+
+	padding: 10px;
+}
 
 
 
@@ -134,7 +176,6 @@
     padding-top: 20px;
     text-align: center;
     font-family: Garamond;
-    font-size: 40px;
     color: #fff;
     background-color: #292C2F;
     
