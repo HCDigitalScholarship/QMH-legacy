@@ -71,6 +71,20 @@ ul.tabs li a {
       padding: 1rem; }
 
 
+.content  {
+        font-family: "Amiri";
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 19px;
+
+
+}
+
+
+
+
+
+
  .full-width {
   	max-width: 1400px;
 
