@@ -1,27 +1,66 @@
-#rowheader {
-    background-color: #909084;
-    padding-top: 0px;
+/* custom css for glossary.html */
+
+  #rowheader {
+	background-color: #333333;
+	padding-top: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
 
 }
 
 #rowheader h1 {
-   color: #f1f1f1;
-   font-family: "Cinzel Decorative";
-   font-size: 70px;
-   padding-top: 40px;
-   padding-bottom: 40px;
-    margin-bottom: 10px;
+	color: #f1f1f1;
+	font-family: "Cinzel Decorative";
+	font-size: 60px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: 0px;
     text-align: center;
-    border-bottom: solid #333333 15px;
+   
 
 }
-.tabs dd > a, .tabs .tab-title > a {
-	font-family: "Cinzel";
-	font-weight: bold;
+
+
+
+ul.tabs {
+	text-align: center;
+	padding-top: 40px;
+    text-align: left;
+    background-color: #333333;
+
+
 }
+
+ul.tabs li {
+
+    float: none !important;
+    display: inline-block;
+}
+
+
+ul.tabs li a {
+	margin-left: 7px;
+	border-radius: 4px 4px 0 0;
+
+
+	
+
+
+}
+
+.tabs dd > a, .tabs .tab-title > a {
+	
+	background-color: #707070;
+	font-family: "Cinzel";
+	font-size: 20px;
+	color: #f1f1f1;
+}
+
+
+
+
+
 .accordion .accordion-navigation > a, .accordion dd > a {
       background: #EFEFEF;
       color: #222222;
@@ -42,7 +81,7 @@
     padding-top: 20px;
   	text-align: center;
   	font-family: Garamond;
-  	font-size: 40px;
+
   	color: #fff;
   	background-color: #292C2F;
     
