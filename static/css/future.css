@@ -25,26 +25,33 @@
 
 li.accordion-navigation {
 
-  padding-top: 15px;
+  padding-top: 0px;
+  padding-bottom: 10px;
 
 }
 
 .accordion .accordion-navigation > a, .accordion dd > a { 
-  border-radius: 130px;
-  width: 230px;
+  border-radius: 30px;
+  width: 270px;
   height: 230px;
+  
   background: #EFEFEF none repeat scroll 0% 0%;
   color: #333333;
   display: block;
   font-family: "Quintessential", sans-serif;
   font-size: 1.2rem;
   padding-top: 5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
+   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1rem;
   text-align: center;
 }
+
+.accordion .accordion-navigation a {
+	background-color: #c0c0c0;
+}
+
+
 
 .content  {
 	font-family: "Amiri";

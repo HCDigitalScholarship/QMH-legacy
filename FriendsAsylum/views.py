@@ -1,7 +1,7 @@
 from django.views.generic.base import TemplateView
 from django.http import HttpResponse
 from django.template import RequestContext, loader
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from models import Glossary
 from models import PatientEntry
 from models import Person
@@ -69,9 +69,10 @@ def pieq(request):
 def pieq2(request):
 	return render(request, 'quakerpiechartwophilly.html')
 
-def index(request):
-	return HttpResponse("hello world, youre at the polls index")
-
+def handler404(request):
+	response = render_to_response('detail.html', {}, context_instance = RequestContext(request))
+	response.status_code = 404
+	return response
 
 class Home(TemplateView):
 	template_name = 'index.html'

@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+  
+
+   {% include 'top-links.html' %}
+    <link rel="stylesheet" href="{% static "css/detail.css" %}">
+
+
+ <title>404 Error</title>
+   </head> 
+  <body>
+ {% include 'nav-bar.html' %}
+
+<div class = "row" id = "row1">
+    <h1 class = "text-center"> Quakers &amp; Mental Health
+    </h1>
+    <div id = "content">
+    <p> Sorry! We couldn't find the page you were looking for. <br><br>
+      <ul>
+    <li>Check and make sure there is no error in your web browser's URL and refresh again.</li>
+    <li>Otherwise, the page you are looking for may have been moved or deleted. </li>
+  </ul>
+</div>
+</div>
+
+
+
+     {% include 'footer-simple.html' %}
+       
+
+            <a href = "/theology"> About </a> | <a href = "/theology"> Background &amp; Context </a> |<a href = "/found">  Early History </a>| <a href = "/moral"> Moral Treatment </a> | <a href = "/medical"> Medical Treatment </a> | <a href = "/glossary"> Glossary </a> | <a href = "/bibliography"> Bibliography &amp; Credits </a>
+        </div>
+        
+        
+
+      </div>
+    </footer>
+      
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+    {% include 'bottom-links.html' %}
+  </body>
+</html>

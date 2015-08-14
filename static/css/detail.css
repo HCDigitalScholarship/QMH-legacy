@@ -1,0 +1,48 @@
+/* custom css for detail.html */
+
+#row1 h1 {
+
+	font-family: "Cinzel Decorative";
+	color: #707070;
+}
+#row1 #content {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: "EB Garamond";
+	color: #333333;
+	border-top: solid 1px #333333;
+	border-bottom: solid 1px #333333;
+	
+
+}
+
+#row1 p {
+
+	font-size: 24px;
+}
+
+.full-width {
+  	max-width: 1400px;
+
+
+  }
+
+  .footer {
+  	margin-top: 20px;
+    padding-top: 30px;
+  	text-align: center;
+  	font-family: Garamond;
+  	color: #fff;
+  	background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

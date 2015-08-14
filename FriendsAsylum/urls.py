@@ -39,10 +39,11 @@ urlpatterns = [
         url(r'^bibliography/$', 'FriendsAsylum.views.bibliography', name = "Bibliography and Credits"),
 	url(r'^glossary/$', 'FriendsAsylum.views.glossary', name = 'GlossaryEntry'),
 	url(r'^arch/$', 'FriendsAsylum.views.arch', name = 'Architecture Page'),
-	url(r'^polls/$', 'FriendsAsylum.views.index', name = 'Index'),
     	url(r'^$', views.Home.as_view(), name = 'home'),
 	url(r'^admin/', include(admin.site.urls)),
+
 ]
+
 
 admin.site.site_header = 'Quakers & Mental Health'
 admin.site.index_title = 'Quakers & Mental Health Administration'

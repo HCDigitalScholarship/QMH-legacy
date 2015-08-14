@@ -104,7 +104,8 @@ h3#mTitle {
 
 
 #row1 {
-	background-color: #DED6A7;
+	background-color: #D9D5C8; 
+
 }
 
 /* Text Blurb Center*/
@@ -112,7 +113,7 @@ h3#mTitle {
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: #909084;
+    background-color: #9E9E98;
     padding-bottom: 30px;
 }
 #row10 blockquote {
