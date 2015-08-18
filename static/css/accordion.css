@@ -49,6 +49,16 @@ ul.tabs li a {
 
 }
 
+h5:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -60px; 
+  height: 60px; 
+  visibility: hidden; 
+}
+
+
+
 .tabs dd > a, .tabs .tab-title > a {
 	
 	background-color: #707070;
