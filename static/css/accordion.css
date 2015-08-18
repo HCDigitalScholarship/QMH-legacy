@@ -1,7 +1,7 @@
 /* custom css for glossary.html */
 
   #rowheader {
-	background-color: #333333;
+	background-color: #707070;
 	padding-top: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -27,7 +27,7 @@ ul.tabs {
 	text-align: center;
 	padding-top: 40px;
     text-align: left;
-    background-color: #333333;
+    background-color: #707070;
 
 
 }
@@ -61,7 +61,7 @@ h5:before {
 
 .tabs dd > a, .tabs .tab-title > a {
 	
-	background-color: #707070;
+	background-color: #333333;
 	font-family: "Cinzel";
 	font-size: 20px;
 	color: #f1f1f1;

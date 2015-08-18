@@ -7,7 +7,7 @@ from models import PatientEntry
 from models import Person
 
 def glossary(request):
-	glossary_list = Glossary.objects.all()
+	glossary_list = Glossary.objects.order_by('word')
 	word_list = [glossary.word for glossary in glossary_list]
 	dict_list = [glossary.definition for glossary in glossary_list]
 	glossary_list = zip(word_list, dict_list)
