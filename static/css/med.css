@@ -84,6 +84,7 @@ font-size: 15px;
   /* Text Blurb Center*/
 #row3 {
     padding-top: 0px;
+	padding-bottom: 25px;
     margin-top: 0px;
     margin-bottom: 0px;
     background-color: #D9D5C8;
@@ -97,6 +98,7 @@ font-size: 15px;
 /* Text Blurb Right*/
 #row4 {
     padding-top: 0px;
+    padding-bottom: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
        
@@ -130,7 +132,7 @@ button, .button {
 #row2 {
     padding-top: 0px;
     margin-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
     background-color: #9E9E98;
     margin-bottom: 0px;
     
