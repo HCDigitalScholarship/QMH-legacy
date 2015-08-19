@@ -1,14 +1,16 @@
 from django.db import models
 
+ 
+
 class Person(models.Model):
 	first_name = models.CharField("First Name", max_length=100)
 	last_name = models.CharField("Last Name", max_length=100)
-	alias = models.CharField("Alias Name", max_length = 100, blank = True, null = True) #only needed for patients
+	alias = models.CharField("Alias Name", max_length = 100, blank = True, null =True) #only needed for patients
 	birth = models.CharField("Birth Date", max_length=20, blank = True)
 	death =  models.CharField("Death Date", max_length=20, blank = True)
 	gender =  models.CharField("Gender", blank = True, null = True,  max_length=20)
 	birthplace = models.ForeignKey("Place", blank = True, null = True, related_name = "birth_place")	
-	role = models.ForeignKey("RoleType", blank = True, null=True, related_name = '%(class)s_Role_1')
+	role = models.ForeignKey("RoleType", blank =True, null=True, related_name = '%(class)s_Role_1')
 	role2 = models.ForeignKey("RoleType", blank = True, null= True, related_name = '%(class)s_Role_2')
 	role3 = models.ForeignKey("RoleType", blank = True, null=True, related_name = '%(class)s_Role_3')
 

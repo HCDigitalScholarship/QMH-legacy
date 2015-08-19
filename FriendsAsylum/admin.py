@@ -3,6 +3,9 @@ from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
 from import_export import resources 
 from FriendsAsylum.models import Person, Relationship, RelationshipType, PatientEntry, Biography, Place, PlaceType, GeoPlace, MeetingtoPersonRelationship, Meeting, MeetingType, Residence, RoleType, Glossary, Text, Text_Type, Text_Relationship
+from django.forms import *
+from django.db import models
+from tinymce.widgets import TinyMCE
 
 class PersonResource(resources.ModelResource):
 	class Meta:
@@ -46,8 +49,19 @@ class BiographyResource(resources.ModelResource):
 		fields = ('id', 'person_Info', 'biography')
 
 
+#class BiographyForm(form.ModelForm):
+#	biography = forms.CharField(widget=TinyMCE(attrs={'cols': 80, 'rows': 30}))
+
+	#class Meta: 
+	#	model = Biography
+
+
 class BiographyAdmin(ImportExportModelAdmin):
+	formfield_overrides = {
+		models.TextField: {'widget':TinyMCE(attrs={'cols':80, 'rows':30})},
+}
 	fields = ['person_Info', 'biography']
+	#form = BiographyForm
 	resource_class = BiographyResource
 	pass
 
