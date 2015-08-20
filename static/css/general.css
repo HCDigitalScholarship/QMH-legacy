@@ -50,6 +50,18 @@ header .orbit-bullets-container {
 
 }
 
+#row2 figure {
+	float: right;
+	position: relative;
+	margin-right: 40px;
+	margin-left: 30px;
+	margin-bottom: 40px;
+}
+#row2.clearfix2 {
+	overflow: auto;
+}
+
+
 .row.full-width {
 padding-bottom: 0px;
 margin-bottom: 0px;
@@ -68,7 +80,7 @@ font-family: "Quintessential";
 font-family: "Amiri";
 font-size: 19px;
 padding-bottom: 10px;
-text-align: left;
+
 }
 
 figcaption {

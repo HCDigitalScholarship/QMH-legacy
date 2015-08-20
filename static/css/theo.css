@@ -96,7 +96,7 @@
 #row11 {
 	background-color: #CCCCB2;
 	padding-top: 0px;
-
+	padding-bottom: 20px;
 
 }
 
@@ -143,12 +143,16 @@ font-family: "Quintessential";
 font-family: "Amiri";
 font-size: 19px;
 padding-bottom: 10px;
-text-align: left;
+
 }
 
 figcaption {
 font-family: "Amiri";
 font-size: 15px;
+}
+
+.panel p {
+	text-align: left;
 }
 
 #row9
