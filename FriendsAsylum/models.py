@@ -178,26 +178,27 @@ class Text_Type(models.Model):
 	def __unicode__(self):
 		return self.text_Type + " " + self.description
 
-class Text_Relationship(models.Model):
+class Text_Entry(models.Model):
 	text = models.ForeignKey("Text", null = True, blank = True)
-	person1 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_1')
-	person2 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_2')
-	person3 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_3')
-	person4 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_4')
-	person5 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_5')
-	person6 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_6')
-	person7 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_7')
-	person8 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_8')
-	person9 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_9')
-	person10 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_10')
-	person11 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_11')
-	person12 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_12')
-	person13 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_13')
-	person14 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_14')
-	person15 = models.ForeignKey("Person", null = True, blank = True, related_name = '%(class)s_Person_15')
+	page_Number = models.CharField("Page Number", max_length = 35, blank = True, null = True)
+	date = models.DateField("Date of Entry", null = True, blank = True)
+	table = models.NullBooleanField("Table", null = True, help_text = "Select whatever form type most closely corresponds to the text entry you are working with.  Either select one or none.")
+	table_columns = models.CharField("Table Columns", max_length = 500, null = True, blank = True, help_text = "Please separate all column values you find with commas.For example: age, height, eye color, etc.")
+	table_rows = models.CharField("Table Rows", max_length = 500, null = True, blank = True, help_text = "Please separate all row values you find with commas.For example: age, height, eye color, etc.")
+	fill_In = models.NullBooleanField("Fill in the Blanks", null = True, help_text = "This type of form often has blank spaces '____' for a physician to write the patient's name, gender, etc.")
+	fillvals = models.CharField("Fill in Values", max_length = 500, null = True, blank = True, help_text = "Please write out what content any blank spaces in the form you are working with is supposed to have. For example, if a doctor is supposed to fill in information about name, age, sex, write: 'name, age, sex'")
+	free_Form = models.NullBooleanField("Free Form", null = True, help_text = "You can use this field if the form of the entry you are working with is not like a table or a fill in the blank type")
+	details = models.TextField("Relevant Information or Details", null = True, blank = True, help_text = "Use this text editor to add important details about the entry you are working with, or if you are working with a free form entry type, this is where you will write what it is about")
 
 	class Meta:
-        	verbose_name_plural = "Text Relationship Types"
+        	verbose_name_plural = "Text Entries"
 
-	def __unicode(self):
-		return unicode(self.text) + " " + unicode(self.person1) + " " + unicode(self.person2) + " " + unicode(self.person3) + " " + unicode(self.person4) + " " + unicode(self.person5) + " " + unicode(self.person6) + " " + unicode(self.person7) + " " + unicode(self.person8) + " " + unicode(self.person9) + " " + unicode(self.person10) + " " + unicode(self.person11) + " " + unicode(self.person12) + " " + unicode(self.person13) + " " + unicode(self.person14) + " " + unicode(self.person15) 
+	def __unicode__(self):
+		return unicode(self.text) + " " + self.page_Number + " " + unicode(self.date) + " " + self.table + " " + self.table_rows + " " + self.table_columns + " " + self.fill_In + " " + self.fillvals + " " + self.free_Form + " " + self.details
+
+class PersonChoice(models.Model):
+	text_Entry = models.ForeignKey("Text_Entry", null = True, blank = True)
+	person = models.ForeignKey("Person", null = True, blank = True)
+
+	def __unicode__(self):
+		return unicode(self.text_Entry) + " " + unicode(self.person)

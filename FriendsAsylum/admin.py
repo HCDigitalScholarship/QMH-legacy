@@ -2,7 +2,7 @@
 from django.contrib import admin
 from import_export.admin import ImportExportModelAdmin
 from import_export import resources 
-from FriendsAsylum.models import Person, Relationship, RelationshipType, PatientEntry, Biography, Place, PlaceType, GeoPlace, MeetingtoPersonRelationship, Meeting, MeetingType, Residence, RoleType, Glossary, Text, Text_Type, Text_Relationship
+from FriendsAsylum.models import Person, Relationship, RelationshipType, PatientEntry, Biography, Place, PlaceType, GeoPlace, MeetingtoPersonRelationship, Meeting, MeetingType, Residence, RoleType, Glossary, Text, Text_Type, Text_Entry, PersonChoice
 from django.forms import *
 from django.db import models
 from tinymce.widgets import TinyMCE
@@ -49,19 +49,12 @@ class BiographyResource(resources.ModelResource):
 		fields = ('id', 'person_Info', 'biography')
 
 
-#class BiographyForm(form.ModelForm):
-#	biography = forms.CharField(widget=TinyMCE(attrs={'cols': 80, 'rows': 30}))
-
-	#class Meta: 
-	#	model = Biography
-
 
 class BiographyAdmin(ImportExportModelAdmin):
 	formfield_overrides = {
 		models.TextField: {'widget':TinyMCE(attrs={'cols':80, 'rows':30})},
 }
 	fields = ['person_Info', 'biography']
-	#form = BiographyForm
 	resource_class = BiographyResource
 	pass
 
@@ -195,14 +188,24 @@ class Text_TypeAdmin(ImportExportModelAdmin):
 	resource_class = Text_TypeResource
 	pass
 
-class Text_RelationshipResource(resources.ModelResource):
-	class Meta:
-		model = Text_Relationship
-		fields = ('id', 'text', 'person1', 'person2', 'person3', 'person4', 'person5', 'person6', 'person7', 'person8', 'person9', 'person10', 'person11', 'person12', 'person13', 'person14', 'person15')
 
-class Text_RelationshipAdmin(ImportExportModelAdmin):
-	fields = ['text', 'person1', 'person2', 'person3', 'person4', 'person5', 'person6', 'person7', 'person8', 'person9', 'person10', 'person11', 'person12', 'person13', 'person14', 'person15']
-	resource_class = Text_RelationshipResource
+class PersonChoiceInline(admin.StackedInline):
+	model = PersonChoice
+	extra = 3
+
+
+class Text_EntryResource(resources.ModelResource):
+	class Meta:
+		model = Text_Entry
+		fields = ('id', 'text', 'page_Number', 'date', 'table', 'table_rows', 'table_columns', 'fill_In', 'fillvals', 'free_Form', 'details')
+
+class Text_EntryAdmin(ImportExportModelAdmin):
+	formfield_overrides = {
+		models.TextField: {'widget':TinyMCE(attrs={'cols':100, 'rows':60})},
+}
+	fields = ['text', 'page_Number', 'date', 'table', 'table_rows', 'table_columns', 'fill_In', 'fillvals', 'free_Form', 'details']
+	inlines = [PersonChoiceInline]
+	resource_class = Text_EntryResource
 	pass
 
 
@@ -226,4 +229,4 @@ admin.site.register(RoleType,RoleTypeAdmin)
 admin.site.register(Glossary,GlossaryAdmin)
 admin.site.register(Text,TextAdmin)
 admin.site.register(Text_Type,Text_TypeAdmin)
-admin.site.register(Text_Relationship,Text_RelationshipAdmin)
+admin.site.register(Text_Entry,Text_EntryAdmin)
