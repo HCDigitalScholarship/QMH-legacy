@@ -97,14 +97,15 @@ font-size: 15px;
 
 #row3 #panel cite {
   font-size: 20px;
+	font-family: "Amiri";
   text-align: right;
   position: absolute;
   margin-left: auto;
-   margin-right: auto;
+   margin-right: 5px;
 	right: 0;
 	left: 0;
-	right: 0;
-
+	right: 6px;
+	
 }
 
 
