@@ -36,10 +36,10 @@ class RelationshipAdmin(ImportExportModelAdmin):
 class PatientEntryResource(resources.ModelResource):
 	class Meta:
 		model = PatientEntry
-		fields = ('id', 'patient_Info', 'admitdate', 'exitdate', 'status', 'weekly_Rate', 'notes', 'age') 
+		fields = ('id', 'patient_Info', 'admitdate', 'exitdate', 'status', 'duration', 'weekly_Rate', 'notes', 'age') 
 
 class PatientEntryAdmin(ImportExportModelAdmin):
-	fields = ['patient_Info', 'admitdate', 'exitdate', 'status', 'weekly_Rate', 'notes', 'age']
+	fields = ['patient_Info', 'admitdate', 'exitdate', 'status', 'duration', 'weekly_Rate', 'notes', 'age']
 	resource_class = PatientEntryResource
 	pass 
 
@@ -135,7 +135,6 @@ class MeetingTypeAdmin(ImportExportModelAdmin):
 	resource_class = MeetingTypeResource
 	pass
 
-
 class ResidenceResource(resources.ModelResource):
 	class Meta:
 		model = Residence
@@ -146,6 +145,16 @@ class ResidenceAdmin(ImportExportModelAdmin):
 	fields = ['residence', 'date_Lived_There', 'person']
 	resource_class = ResidenceResource
 	pass
+
+
+class RoleTypeResource(resources.ModelResource):
+	class Meta:
+		model = RoleType
+		fields = ('id', 'role', 'description')
+
+
+
+
 
 
 class RoleTypeResource(resources.ModelResource):
@@ -223,8 +232,8 @@ admin.site.register(PlaceType,PlaceTypeAdmin)
 admin.site.register(GeoPlace,GeoPlaceAdmin)
 admin.site.register(MeetingtoPersonRelationship,MeetingtoPersonRelationshipAdmin)
 admin.site.register(Meeting,MeetingAdmin)
-admin.site.register(MeetingType,MeetingTypeAdmin)
 admin.site.register(Residence,ResidenceAdmin)
+admin.site.register(MeetingType,MeetingTypeAdmin)
 admin.site.register(RoleType,RoleTypeAdmin)
 admin.site.register(Glossary,GlossaryAdmin)
 admin.site.register(Text,TextAdmin)

@@ -9,13 +9,13 @@ class Person(models.Model):
 	birth = models.CharField("Birth Date", max_length=20, blank = True)
 	death =  models.CharField("Death Date", max_length=20, blank = True)
 	gender =  models.CharField("Gender", blank = True, null = True,  max_length=20)
-	birthplace = models.ForeignKey("Place", blank = True, null = True, related_name = "birth_place")	
+	birthplace = models.ForeignKey("Place", blank = True, null = True, related_name = "birth_place")
 	role = models.ForeignKey("RoleType", blank =True, null=True, related_name = '%(class)s_Role_1')
 	role2 = models.ForeignKey("RoleType", blank = True, null= True, related_name = '%(class)s_Role_2')
 	role3 = models.ForeignKey("RoleType", blank = True, null=True, related_name = '%(class)s_Role_3')
 
 	def __unicode__(self):
-		return self.first_name + " " + self.last_name  + " " + self.alias + " " + self.birth +  " " + self.death + " " + self.gender + " " + unicode(self.birthplace) + " " + unicode(self.role) + " " + unicode(self.role2) + " " + unicode(self.role3)          
+		return self.first_name + " " + self.last_name  + " " + self.alias + " " + self.birth +  " " + self.death + " " + self.gender + " " + unicode(self.birthplace) + " " + unicode(self.role) + " " + unicode(self.role2) + " " + unicode(self.role3)           
 
 
 
@@ -43,6 +43,7 @@ class PatientEntry(models.Model):
 	admitdate = models.CharField("Entry Date", max_length = 15, blank = True)
 	exitdate = models.CharField("Departure Date", max_length = 15, blank = True) 
 	status = models.TextField("Status on Discharge", blank=True)
+	duration = models.IntegerField("Duration of Insanity/Disease", blank = True, null = True, help_text = "Enter duration of insanity in number of days")
 	weekly_Rate = models.CharField("Weekly Rate", max_length = 75, blank = True, null = True)
 	notes = models.TextField("Note Field", blank = True, null = True)
 	age = models.CharField("Age at Admittance", default = '', max_length = 3, null = True, blank = True)	
@@ -52,7 +53,7 @@ class PatientEntry(models.Model):
 
 
 	def __unicode__(self):
-		return unicode(self.patient_Info) +  " " +  self.admitdate + " " + self.exitdate + " " + self.status + " " +  self.weekly_Rate + " " + self.notes + " " + self.age
+		return unicode(self.patient_Info) +  " " +  self.admitdate + " " + self.exitdate + " " + self.status + " " +  self.weekly_Rate + " " + self.notes + " " + self.age + " " + unicode(self.duration)
 
 class Biography(models.Model):
 	person_Info = models.ForeignKey("Person")
@@ -127,6 +128,7 @@ class MeetingType(models.Model):
 	def __unicode__(self): 
 		return self.meeting_Type + " " + self.description
 
+
 class Residence(models.Model):
 	residence = models.ForeignKey("Place")
 	date_Lived_There = models.CharField("Date of Residence", max_length = 15, null = True, blank = True)
@@ -134,6 +136,8 @@ class Residence(models.Model):
 	
 	def __unicode__(self):
 		return unicode(self.residence) + " " + self.date_Lived_There + " " + unicode(self.person)
+
+
 
 class RoleType(models.Model):
 	role = models.CharField("Role_Type", max_length = 50, null = True, blank = True)
