@@ -1,0 +1,80 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+  
+
+   {% include 'top-links.html' %}
+    <link rel="stylesheet" href="{% static "css/bargraph.css" %}">
+
+   
+    <title>Patient Bar Graph</title>
+   </head> 
+
+
+   <body>
+
+	<div class = "row full-width">
+  <div class="container">
+    <h2>Aggregate Patient Information</h2>
+    <div class = "text-center">
+    <select name="selection" id="selectMe">
+      <option>Overall Patients</option>
+      <option optionValue="InHouse">Patients Residing in House</option>
+      <option optionValue="Admitted">Patients Admitted</option>
+      <option optionValue="Deceased">Patients Who Died</option>
+      <option optionValue="Average">Average # of Patients</option>
+    </select>
+    <button type = "button" data-reveal-id="firstModal "id = "more"> Information/Key</button>
+    <div id="firstModal" class="reveal-modal medium" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="firstModalTitle">Information on Patient Bar Graph</h2>
+  <ul class = "no-bullet">
+  <li><code>Overall Patients</code></li>
+  <p>The Overall Patients Bar Graph of the Asylum represents the number of patients which were there that year.</p>
+  <li><code>Patients Residing in House</code></li>
+  <p>This represents the number of patients who were still residing in the Asylum at the time of Annual Report.</p>
+  <li><code>Patients Admitted</code></li>
+  <p> This graph represents the number of patients admitted to the Asylum that year. </p>
+  <li><code>Patients Who Died</code></li>
+  <p> This represents the number of patients who died while living at the Asylum that year.  Causes of death ranged from: pulmonary consumption, to bilious remittent fever, to weakness from over-excitement, to epilepsy, pneumonia, pleurisy, cancer of the stomach, consumption of the lungs, and being aged. </p>
+  <li><code>Average # of Patients</code></li>
+  <p> This represents overall, the average number of patients who were under the care of the institution during any time that year. </p>
+  </ul>
+ 
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+  </div>
+    <br>
+    <div id="chart">
+    </div>
+  </div>
+</div>
+
+
+ {% include 'footer-simple.html' %}
+       
+
+              
+        </div>
+                
+
+      </div>
+    </footer>
+      
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+     {% include 'bottom-links.html' %}
+
+     <script src="{% static "d3/d3.min.js" %}"></script>
+     <script src = "{% static "js/bargraph.js" %}"></script>
+   
+
+  </body>
+</html>
+
+
+
+

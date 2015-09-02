@@ -49,30 +49,55 @@
     <div class = "row" id = "row4">
       <div class = "large-12 columns text-center">
         <h3> <strong>FEATURES</strong></h3>
+		<br>
       </div>
     </div>
-    <div class = "row" id = "row5">
-      <div class = "large-12 columns"><br>
-        <ul class = "large-block-grid-2 medium-block-grid-2 small-block-grid-2">
-          <li><a class = "th radius" href ="/profiles"><img src = "{% static "Images/Scattergood.jpg" %}" alt ="Patient Info"></a></li>
-          <li><a class = "th radius" href ="/pieq"><img src = "{% static "Images/Pie Chart of Quaker Meetings.jpg" %}" alt ="Quaker Meetings Pie Chart"></a></li>
-          <ul class = "button-group even-2">
-            <li><a href="/profiles" class="button small radius secondary even">Patient Info</a></li>
-            <li><a href="/pieq" class="button small radius secondary">Quaker Meeting Pie Chart</a></li>
-            </ul>
-	<li><a class = "th radius" href ="/essay"><img src = "{% static "Images/essay2.png" %}" alt ="Featured Essay"></a></li>
-	<li><a class = "th radius" href ="/glossary"><img src = "{% static "Images/Patientinfo.jpg" %}" alt ="Glossary of Terms"></a></li>
-  <ul class = "button-group even-2">
-            <li><a href="/essay" class="button small radius secondary">Featured Essay</a></li>
-            <li><a href="/glossary" class="button small radius secondary">Glossary of Terms</a></li>
-          </ul>
-        </ul>
+<div id = "row5">
+    <div class = "row"> 
+      <div class = "large-6 medium-6 small-12 columns text-center">
+
+        <a class = "th radius" href ="/profiles"><img src = "{% static "Images/Scattergood.jpg" %}" alt ="Patient Info"></a>
+	<h3 style = "font-family:'Quintessential'">Patient Information </h3>
+		<div class = "show-for-small-down">
+		 <br>
+		</div>
+	
+      </div>
+      <div class = "large-6 medium-6 small-12 columns text-center">
+         <a class = "th radius" href ="/pieq"><img src = "{% static "Images/Pie Chart of Quaker Meetings.jpg" %}" alt ="Quaker Meetings Pie Chart"></a> 
+	<h3 style = "font-family:'Quintessential'"> Quaker Meeting Pie Chart </h3>
+	</div>
+	 <div class = "show-for-small-down">
+                 <br>
+          </div>
+    </div>
+<div class = "show-for-medium-up">
+<br>
+<br>
+</div>
+    <div class = "row">
+	<div class = "large-6 medium-6 small-12 columns text-center">
+	<a class = "th radius" href ="/essay"><img src = "{% static "Images/essay2.png" %}" alt ="Featured Essay"></a>
+	<h3 style = "font-family:'Quintessential'"> Framing Essay </h3>
+		 <div class = "show-for-small-down">
+                 <br>
+                </div>
+	</div>
+	<div class = "large-6 medium-6 small-12 columns text-center">
+	<a class = "th radius" href ="/glossary"><img src = "{% static "Images/Patientinfo.jpg" %}" alt ="Glossary of Terms"></a>
+        <h3 style = "font-family:'Quintessential'"> Glossary of Terms </h3>
+	</div>
+		 <div class = "show-for-small-down">
+                 <br>
+                </div>
+
+	</div>
     <br> </br>
-      </div>
+
     </div>
+
 
      {% include 'footer-complex.html' %}
-
 
 	     </div><!-- end inner wrap, must go after ALL content -->
      </div><!-- end offcanvas -->

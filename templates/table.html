@@ -1,0 +1,100 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel = "stylesheet" href= "{% static "css/icons/foundation-icons/foundation-icons.css" %}">
+    <link rel = "stylesheet" href= "{% static "css/icons/foundation-icons/foundation-icons.eot" %}">
+    <link rel = "stylesheet" href= "{% static "css/icons/foundation-icons/foundation-icons.svg" %}">
+    <link rel = "stylesheet" href= "{% static "css/icons/foundation-icons/foundation-icons.ttf" %}" >
+    <link rel = "stylesheet" href= "{% static "css/icons/foundation-icons/foundation-icons.woff" %}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/zf-5.5.2/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,b-1.0.3,b-colvis-1.0.3,b-flash-1.0.3,b-html5-1.0.3,b-print-1.0.3,r-1.0.7,se-1.0.1/datatables.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Tangerine|Shadows+Into+Light|Special+Elite|Poiret+One|Quintessential|Cinzel|Cinzel+Decorative|Amiri|EB+Garamond' rel='stylesheet' type='text/css'>
+    <link rel = "stylesheet" href = "{% static "css/tables.css" %}">
+ 
+
+        <title>DataTables</title>
+
+   </head>
+
+   <body>
+
+
+        <h2 class = "text-center" style = "font-family: 'Cinzel'; margin: 0;padding: 30px; background: #707070; font-size: 45px"> DataTables Example with Patient Entries </h2>
+
+<br>
+<div class = "row full-width">
+ <table id="example" class="display" cellspacing="0" width="100%">
+                                        <thead>
+                                                <tr>
+                                                        <th>Name</th>
+                                                        <th> Birth Date</th>
+                                                        <th> Gender </th>
+                                                        <th> Admit Date </th>
+                                                        <th> Age on Arrival </th>
+                                                        <th> Duration of Insanity (in days)</th>
+                                                        <th> Exit Date  </th>
+                                                        <th> Status on Exit </th>
+                                                        <th> Weekly Paid Rate  </th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                {% if patients %}
+                                                                {% for patient in patients %}
+                                                        <tr>
+                                                                <td name = "{{patient.patient_Info.first_name}} {{patient.patient_Info.alias">
+                                                                 {{patient.patient_Info.first_name}} {{patient.patient_Info.alias}}
+                                                                </td>
+                                                                <td> {{patient.patient_Info.birth}} </td>
+                                                                <td>{{patient.patient_Info.gender}} </td>
+                                                                <td>{{patient.admitdate}} </td>
+                                                                <td>{{patient.age}} </td>
+                                                                <td>{{patient.duration}} </td>
+                                                                <td>{{patient.exitdate}} </td>
+                                                                <td>{{patient.status}} </td>
+                                                                <td>{{patient.weekly_Rate}} </td>
+                                                        </tr>
+                                                                {% endfor %}
+                                        </tbody>
+                                </table>
+			{% else %}
+                                   <strong> There are no patient entries at this time. </strong>
+                        {% endif %}
+     
+
+
+
+
+
+</div>
+
+	{% include 'footer-simple.html' %}
+
+  </div>
+</div> <!-- closing divs for nav bar-->
+
+        <script type="text/javascript" src="https://cdn.datatables.net/r/zf-5.5.2/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,b-1.0.3,b-colvis-1.0.3,b-flash-1.0.3,b-html5-1.0.3,b-print-1.0.3,r-1.0.7,se-1.0.1/datatables.min.js"></script>
+       <script>
+      $(document).foundation();
+    </script>
+    <script>
+
+$(document).ready(function() {
+  $('#example').DataTable( {
+	  dom: 'T<"clear">lfrtip',
+	  "aLengthMenu": [[20, 50, 100, -1],
+                [20, 50, 100, "All"]]
+    } );
+} );
+    
+
+
+
+   </script>
+  </body>
+</html>
+  </body>
+</html>
+
+

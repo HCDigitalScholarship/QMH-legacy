@@ -1,0 +1,88 @@
+/*custom CSS for bargraph.html*/
+body { 
+	background-color: #f0f0f0;
+}
+
+h2 {
+	font-family: "Cinzel";
+	color: navy;
+	text-align: center;
+}
+.container {
+	width: 1000;
+	
+	height: 600;
+}
+
+
+path.domain {
+	
+	fill: none;
+}
+
+text {
+	font-size: 24px;
+	font-family: "Amiri";
+}
+
+button {
+	background-color: white;
+	border: #cccccc 1px solid;
+	width: 180px;
+	height: 55px;
+	color: rgba(0, 0, 0, 0.75);
+	border-radius: 40px;
+	margin-bottom: 0px;
+	box-shadow: 4px 4px 6px #333333;
+}
+
+button:hover {
+	background-color:#f3f3f3;
+	border: #7a7a7a solid 1px;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+button:visited {
+	background-color: white;
+}
+
+button:focus {
+	background-color: #cccccc;
+	color:  rgba(0, 0, 0, 0.75);
+}
+
+#firstModal p {
+	font-family: "Amiri";
+}
+
+
+#selectMe {
+	box-shadow: 4px 4px 6px #333333;
+	width: 200px;
+	height: 55px;
+	margin-bottom: 0px;
+	border-radius: 30px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	
+}
+
+  .footer {
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: Garamond;
+    
+    color: #fff;
+    background-color: #292C2F;
+    
+
+  }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

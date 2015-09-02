@@ -69,6 +69,12 @@
  button, .button {
 	font-family: "EB Garamond";
 	font-size: 1rem;
+
+}
+
+.button-group.round {
+	border-color: #94948C solid 2px;
+
 }
   
  #row3 {
@@ -108,6 +114,15 @@
   	color: #909090;
 
   }
+  
+
+  #row5 img{
+	width: 360px;
+  
+}
+
+  
+
   #row6 {
   	background-color: #909084;
   }

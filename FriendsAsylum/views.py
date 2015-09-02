@@ -13,6 +13,10 @@ def glossary(request):
 	glossary_list = zip(word_list, dict_list)
 	return render(request, 'glossary.html', {'glossaries': glossary_list})
 
+def ptable(request):
+	patient_list = PatientEntry.objects.order_by('patient_Info')
+	return render(request, 'table.html', {'patients': patient_list})
+	
 
 def profiles(request):
 	patient_list = PatientEntry.objects.order_by('patient_Info')
@@ -68,6 +72,9 @@ def pieq(request):
 
 def pieq2(request):
 	return render(request, 'quakerpiechartwophilly.html')
+
+def bargraph(request):
+	return render(request, 'bargraph.html')
 
 def handler404(request):
 	response = render_to_response('detail.html', {}, context_instance = RequestContext(request))

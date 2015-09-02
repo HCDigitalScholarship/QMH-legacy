@@ -1,0 +1,19 @@
+/* custom css for table.html */
+
+.footer {
+  	margin-top: 20px;
+    padding-top: 30px;
+  	text-align: center;
+  	font-family: Garamond;
+  	
+  	color: #fff;
+  	background-color: #292C2F;
+ }
+
+
+.footer {
+  .columns:nth-child(n+2) {
+      border-left: 1px solid scale-color(#f1f1f1, $lightness: -30%);
+     min-height: 280px;
+  }
+ }

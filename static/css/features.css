@@ -28,10 +28,19 @@ body {
 	background-color: #f0f0f0;
 }
 
+#row4 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#row4 img {
+	width: 300px;
+}
+
+
 .image-wrapper {
   width: 100%;
   height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.04);
   overflow: hidden;
   position: relative;
   text-align: center;

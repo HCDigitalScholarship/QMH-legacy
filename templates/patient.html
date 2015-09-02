@@ -337,57 +337,20 @@
 <!-- text center blurb -->
 <!-- AC Could we add padding at the top here? And we talked about maybe making this page look like the Glossary to make it more fun. And adding different colors to make the white less boring.-->
 <br>
-<p> Following is a list of information on patients we have compiled from the Superintendent's Day Books.  As changes or additions are made to existing patients, and as more patients are added to our database, these changes will automatically appear here. </p>
+<p> Following, we have included two features which allow you to learn more about patients, their stay at the Asylum, and general statistics.  To learn more about the specifics of certain patients, click on the Patient Table.  To learn more about the general statistics of the Asylum, click on the Patient Bar Graph below. Also, note that as any additions or changes are made to our database with regards to patients and patient information, these changes will automatically be reflected in these features. </p>
 <br>
  </div>
 </div>
 
- <div id = "newrow">
-	
-		{% if patients %} <!--refers to name of variable in views containing all patient entries-->
-			<ul class = "accordion" data-accordion>
-				{% for patient in patients %}				
-	
-	
-		
-									
-					<li class = "accordion-navigation">
-						<a name = "{{patient.patient_Info.first_name}} {{patient.patient_Info.last_name|slice:":2"}}."></a>
-						<a href = "#panel{{forloop.counter0}}">
-<strong> 	Name: {{ patient.patient_Info.first_name }}</strong><br>
-	Last Name: {{ patient.patient_Info.last_name|slice:":2" }}.<br>
-	Birth: {{ patient.patient_Info.birth }}<br>
-	Death: {{ patient.patient_Info.death }}<br>
-	Gender: {{ patient.patient_Info.gender }}<br>
-	{% if patient.patient_Info.birthplace %}
+<div class = "row full-width">
+	<div class = "large-6 columns medium-6 columns small-12 columns text-center">
+		<a href = "/ptable"><img src = "{% static "Images/tables.png" %}"></a>
+	</div>
+	<div class = "large-6 columns medium-6 columns small-12 columns text-center">
+		 <a href = "/bargraph"><img src = "{% static "Images/bargraph.png" %}"></a>
 
-	Birthplace: {{ patient.patient_Info.birthplace }}
-	
-	{% else %}
-	Birthplace:
-	{% endif %}	
-	
+        </div>
 
-											
-											</a>
-
-			
-					<div id = "panel{{forloop.counter0}}" class = "content">
-					        <p>	Age on Arrival: {{ patient.age }} <br>
-							Admit Date: {{ patient.admitdate }} <br>
-					        	Exit Date: {{ patient.exitdate }} <br>
-							Status on Exit: {{ patient.status }} <br>
-							Weekly Rate Paid: {{ patient.weekly_Rate }} <br>
-							Significant Notes: {{ patient.notes }} <br>
-						</p>	
-						</div>
-					 </li>
-					
-				{% endfor %}
-			</ul>
-		{% else %}
-			<strong> There are no patient entries present right now. </strong>
-		{% endif %}
 
 </div>
 
