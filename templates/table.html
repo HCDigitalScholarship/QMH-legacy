@@ -21,8 +21,10 @@
    <body>
 
 
-        <h2 class = "text-center" style = "font-family: 'Cinzel'; margin: 0;padding: 30px; background: #707070; font-size: 45px"> DataTables Example with Patient Entries </h2>
-
+        <h2 class = "text-center" style = "font-family: 'Cinzel'; margin: 0;padding: 50px; background: #707070; font-size: 45px"> Patient Information Table </h2>
+<div class = "row">
+<h5 style = "font-family:'Amiri'; padding-top:25px">The table below allows you to learn more about individual patient histories, display different amounts of table data, and sort and search any information available in the table. The information for this table was compiled from the an array of primary materials available in Haverford Special Collections about Friends Asylum such as the Superintendent's Diaries, Manager's Minutes, and <a href = "http://triptych.brynmawr.edu/cdm/search/searchterm/friends%20asylum%20annual%20report/order/nosort"> Annual Reports</a>.  </h5>
+</div>
 <br>
 <div class = "row full-width">
  <table id="example" class="display" cellspacing="0" width="100%">
@@ -44,7 +46,7 @@
                                                                 {% for patient in patients %}
                                                         <tr>
                                                                 <td name = "{{patient.patient_Info.first_name}} {{patient.patient_Info.alias">
-                                                                 {{patient.patient_Info.first_name}} {{patient.patient_Info.alias}}
+                                                                 {{patient.patient_Info.first_name}} {{patient.patient_Info.alias}}.
                                                                 </td>
                                                                 <td> {{patient.patient_Info.birth}} </td>
                                                                 <td>{{patient.patient_Info.gender}} </td>
