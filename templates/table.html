@@ -2,16 +2,9 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel = "stylesheet" href= "{% static "css/icons/foundation-icons/foundation-icons.css" %}">
-    <link rel = "stylesheet" href= "{% static "css/icons/foundation-icons/foundation-icons.eot" %}">
-    <link rel = "stylesheet" href= "{% static "css/icons/foundation-icons/foundation-icons.svg" %}">
-    <link rel = "stylesheet" href= "{% static "css/icons/foundation-icons/foundation-icons.ttf" %}" >
-    <link rel = "stylesheet" href= "{% static "css/icons/foundation-icons/foundation-icons.woff" %}">
+	{% include 'top-links-short.html' %}   
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/zf-5.5.2/jq-2.1.4,jszip-2.5.0,pdfmake-0.1.18,dt-1.10.9,b-1.0.3,b-colvis-1.0.3,b-flash-1.0.3,b-html5-1.0.3,b-print-1.0.3,r-1.0.7,se-1.0.1/datatables.min.css"/>
-    <link href='https://fonts.googleapis.com/css?family=Tangerine|Shadows+Into+Light|Special+Elite|Poiret+One|Quintessential|Cinzel|Cinzel+Decorative|Amiri|EB+Garamond' rel='stylesheet' type='text/css'>
-    <link rel = "stylesheet" href = "{% static "css/tables.css" %}">
+      <link rel = "stylesheet" href = "{% static "css/tables.css" %}">
  
 
         <title>DataTables</title>
@@ -19,7 +12,7 @@
    </head>
 
    <body>
-
+	{% include 'nav-bar.html' %}
 
         <h2 class = "text-center" style = "font-family: 'Cinzel'; margin: 0;padding: 50px; background: #707070; font-size: 45px"> Patient Information Table </h2>
 <div class = "row">

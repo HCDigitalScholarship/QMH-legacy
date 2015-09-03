@@ -1,9 +1,14 @@
+{% load staticfiles %}
 <!doctype html>
 <html>
 
-<head></head>
+<head>
+{% include 'top-links-short.html' %}
+<title>Quaker Pie Chart</title>
+</head>
 <body>
-
+{% include 'nav-bar.html' %}
+<br>
 <div id="pieChart"></div>
 {% include 'd3-links.html' %}
 <script>
