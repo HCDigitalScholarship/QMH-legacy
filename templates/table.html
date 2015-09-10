@@ -80,9 +80,35 @@
 
 $(document).ready(function() {
   $('#example').DataTable( {
-	  dom: 'T<"clear">lfrtip',
-	  "aLengthMenu": [[20, 50, 100, -1],
-                [20, 50, 100, "All"]]
+	  dom: 'Bfrtip',
+      	   buttons: [
+            {
+                extend: 'copyHtml5',
+                exportOptions: {
+                    columns: ':visible'               
+		 }
+            },
+            {
+                extend: 'excelHtml5',
+                exportOptions: {
+                    columns: ':visible'
+                }
+            },
+            {
+                extend: 'csvHtml5',
+                exportOptions: {
+                    columns: ':visible'
+                }
+            },
+            {
+                extend: 'pdfHtml5',
+                exportOptions: {
+                    columns: ':visible'
+                }
+            }
+        ],
+	 "aLengthMenu": [[20, 50, 100, -1], [20, 50, 100, "All"]]
+	
     } );
 } );
     

@@ -3,29 +3,32 @@
 <html>
 
 <head>
-{% include 'top-links-short.html' %}
+{% include 'top-links.html' %}
 <title>Quaker Pie Chart </title>
 </head>
 <body>
 {% include 'nav-bar.html' %}
 <br>
-<div id="pieChart"></div>
+<div class = "row">
+<a href="#" data-reveal-id="firstModal" style = "margin-right:80px;display: inline-block;" class="radius button text-center">Key for Chart</a>
+
+<h3 style = "font-family: 'Cinzel';text-align: center;display:inline-block;"> Pie Chart of Quaker Meetings </h3>
+
+<h4 style = "font-family: 'Amiri';text-align: center;"> Which Contributed to Friends Asylum </h4>
+</div>
+<!-- Reveal Modals begin -->
+<div id="firstModal" class="reveal-modal medium" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="firstModalTitle" style = "font-family: 'Cinzel'; text-align:center;">Information about Quaker Pie Chart</h2>
+  <p style = "font-family:'Amiri';">This pie chart depicts the overall percentage of contributions given by each Quaker Meeting to fund Friends Asylum.  The percentages were obtained by looking at data of people who contributed from 1817-1834 and what meeting they were from.  For example, the number 383 over the Philadelphia slice of the pie chart represents the fact that 383 people from some Philadelphia Meeting contributed to Friends Asylum.</p>
+ 
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+<div id="pieChart" class = "text-center"></div>
 {% include 'd3-links.html' %}
+
+
 <script>
 var pie = new d3pie("pieChart", {
-	"header": {
-		"title": {
-			"text": "Pie Chart of Quaker Meetings ",
-			"fontSize": 22,
-			"font": "cinzel"
-		},
-		"subtitle": {
-			"text": "Which Contributed to Friends Asylum",
-			"color": "#999999",
-			"font": "garamond"
-		},
-		"titleSubtitlePadding": 12
-	},
 	"footer": {
 		"color": "#999999",
 		"fontSize": 11,
@@ -344,6 +347,6 @@ var pie = new d3pie("pieChart", {
 	}
 });
 </script>
-
+{% include 'bottom-links.html' %}
 </body>
 </html>
