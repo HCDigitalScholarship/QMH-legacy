@@ -5,7 +5,10 @@ Quakers and Mental Health Project files
 
 Friends Asylum super user login:
 Username: 
-Password: 
+Password:
+
+This site uses a PostreSQL database.  (We originally had a sqlite database).
+ 
 The backend of this site uses the Django framework (documentation can be found at https://www.djangoproject.com/).
 
 The frontend of this site uses Foundation5 (the complete download). The documentation for Foundation can be found at http://foundation.zurb.com/develop/download.html.
