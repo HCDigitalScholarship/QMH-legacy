@@ -1,0 +1,417 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+  <!--IGNORE THESE-->
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/foundation.css" />
+
+    <!-- these are icons -->
+    <link rel = "stylesheet" href= "css/foundation-icons/foundation-icons.css" />
+    <link rel = "stylesheet" href= "css/foundation-icons/foundation-icons.eot" />
+    <link rel = "stylesheet" href= "css/foundation-icons/foundation-icons.svg" />
+    <link rel = "stylesheet" href= "css/foundation-icons/foundation-icons.ttf" />
+    <link rel = "stylesheet" href= "css/foundation-icons/foundation-icons.woff" />
+
+
+
+    <!-- these are google fonts, feel free to add more as long as you add it in the same format with | dividers and + for conjoining words -->
+    <link href='https://fonts.googleapis.com/css?family=Tangerine|Shadows+Into+Light|Sacramento|Special+Elite|Poiret+One' rel='stylesheet' type='text/css'>
+
+<!--this is your css file you will make changes to -->
+    <link rel = "stylesheet" href = "css/example.css" /> 
+    <script src="js/vendor/modernizr.js"></script>
+    <title>Foundation Tutorial Page | Welcome</title>
+   </head> <!-- you always need all these links-->
+
+
+   <body>
+    <!--the following really long segment is just the code for the menu/navigation bar!!-->
+     <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar hide-for-large-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+            </section>
+        </nav>
+            <aside class="left-off-canvas-menu">
+              <ul class="off-canvas-list">
+                <li><a href="#"><i class = "fi-home"></i></a></li>
+                <li><a href="#">About</a>
+                  <ul>
+                    <li><a href="#">Learn More</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Helpful Resources</a>
+                  <ul>
+                    <li><a href="http://foundation.zurb.com/docs/">Zurb Documentation</a></li>
+                    <li><a href="http://stackoverflow.com/search?q=foundation5&s=1410ba7f-ee07-4542-85d4-e4dbf7aa5f0b">Stack Overflow</a></li>
+                    <li><a href="http://silverli.github.io/lindsaysilver/">Lindsay!</a></li>
+                    
+                  </ul>
+                </li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Bibliography &amp; Credits</a></li>
+              </ul>
+            </aside>
+            <a class="exit-off-canvas"></a>
+    
+      <div class = "sticky">
+        <nav class="top-bar show-for-large-up" data-topbar="" role ="navigation">
+          <ul class="title-area">
+            <li class="name"> </li>
+            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          </ul>
+
+          <section class="top-bar-section">
+            <ul class = "left">
+            <li> <a href= "#"><i class = "fi-home"></i></a></li>
+            </ul> 
+            <ul class = "right">
+              <li class="has-dropdown"><a href="#">About</a>
+                <ul class = "dropdown">
+                  <li><a href = "#">Learn More</a></li>
+                 
+                </ul>
+              </li>
+               <li class="has-dropdown"><a href="#"> Helpful Resources </a>
+               <ul class="dropdown">
+                <li><a href="http://foundation.zurb.com/docs/">Zurb Documentation</a></li>
+                <li><a href="http://stackoverflow.com/search?q=foundation5&s=1410ba7f-ee07-4542-85d4-e4dbf7aa5f0b">Stack Overflow</a></li>
+                <li><a href="http://silverli.github.io/lindsaysilver/">Lindsay!</a></li>
+                
+               </ul>
+              </li>
+          
+              <li><a href="#">Bibliography &amp; Credits</a></li>
+            </ul>
+          </section>
+        </nav>
+    </div>
+
+    <!-- end of navigation bar-->
+
+
+
+<!-- END OF IGNORE-->
+
+
+
+<!-- top image and text overlay-->
+<!--if you dont want any text overlay, just delete! (and delete from css file too!)-->
+    <header>
+      <div class = "banner">
+        <div class = "overlay-container">
+        <img src="http://arammkrtchyan.info/portfolio-old/images/team_mini.jpg">
+        <div class = "overlay1 show-for-large-up">
+          <strong>Foundation Tutorial Page</strong>
+          
+
+         
+        </div>
+         <div class = "overlay2 show-for-large-up">
+          
+          <h5 class = "text-right" style = "font-family: 'Sacramento'; font-size:30px;"> ~ By <a href = "http://silverli.github.io/lindsaysilver/">Lindsay Silver </a>~</h5>
+        </div>
+      </div>
+      </div>
+    </header>
+
+
+
+
+
+    <div id = "rowheader">
+      <h1 style = "margin-left: 30px; margin-right: 30px;"> <strong>Examples of Foundation5 in HTML &amp; CSS </strong> </h1>
+    </div>
+
+
+    <!--this is a place you can put quotes if you'd really like them to stand out-->
+
+    <div id = "row1">
+        <h2>"Sometimes it's the very people who no one imagines anything of who do the things no one can imagine."
+        <cite style ="color: #2E75EB;"><em> ~The Imitation Game </em> </cite>
+      </h2>
+    </div>
+
+
+    <div id = "row2">
+      <div class = "row"> 
+        <h2> Text Blurb Left </h2>
+        <p> The Committee based the Asylum’s architecture on that of the Retreat. At the Retreat, the architect had put rooms on both sides of the hallway, which left some of the rooms dark and gloomy. So the Asylum’s Building Committee made sure to put patient rooms only on one side of the hallway, with windows on the opposite side of the hall. The Asylum’s plan ensured that all patients had access to the curative fresh air and light provided by the windows opposite their rooms.  This fit in with Quaker ideas about equality. All patients deserved equal access to air and light.  The Building Committee also worried a lot about keeping the Asylum safe. </p>
+      </div>
+    </div>
+
+
+
+       <!-- this is the rotating pic slider--if you want it to span the whole page, we will have to find images that have sizes of at least 2000 by some_height of pixels--this image is only 960 wide-->
+    <div class = "row" id = "orbit">
+      
+      
+     <ul class = "exorbit" data-orbit data-options= "animation:fade; animation_speed:200; pause_on_hover: false; next_on_click: true;">
+            <li>
+              <img src="http://placehold.it/1000x350">
+              <div class = "orbit-caption">
+                Orbit Slider Optional Caption
+              </div>
+            </li>
+            <li>
+              <img src="http://placehold.it/1000x350">
+              <div class = "orbit-caption">
+                Orbit Caption #2
+              </div>
+            </li>
+            <li>
+              <img src="http://placehold.it/1000x350">
+              <div class = "orbit-caption">
+                Orbit Caption #3
+              </div>
+            </li>
+            <li>
+              <img src="http://placehold.it/1000x350">
+              <div class = "orbit-caption">
+                Orbit Caption #4
+              </div>
+            </li>
+          </ul> 
+        
+      </div>
+    </div>
+
+
+       <div id = "row3">
+       <div class = "row"> 
+        <h2> Text Blurb Center </h2>
+        <p> The Committee based the Asylum’s architecture on that of the Retreat. At the Retreat, the architect had put rooms on both sides of the hallway, which left some of the rooms dark and gloomy. So the Asylum’s Building Committee made sure to put patient rooms only on one side of the hallway, with windows on the opposite side of the hall. The Asylum’s plan ensured that all patients had access to the curative fresh air and light provided by the windows opposite their rooms.  This fit in with Quaker ideas about equality. All patients deserved equal access to air and light.  The Building Committee also worried a lot about keeping the Asylum safe. </p>
+      </div>
+    </div>
+
+      <div class = "row" id = "row4"> 
+        <div class = "large-6 medium-6 small-12 column">
+          <h2 class ="text-center"> Mixed Text Blurb </h2>
+          <p> The Committee based the Asylum’s architecture on that of the Retreat. At the Retreat, the architect had put rooms on both sides of the hallway, which left some of the rooms dark and gloomy. So the Asylum’s Building Committee made sure to put patient rooms only on one side of the hallway, with windows on the opposite side of the hall. The Asylum’s plan ensured that all patients had access to the curative fresh air and light provided by the windows opposite their rooms.  This fit in with Quaker ideas about equality. All patients deserved equal access to air and light.  The Building Committee also worried a lot about keeping the Asylum safe. </p>
+        </div>
+        <div class = "large-6 medium-6 small-12  text-center column">
+          <h2 class ="text-center"> Square Image </h2>
+          <p><a class = "th radius" href ="#"> <img src="http://placehold.it/350x350"></a></p>
+        </div>
+      </div>
+
+
+
+ <div id = "row5"> 
+  <div class = "row full-width">
+    <h2 class ="text-center"> Responsive Image that Goes Below Text </h2>
+  </div>
+     <div class = "row full-width" data-equalizer>
+  <article class = "large-6 large-push-6 medium-12 small-12 columns" data-equalizer-watch>
+    <p> In Twelfth Month, 1817 Isaac Bonsall wrote that he had received an Electrical Machine, “a valuable present,” from the Visiting Managers. The next month, the Visiting Managers recorded an inventory of the Electrical Machine’s parts in their minutes. By 1817, the use of electricity to treat insanity (and a multitude of other ailments) was an unusual, but known, option, and Bonsall and the Managers thought that the Electrical Machine could be used to treat the patients. They could have read about using medicinal electricity in books like T. Gale’s<em><a href = "#" data-reveal-id = "bModal"> Electricity, or Ethereal Fire, Considered</a></em>, which even contained case studies concerning insanity. However, the Electrical Machine was unusual enough that Bonsall and the resident physician Dr. Lukens did not figure out how to use it on patients until 1820, when an acquaintance from Philadelphia came out to Frankford to teach them how it worked (Third Month, 24, 1820). </p>
+    <p> In Twelfth Month, 1817 Isaac Bonsall wrote that he had received an Electrical Machine, “a valuable present,” from the Visiting Managers. The next month, the Visiting Managers recorded an inventory of the Electrical Machine’s parts in their minutes.</p>
+
+<div id = "bModal" class = "reveal-modal small" data-reveal aria-labelledby = "bTitle" aria-hidden = "true" role= "dialog"><p id = "bTitle"> Gale, T. Electricity, or Ethereal Fire, Considered. Troy: Moffitt and Lyon, 1802. 
+</p>
+  <a class = 'close-reveal-modal' aria-label= "Close">&#215;</a>  
+</div>
+
+</article>
+  <aside class = "large-6 large-pull-6  medium-12 small-12 columns text-center" data-equalizer-watch>
+        <figure>
+          <img height = "500px" width = "500px" src = "http://placehold.it/400x400">
+            <figcaption> Placeholder Image </figcaption>
+        </figure>
+  </aside>
+  </div>
+</div>
+
+      <div id = "row6"> 
+        <div class = "row">
+        <h2> Text Blurb Right </h2>
+        <p> The Committee based the Asylum’s architecture on that of the Retreat. At the Retreat, the architect had put rooms on both sides of the hallway, which left some of the rooms dark and gloomy. So the Asylum’s Building Committee made sure to put patient rooms only on one side of the hallway, with windows on the opposite side of the hall. The Asylum’s plan ensured that all patients had access to the curative fresh air and light provided by the windows opposite their rooms.  This fit in with Quaker ideas about equality. All patients deserved equal access to air and light.  The Building Committee also worried a lot about keeping the Asylum safe. </p>
+      </div>
+    </div>
+
+    
+
+
+  <div id = "row7">  
+  <div class = "row"> 
+       <h2> Nineteenth Century Friends </h2>
+     </div>
+    <div class = "row"> 
+      <div class = "large-8 medium-12 small-12 columns"> 
+    
+   <p>By the nineteenth century, Quakers had become much more respectable. As part of this transformation, the more extreme parts of early Friends’ witness disappeared from Quaker worship. The structures of Quaker Meetings and communities worked to contain and shape Friends’ leadings. Especially in the 1810s and 1820s, Quakers struggled to determine the right balance between Inner Light-led worship, which could look extreme, and the more orderly worship they had begun to practice. Their struggle was compounded by the fact that Quakers had not completely escaped their radical roots, and outsiders often still believed negative stereotypes about Quakers. For example, the renowned doctor Johann Spurzheim wrote that Quakers were more prone to insanity than the general population because they married within their group<a href = "#" data-reveal-id = "myModal"> (79)</a>. These factors meant that, when the Asylum was founded, Quakers were associated in the public mind with insanity. </p>
+<div id ="myModal" class = "reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role = "dialog">
+<p id ="modalTitle">Spurzheim, Johann Christoph. Observations on the Deranged Manifestations of the Mind, or Insanity. Gainesville, FL: Scholars’ Facsimiles and Reprints, 1970.</p>
+<a class = "close-reveal-modal" aria-label= "Close">&#215;</a>
+</div>
+
+</div>
+<div class = "large-4 medium-12 small-12 columns">
+   <div class ="show-for-large-up">
+    <br> </br>
+   
+   </div>
+   <figure class = "text-center">
+        <ul class = "large-block-grid-1 small-block-grid-1" data-clearing>
+        <li><a class = "th" href = "http://placehold.it/400x400"> <img width= "400px" src = "http://placehold.it/400x400"></a></li>
+        </ul> 
+          <figcaption> "A Lovely Square Image" </figcaption>
+    </figure>      
+</div>
+</div>
+</div>
+
+
+
+
+
+
+      <div id = "row8" class = "clearfix2"> 
+        <h2> Text Blurb with Floated Panel </h2>
+        <div class = "panel radius">
+          <h5> Callout Panel </h5>
+          <blockquote> "My fellow Americans, ask not what your country can do for you, ask what you can do for your country." <cite> John F. Kennedy </cite></blockquote>
+        </div>
+        <p> The Committee based the Asylum’s architecture on that of the Retreat. At the Retreat, the architect had put rooms on both sides of the hallway, which left some of the rooms dark and gloomy. So the Asylum’s Building Committee made sure to put patient rooms only on one side of the hallway, with windows on the opposite side of the hall. The Asylum’s plan ensured that all patients had access to the curative fresh air and light provided by the windows opposite their rooms.  This fit in with Quaker ideas about equality. All patients deserved equal access to air and light.  The Building Committee also worried a lot about keeping the Asylum safe. </p>
+      </div>
+      
+
+     
+
+      
+    <div id = "row9"> 
+      <h1> <strong>~The End!~</strong> </h1>
+      <div class = 'text-center'>
+          <a href = "#" data-reveal-id = "firstModal" class = "radius large button"> Oh, and this is a Modal!</a>
+          <div id = "firstModal" class = "reveal-modal text-center" data-reveal aria-labelledby="firstModalTitle" aria-hidden = "true" role = "dialog">
+            <h3 id = "firstModalTitle"> Modals can be Buttons, Words, Even Pictures!</h3>
+            <p> Pretty sweet, huh?</p>
+            <a class = "close-reveal-modal" aria-label = "Close">&#215;</a>
+          </div>
+          </div>
+    </div>
+
+
+<div id = "row10"> 
+    <div class = "row text-center">
+      <br>
+      <h3 style = "font-family: 'Special Elite';font-size:30px;"> P.S... Image Grids are Reaallly Easy with Foundation</h3>
+      <br>
+      <ul class="large-block-grid-3 medium-block-grid-2 small-block-grid-1 text-center">
+        <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+         <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+         <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+         <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+          <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+         <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+         <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+         <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+          <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+         <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+         <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+         <a href = "#" class = "th"><img src = "http://placehold.it/300x300"></a>
+         
+
+       
+      </ul>
+      <br>
+      <br>
+     </div>
+    </div>
+
+
+
+
+
+   
+
+
+
+    <!-- this is just code for the social media and connect with ds stuff-->
+     <div id = "row11"> 
+
+      <div class = "row">
+        <div class = "small-12 medium-12 large-12 columns text-center">
+            <br> </br>
+            <a href ="https://www.facebook.com/hclibraries"><i class = "fi-social-facebook"></i></a>
+            <a href ="https://twitter.com/HCLibraries"><i class = "fi-social-twitter"></i></a>
+            <a href ="https://instagram.com/HCLibraries/"><i class = "fi-social-instagram"></i></a>
+            <a href ="#"><i class = "fi-mail"></i></a>
+            <br> </br>
+          </div>
+        </div>
+    
+
+       
+
+ 
+
+
+<!--this is just code for the very bottom footer-->
+    <footer class = "footer" id = "footer1">
+      <div class = "row full-width">
+ 
+    
+          <div class = "small-12 medium-4 large-4 columns text-center" id ="vert">
+            <ul class = "no-bullet">
+              <li> Quaker &amp; Special Collections</li>
+              <li> Magill Library &middot; 610.896.1161</li>
+              <li>370 Lancaster Ave.</li>
+              <li>Haverford, PA 19041</li>
+               <li>  <a href = "http://library.haverford.edu/places/special-collections">Special Collections Website </a></li>
+            </ul>
+        </div>
+
+        <div class = "small-12 medium-4 large-4 columns text-center" id = "vert">
+            <ul class = "no-bullet">
+           <li> Digital Scholarship</li>
+           <li> Haverford College Libraries</li>
+          <li>  370 Lancaster Avenue</li>
+          <li>  Haverford, PA 19041</li>
+           <li>  <a href = "http://library.haverford.edu/services/digital-scholarship/"> HaverfordDS Website </a></li>
+          </ul>
+        </div>
+
+        <div class = "small-12 medium-4 large-4 columns text-center">
+            <ul class = "no-bullet">
+              <li> Funding Provided By: </li>
+              <li> The Scattergood Foundation</li>
+              <li>1501 Cherry Street</li>
+              <li>Philadelphia, PA 19102 </li>
+               <li>  <a href = "http://www.scattergoodfoundation.org/">Scattergood Foundation Website </a></li>
+            </ul>
+         
+        </div>  
+
+        <div class = "large-12 columns text-center">
+
+           <p><a href = "#"> About </a> | <a href = "#"> Helpful Links </a> | <a href = "#"> Bibliograpy &amp; Credits </a></p>
+        </div>
+        
+        
+
+      </div>
+    </footer>
+      
+      
+
+      
+
+
+
+
+       </div><!-- end inner wrap of menu/navigation bar, must go after ALL content -->
+     </div><!-- end offcanvas -->
+
+    
+    <!-- you also always need the following bottom links -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
