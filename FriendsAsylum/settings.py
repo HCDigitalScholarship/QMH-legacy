@@ -30,7 +30,7 @@ STATICFILES_DIRS = (
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&)ox0^)rrlzfc#!&v_t$!xa^une*jiq3jk1cduv45!$6#a6ps_'
+#After downloading and installing Django, Django will give you your own secret key which will be used in your specific production of your project
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -112,23 +112,15 @@ WSGI_APPLICATION = 'FriendsAsylum.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
+#Django automatically supplies you with a sqlite database, which is good for projects which will need a moderately sized database
 DATABASES = {
-    #'default': {
-     #   'ENGINE': 'django.db.backends.sqlite3',
-      #  'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    #}
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    
 
-'default': { 
-	'ENGINE': 'django.db.backends.postgresql_psycopg2',
-	'NAME': 'friendsdata',
-	'USER': 'friends',
-	'PASSWORD': 'safari77',
-	'HOST': '127.0.0.1',
-	'PORT': '5432',
+	}
 
-
-}
 }
 
 
