@@ -17,9 +17,7 @@ The features/visualizations on this site were made using the following libraries
 -DataTables (https://www.datatables.net/)
 -PDF Object (http://pdfobject.com/)
 
-This project uses the following python libraries:
--django
--json
+To learn more about how I got started with Django, Foundation, and creating this site, please visit my wiki page on github here: https://github.com/HCDigitalScholarship/FriendsAsylum/wiki/Welcome-and-Introduction-to-QMH-and-Django
 
 Data, Excel Docs, Etc. for Future Research on QMH:
 
