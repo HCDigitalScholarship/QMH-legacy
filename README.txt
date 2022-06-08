@@ -1,3 +1,7 @@
+THIS PROJECT IS DEPRECATED. VIEW UPDATED REPO HERE: https://github.com/HCDigitalScholarship/qmh-v2
+
+----------------------------------------------
+
 README for Friends Asylum Project
 Summer 2015
 
